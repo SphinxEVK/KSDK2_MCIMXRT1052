@@ -1,8 +1,8 @@
 # KSDK2_MCIMXRT1052
 
-本项目为RT1052的IAR模板工程，采用了类似[KSDK2_KV58-IAR-project](https://github.com/AlexYzhov/KSDK2_KV58-IAR-project)  repo里的文件组织结构。
+本项目为RT1052的IAR模板工程，采用了类似[KSDK2_KV58-IAR-project](https://github.com/AlexYzhov/KSDK2_KV58-IAR-project)  repo里的文件组织结构，上电后核心工作在600Mhz。
 
-硬件上，本工程基于我和网友Stackoverflow共同开发的**SphinxEVK** iMX RT1052开发板，其中片外存储器主要使用的是Winbond W25Q256JVEQ，但同时也预留了SDRAM和同时兼容Hyperflash、OctaFlash的FlexSPI接口。
+硬件上，本工程基于我和网友Stackoverflow共同开发的**SphinxEVK** iMX RT1052开发板，使用24Mhz晶振。片外存储器主要使用的是Winbond W25Q256JVEQ，但同时也预留了SDRAM和兼容Hyperflash、OctaFlash的FlexSPI接口，可通过Boot开关[0010]->[0110]选择启动源。
 
 软件上，本工程基于MCUXpressoSDK2.3.1驱动(**/Library/MCUXpressoSDK**)，同时打包封装了CMSIS数学库、CMSIS-DSP库(**/Library/CMSIS**)，并且添加了一些NXP提供的中间件软件(**/Middleware**)。本工程通过对GPIO_B0_15进行编程，实现了LED闪烁。
 
