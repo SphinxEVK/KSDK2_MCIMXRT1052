@@ -2426,6 +2426,7 @@
                 <option>
                     <name>CCIncludePath2</name>
                     <state>$PROJ_DIR$\..\App</state>
+                    <state>$PROJ_DIR$\..\App\testbench</state>
                     <state>$PROJ_DIR$\..\Board</state>
                     <state>$PROJ_DIR$\..\Drivers</state>
                     <state>$PROJ_DIR$\..\Library</state>
@@ -6239,6 +6240,15 @@
     </configuration>
     <group>
         <name>App</name>
+        <group>
+            <name>testbench</name>
+            <file>
+                <name>$PROJ_DIR$\..\App\testbench\bsp_sdram.c</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\..\App\testbench\bsp_sdram.h</name>
+            </file>
+        </group>
     </group>
     <group>
         <name>Board</name>
@@ -6427,6 +6437,6 @@
         </file>
     </group>
     <file>
-        <name>$PROJ_DIR$\main.c</name>
+        <name>$PROJ_DIR$\..\main.c</name>
     </file>
 </project>

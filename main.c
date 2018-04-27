@@ -41,6 +41,8 @@
 
 #include "SEGGER_RTT.h"
 
+#include "bsp_sdram.h"
+
 /*******************************************************************************
  * Definitions
  ******************************************************************************/
@@ -95,6 +97,15 @@ int main(void)
 	//memcpy(string, (uint8_t*)FlexSPI_AHB_BASE, sizeof("HELLOWORLD"));
 	
 	//uint8_t str[] = {0x01, 0x02, 0x03, 0x04};
+	
+	if(1==sdram_test(0x12ABCDEF))
+	{
+		//sdram test success
+	}
+	else
+	{
+		//sdram test failed
+	}
 
     while (1)
     {
