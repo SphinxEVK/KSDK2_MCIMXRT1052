@@ -16,12 +16,13 @@
         <LeaveTargetRunning>_ 0</LeaveTargetRunning>
     </JLinkDriver>
     <DebugChecksum>
-        <Checksum>2279809452</Checksum>
+        <Checksum>3542591981</Checksum>
     </DebugChecksum>
     <CodeCoverage>
         <Enabled>_ 0</Enabled>
     </CodeCoverage>
     <Disassembly>
+        <MixedMode>1</MixedMode>
         <InstrCount>0</InstrCount>
     </Disassembly>
     <Exceptions>

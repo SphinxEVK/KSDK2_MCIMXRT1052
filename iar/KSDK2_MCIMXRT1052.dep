@@ -1,135 +1,205 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project>
     <fileVersion>2</fileVersion>
-    <fileChecksum>648065634</fileChecksum>
+    <fileChecksum>2715156022</fileChecksum>
     <configuration>
         <name>DEBUG_QSPIFlash</name>
         <outputs>
-            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_clock.c</file>
-            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_common.h</file>
-            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_clock.h</file>
-            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\startup\system_MIMXRT1052.c</file>
-            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\startup\system_MIMXRT1052.h</file>
-            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\startup\startup_MIMXRT1052.s</file>
-            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_common.c</file>
-            <file>$TOOLKIT_DIR$\inc\c\stdbool.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\stddef.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\assert.h</file>
-            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_flexspi.c</file>
-            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_gpio.c</file>
-            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_gpio.h</file>
-            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\utilities\fsl_debug_console.h</file>
-            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_lpuart.c</file>
-            <file>$PROJ_DIR$\..\SEGGER\RTT\SEGGER_RTT.c</file>
-            <file>$PROJ_DIR$\..\SEGGER\RTT\SEGGER_RTT_printf.c</file>
-            <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\ysizet.h</file>
-            <file>$PROJ_DIR$\main.c</file>
-            <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\stdlib.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\iccarm_builtin.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\DLib_Product_stdlib.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\DLib_Product_string.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\string.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Normal.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
-            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\utilities\io\fsl_io.c</file>
-            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\utilities\log\fsl_log.c</file>
-            <file>$PROJ_DIR$\..\Xip\external_flash_config.h</file>
-            <file>$PROJ_DIR$\..\Xip\fsl_flexspi_nor_boot.c</file>
-            <file>$PROJ_DIR$\..\Xip\fsl_flexspi_nor_boot.h</file>
-            <file>$PROJ_DIR$\DEBUG_QSPIFlash\Obj\fsl_clock.pbi</file>
-            <file>$PROJ_DIR$\DEBUG_QSPIFlash\Obj\main.o</file>
-            <file>$PROJ_DIR$\DEBUG_QSPIFlash\Obj\fsl_flexspi_nor_boot.o</file>
-            <file>$PROJ_DIR$\DEBUG_QSPIFlash\Obj\clock_config.pbi</file>
-            <file>$PROJ_DIR$\DEBUG_QSPIFlash\Obj\fsl_debug_console.o</file>
-            <file>$PROJ_DIR$\DEBUG_QSPIFlash\Obj\pin_mux.pbi</file>
-            <file>$PROJ_DIR$\DEBUG_QSPIFlash\Obj\SEGGER_RTT.o</file>
-            <file>$PROJ_DIR$\DEBUG_QSPIFlash\Obj\fsl_flexspi.pbi</file>
-            <file>$PROJ_DIR$\DEBUG_QSPIFlash\Obj\SEGGER_RTT_printf.o</file>
-            <file>$PROJ_DIR$\DEBUG_QSPIFlash\Obj\SEGGER_RTT.pbi</file>
-            <file>$PROJ_DIR$\DEBUG_QSPIFlash\Obj\SEGGER_RTT_printf.pbi</file>
-            <file>$PROJ_DIR$\DEBUG_QSPIFlash\Obj\fsl_debug_console.pbi</file>
-            <file>$PROJ_DIR$\DEBUG_QSPIFlash\Obj\fsl_flexspi_nor_boot.pbi</file>
-            <file>$PROJ_DIR$\DEBUG_QSPIFlash\Obj\main.pbi</file>
-            <file>$PROJ_DIR$\DEBUG_QSPIFlash\Exe\KSDK2_MCIMXRT1052.out</file>
+            <file>$PROJ_DIR$\..\Board\board.h</file>
+            <file>$PROJ_DIR$\..\Board\board.c</file>
+            <file>$PROJ_DIR$\..\Board\clock_config.h</file>
+            <file>$PROJ_DIR$\..\Board\pin_mux.c</file>
+            <file>$PROJ_DIR$\..\Board\pin_mux.h</file>
+            <file>$PROJ_DIR$\..\Board\clock_config.c</file>
             <file>$PROJ_DIR$\DEBUG_QSPIFlash\Obj\KSDK2_MCIMXRT1052.pbd</file>
-            <file>$PROJ_DIR$\DEBUG_QSPIFlash\Obj\startup_MIMXRT1052.o</file>
-            <file>$PROJ_DIR$\DEBUG_QSPIFlash\Obj\fsl_gpio.pbi</file>
-            <file>$PROJ_DIR$\DEBUG_QSPIFlash\Obj\board.pbi</file>
+            <file>$PROJ_DIR$\DEBUG_QSPIFlash\Obj\fsl_log.pbi</file>
+            <file>$PROJ_DIR$\DEBUG_QSPIFlash\Obj\fsl_log.o</file>
             <file>$PROJ_DIR$\DEBUG_QSPIFlash\Obj\fsl_lpuart.pbi</file>
             <file>$PROJ_DIR$\DEBUG_QSPIFlash\Obj\system_MIMXRT1052.pbi</file>
-            <file>$PROJ_DIR$\DEBUG_QSPIFlash\Obj\fsl_io.pbi</file>
-            <file>$PROJ_DIR$\DEBUG_QSPIFlash\Obj\fsl_log.pbi</file>
-            <file>$PROJ_DIR$\DEBUG_QSPIFlash\Obj\fsl_common.pbi</file>
-            <file>$TOOLKIT_DIR$\inc\c\cmsis_iar.h</file>
-            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\fsl_device_registers.h</file>
-            <file>$PROJ_DIR$\DEBUG_QSPIFlash\Obj\xip_config.o</file>
-            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\MIMXRT1052_features.h</file>
-            <file>$PROJ_DIR$\DEBUG_QSPIFlash\Obj\xip_config.pbi</file>
-            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\MIMXRT1052.h</file>
-            <file>$PROJ_DIR$\..\Library\CMSIS\Include\cmsis_compiler.h</file>
-            <file>$PROJ_DIR$\..\Board\pin_mux.c</file>
-            <file>$PROJ_DIR$\..\Board\clock_config.h</file>
-            <file>$PROJ_DIR$\..\Xip\xip_config.c</file>
-            <file>$PROJ_DIR$\..\Board\board.c</file>
-            <file>$PROJ_DIR$\..\Board\clock_config.c</file>
-            <file>$PROJ_DIR$\..\Board\board.h</file>
-            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\utilities\fsl_debug_console.c</file>
-            <file>$PROJ_DIR$\..\Library\CMSIS\Include\cmsis_version.h</file>
-            <file>$PROJ_DIR$\..\Library\CMSIS\Include\mpu_armv7.h</file>
-            <file>$PROJ_DIR$\..\Library\CMSIS\Include\core_cm7.h</file>
-            <file>$PROJ_DIR$\DEBUG_QSPIFlash\Obj\fsl_log.o</file>
-            <file>$PROJ_DIR$\DEBUG_QSPIFlash\Obj\clock_config.o</file>
-            <file>$PROJ_DIR$\DEBUG_QSPIFlash\Obj\fsl_io.o</file>
-            <file>$PROJ_DIR$\DEBUG_QSPIFlash\Obj\fsl_clock.o</file>
             <file>$PROJ_DIR$\DEBUG_QSPIFlash\Obj\fsl_flexspi.o</file>
-            <file>$PROJ_DIR$\DEBUG_QSPIFlash\Obj\pin_mux.o</file>
-            <file>$PROJ_DIR$\DEBUG_QSPIFlash\Obj\fsl_common.o</file>
-            <file>$PROJ_DIR$\DEBUG_QSPIFlash\Obj\board.o</file>
-            <file>$PROJ_DIR$\DEBUG_QSPIFlash\Obj\fsl_gpio.o</file>
-            <file>$PROJ_DIR$\DEBUG_QSPIFlash\Obj\fsl_lpuart.o</file>
             <file>$PROJ_DIR$\DEBUG_QSPIFlash\Obj\system_MIMXRT1052.o</file>
+            <file>$PROJ_DIR$\DEBUG_QSPIFlash\Obj\fsl_common.o</file>
+            <file>$PROJ_DIR$\DEBUG_QSPIFlash\Obj\fsl_io.o</file>
+            <file>$PROJ_DIR$\DEBUG_QSPIFlash\Obj\startup_MIMXRT1052.o</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdbool.h</file>
+            <file>$PROJ_DIR$\DEBUG_QSPIFlash\List\KSDK2_MCIMXRT1052.map</file>
+            <file>$PROJ_DIR$\DEBUG_QSPIFlash\Obj\fsl_debug_console.pbi</file>
+            <file>$PROJ_DIR$\DEBUG_QSPIFlash\Obj\SEGGER_RTT.pbi</file>
+            <file>$TOOLKIT_DIR$\lib\dl7M_tln.a</file>
+            <file>$PROJ_DIR$\DEBUG_QSPIFlash\Obj\fsl_clock.o</file>
+            <file>$PROJ_DIR$\DEBUG_QSPIFlash\Obj\fsl_io.pbi</file>
+            <file>$PROJ_DIR$\DEBUG_QSPIFlash\Obj\main.pbi</file>
+            <file>$PROJ_DIR$\DEBUG_QSPIFlash\Exe\KSDK2_MCIMXRT1052.bin</file>
+            <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
+            <file>$PROJ_DIR$\DEBUG_QSPIFlash\Obj\pin_mux.o</file>
+            <file>$PROJ_DIR$\DEBUG_QSPIFlash\Obj\fsl_lpuart.o</file>
+            <file>$PROJ_DIR$\DEBUG_QSPIFlash\Obj\xip_config.pbi</file>
+            <file>$TOOLKIT_DIR$\inc\c\stddef.h</file>
+            <file>$PROJ_DIR$\DEBUG_QSPIFlash\Obj\fsl_common.pbi</file>
+            <file>$PROJ_DIR$\DEBUG_QSPIFlash\Obj\pin_mux.pbi</file>
+            <file>$TOOLKIT_DIR$\inc\c\ysizet.h</file>
+            <file>$PROJ_DIR$\DEBUG_QSPIFlash\Obj\fsl_gpio.pbi</file>
+            <file>$PROJ_DIR$\DEBUG_QSPIFlash\Obj\SEGGER_RTT_printf.pbi</file>
+            <file>$TOOLKIT_DIR$\inc\c\assert.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Normal.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\cmsis_iar.h</file>
+            <file>$PROJ_DIR$\DEBUG_QSPIFlash\Obj\fsl_flexspi.pbi</file>
+            <file>$PROJ_DIR$\DEBUG_QSPIFlash\Obj\fsl_gpio.o</file>
+            <file>$PROJ_DIR$\DEBUG_QSPIFlash\Obj\fsl_flexspi_nor_boot.pbi</file>
+            <file>$PROJ_DIR$\DEBUG_QSPIFlash\Obj\fsl_clock.pbi</file>
+            <file>$PROJ_DIR$\..\Library\CMSIS\Include\cmsis_compiler.h</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\fsl_device_registers.h</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\MIMXRT1052_features.h</file>
+            <file>$PROJ_DIR$\..\SEGGER\RTT\SEGGER_RTT.c</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\startup\system_MIMXRT1052.c</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\utilities\log\fsl_log.c</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\MIMXRT1052.h</file>
+            <file>$PROJ_DIR$\..\SEGGER\RTT\SEGGER_RTT_printf.c</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_clock.c</file>
+            <file>$PROJ_DIR$\..\Library\CMSIS\Include\mpu_armv7.h</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_gpio.c</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\utilities\log\fsl_log.h</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_flexspi.c</file>
+            <file>$PROJ_DIR$\..\Library\CMSIS\Include\core_cm7.h</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_gpio.h</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\utilities\fsl_debug_console.c</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\startup\system_MIMXRT1052.h</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\startup\startup_MIMXRT1052.s</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_lpuart.c</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_iomuxc.h</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\utilities\fsl_debug_console_conf.h</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_common.h</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_clock.h</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\utilities\io\fsl_io.c</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\utilities\io\fsl_io.h</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_common.c</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_flexspi.h</file>
+            <file>$PROJ_DIR$\..\Library\CMSIS\Include\cmsis_version.h</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_lpuart.h</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\utilities\fsl_debug_console.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\string.h</file>
+            <file>$PROJ_DIR$\DEBUG_QSPIFlash\Obj\fsl_flexspi_nor_boot.o</file>
+            <file>$PROJ_DIR$\DEBUG_QSPIFlash\Obj\fsl_debug_console.o</file>
+            <file>$TOOLKIT_DIR$\inc\c\intrinsics.h</file>
+            <file>$PROJ_DIR$\..\SEGGER\RTT\SEGGER_RTT.h</file>
+            <file>$TOOLKIT_DIR$\lib\m7M_tl.a</file>
+            <file>$TOOLKIT_DIR$\inc\c\iccarm_builtin.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
+            <file>$PROJ_DIR$\..\SEGGER\RTT\SEGGER_RTT_Conf.h</file>
+            <file>$PROJ_DIR$\DEBUG_QSPIFlash\Obj\SEGGER_RTT.o</file>
+            <file>$TOOLKIT_DIR$\lib\rt7M_tl.a</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdlib.h</file>
+            <file>$PROJ_DIR$\main.c</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
+            <file>$PROJ_DIR$\DEBUG_QSPIFlash\Obj\board.o</file>
+            <file>$PROJ_DIR$\DEBUG_QSPIFlash\Obj\clock_config.o</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\utilities\str\fsl_str.h</file>
+            <file>$PROJ_DIR$\DEBUG_QSPIFlash\Obj\SEGGER_RTT_printf.o</file>
+            <file>$PROJ_DIR$\MIMXRT1052xxxxx_flexspi_nor.icf</file>
+            <file>$PROJ_DIR$\..\Xip\xip_config.c</file>
+            <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
+            <file>$PROJ_DIR$\DEBUG_QSPIFlash\Obj\main.o</file>
+            <file>$PROJ_DIR$\DEBUG_QSPIFlash\Obj\board.pbi</file>
+            <file>$PROJ_DIR$\DEBUG_QSPIFlash\Obj\xip_config.o</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdarg.h</file>
+            <file>$PROJ_DIR$\DEBUG_QSPIFlash\Obj\clock_config.pbi</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product_string.h</file>
+            <file>$PROJ_DIR$\..\Xip\external_flash_config.h</file>
+            <file>$PROJ_DIR$\..\Xip\fsl_flexspi_nor_boot.h</file>
+            <file>$PROJ_DIR$\..\Xip\fsl_flexspi_nor_boot.c</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product_stdlib.h</file>
+            <file>$PROJ_DIR$\DEBUG_QSPIFlash\Exe\KSDK2_MCIMXRT1052.out</file>
         </outputs>
         <file>
-            <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_clock.c</name>
+            <name>$PROJ_DIR$\..\Board\board.c</name>
             <outputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 79</file>
+                    <file> 87</file>
                 </tool>
                 <tool>
                     <name>BICOMP</name>
-                    <file> 35</file>
+                    <file> 95</file>
                 </tool>
             </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 64 35 93 25 36 37 86 16 80 73 32 99 84 103 29 44 49 56 70 43 38 79 52 59 45 65 72 0 2 57</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 93 25 80 16 86 99 32 64 2 0 73 44 65 37 103 43 72 35 84 29 36 45 56 57 49 59 70 52 38 79</file>
+                </tool>
+            </inputs>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\startup\system_MIMXRT1052.c</name>
+            <name>$PROJ_DIR$\..\Board\pin_mux.c</name>
             <outputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 86</file>
+                    <file> 26</file>
                 </tool>
                 <tool>
                     <name>BICOMP</name>
-                    <file> 55</file>
+                    <file> 31</file>
                 </tool>
             </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 64 35 93 25 36 37 86 16 80 73 32 99 84 103 29 44 49 56 70 43 38 79 52 59 45 65 62 4</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 25 29 93 80 32 4 35 84 36 103 43 62 16 73 44 65 37 86 99 45 56 64 49 59 70 52 38 79</file>
+                </tool>
+            </inputs>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\startup\startup_MIMXRT1052.s</name>
+            <name>$PROJ_DIR$\..\Board\clock_config.c</name>
             <outputs>
                 <tool>
-                    <name>AARM</name>
-                    <file> 51</file>
+                    <name>ICCARM</name>
+                    <file> 88</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 98</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 2 64 35 93 25 36 37 86 16 80 73 32 99 84 103 29 44 49 56 70 43 38 79 52 59 45 65</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 25 32 38 29 59 52 44 80 93 35 84 36 64 16 73 65 37 86 99 49 70 79 2 103 45 56 43</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>[ROOT_NODE]</name>
+            <outputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 104 17</file>
                 </tool>
             </outputs>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_common.c</name>
+            <name>$PROJ_DIR$\DEBUG_QSPIFlash\Exe\KSDK2_MCIMXRT1052.bin</name>
+            <inputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 91 87 88 21 13 75 11 74 40 14 8 27 94 26 82 90 15 12 96 83 78 20</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\SEGGER\RTT\SEGGER_RTT.c</name>
             <outputs>
                 <tool>
                     <name>ICCARM</name>
@@ -137,42 +207,187 @@
                 </tool>
                 <tool>
                     <name>BICOMP</name>
-                    <file> 58</file>
+                    <file> 19</file>
                 </tool>
             </outputs>
-        </file>
-        <file>
-            <name>[ROOT_NODE]</name>
-            <outputs>
+            <inputs>
                 <tool>
-                    <name>ILINK</name>
-                    <file> 49</file>
+                    <name>ICCARM</name>
+                    <file> 77 81 76 79 25 36 37 86 73 93 32 99</file>
                 </tool>
-            </outputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 36 76 93 25 86 99 73 81 79 37 32 77</file>
+                </tool>
+            </inputs>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_flexspi.c</name>
+            <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\startup\system_MIMXRT1052.c</name>
             <outputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 80</file>
+                    <file> 12</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 10</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 80 93 25 36 37 86 44 49 56 70 43 38 79 52 59 45</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 59 86 93 37 49 80 44 25 36 45 56 43 70 52 38 79</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\utilities\log\fsl_log.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 8</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 7</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 54 64 35 93 25 36 37 86 16 80 73 32 99 84 103 29 44 49 56 70 43 38 79 52 59 45 65 63 67</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 25 32 80 35 64 29 93 59 67 84 36 49 63 16 73 44 65 37 86 99 103 45 56 43 54 70 52 38 79</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\SEGGER\RTT\SEGGER_RTT_printf.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 90</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 34</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 77 81 76 79 25 36 37 86 84 93 32 103</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 97 81 79 25 84 76 103 93 77 36 37 86 32</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_clock.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 21</file>
                 </tool>
                 <tool>
                     <name>BICOMP</name>
                     <file> 42</file>
                 </tool>
             </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 64 35 93 25 36 37 86 16 80 73 32 99 84 103 29 44 49 56 70 43 38 79 52 59 45 65</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 25 93 38 16 86 59 52 44 73 65 37 32 35 80 84 29 36 49 70 79 64 99 103 45 56 43</file>
+                </tool>
+            </inputs>
         </file>
         <file>
             <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_gpio.c</name>
             <outputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 84</file>
+                    <file> 40</file>
                 </tool>
                 <tool>
                     <name>BICOMP</name>
-                    <file> 52</file>
+                    <file> 33</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 57 64 35 93 25 36 37 86 16 80 73 32 99 84 103 29 44 49 56 70 43 38 79 52 59 45 65</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 25 38 93 59 52 44 16 86 99 64 73 65 37 32 35 80 84 29 36 49 70 79 57 103 45 56 43</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_flexspi.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 11</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 39</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 69 29 93 25 36 37 86 32 44 49 56 80 70 43 38 79 52 59 45 64 35 16 73 99 84 103 65</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 80 64 43 79 103 93 25 36 29 32 16 45 56 38 35 84 99 44 37 86 49 59 70 52 73 65 69</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\utilities\fsl_debug_console.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 75</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 18</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 84 93 25 36 37 86 32 103 72 64 35 16 80 73 99 29 44 49 56 70 43 38 79 52 59 45 65 63 54 89</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 25 65 79 44 99 49 16 54 93 73 72 36 103 64 32 59 70 84 63 89 37 86 35 80 29 45 56 52 38 97 43</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\startup\startup_MIMXRT1052.s</name>
+            <outputs>
+                <tool>
+                    <name>AARM</name>
+                    <file> 15</file>
                 </tool>
             </outputs>
         </file>
@@ -181,11 +396,321 @@
             <outputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 85</file>
+                    <file> 27</file>
                 </tool>
                 <tool>
                     <name>BICOMP</name>
-                    <file> 54</file>
+                    <file> 9</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 71 64 35 93 25 36 37 86 16 80 73 32 99 84 103 29 44 49 56 70 43 38 79 52 59 45 65</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 43 65 37 44 32 103 80 73 25 64 16 93 86 99 45 56 35 84 29 36 49 59 70 52 38 79 71</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\utilities\io\fsl_io.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 14</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 22</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 67 64 35 93 25 36 37 86 16 80 73 32 99 84 103 29 44 49 56 70 43 38 79 52 59 45 65 63 71</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 73 25 44 65 37 32 79 16 71 64 93 86 99 49 70 63 35 80 84 29 36 59 52 38 67 103 45 56 43</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_common.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 13</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 30</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 64 35 93 25 36 37 86 16 80 73 32 99 84 103 29 44 49 56 70 43 38 79 52 59 45 65</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 44 25 16 65 32 79 73 37 103 93 86 99 45 56 70 35 80 84 29 36 49 59 52 38 64 43</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\main.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 94</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 23</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 0 2 64 35 93 25 36 37 86 16 80 73 32 99 84 103 29 44 49 56 70 43 38 79 52 59 45 65 57 72 4 77 81 76</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 25 64 73 32 2 44 65 37 57 16 93 86 59 52 38 76 72 4 77 35 80 84 29 36 49 70 79 0 99 103 45 56 43 81</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Xip\xip_config.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 96</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 28</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 100 80 93 25 36 37 86 16 64 35 73 32 99 84 103 29 44 49 56 70 43 38 79 52 59 45 65</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 25 38 84 59 52 44 80 35 32 64 93 36 29 16 37 86 73 65 99 49 70 79 100 103 45 56 43</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Xip\fsl_flexspi_nor_boot.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 74</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 41</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 101 80 93 25 36 37 86 0 2 64 35 16 73 32 99 84 103 29 44 49 56 70 43 38 79 52 59 45 65 57</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 16 93 37 57 25 32 80 86 2 64 73 44 65 59 52 38 0 36 35 84 29 99 49 70 79 101 103 45 56 43</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\DEBUG_QSPIFlash\Exe\KSDK2_MCIMXRT1052.out</name>
+            <outputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 17</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 91 87 88 21 13 75 11 74 40 14 8 27 94 26 82 90 15 12 96 83 78 20</file>
+                </tool>
+            </inputs>
+        </file>
+    </configuration>
+    <configuration>
+        <name>DEBUG_RAM</name>
+        <outputs>
+            <file>$PROJ_DIR$\..\Board\board.h</file>
+            <file>$PROJ_DIR$\..\Board\board.c</file>
+            <file>$PROJ_DIR$\..\Board\clock_config.h</file>
+            <file>$PROJ_DIR$\..\Board\pin_mux.c</file>
+            <file>$PROJ_DIR$\..\Board\pin_mux.h</file>
+            <file>$PROJ_DIR$\..\Board\clock_config.c</file>
+            <file>$PROJ_DIR$\DEBUG_RAM\Obj\fsl_common.o</file>
+            <file>$PROJ_DIR$\DEBUG_RAM\Obj\fsl_debug_console.o</file>
+            <file>$PROJ_DIR$\DEBUG_RAM\Obj\fsl_flexspi_nor_boot.o</file>
+            <file>$PROJ_DIR$\DEBUG_RAM\Obj\fsl_lpuart.o</file>
+            <file>$PROJ_DIR$\DEBUG_RAM\Obj\fsl_common.pbi</file>
+            <file>$PROJ_DIR$\DEBUG_RAM\Obj\main.pbi</file>
+            <file>$PROJ_DIR$\DEBUG_RAM\Obj\system_MIMXRT1052.o</file>
+            <file>$PROJ_DIR$\DEBUG_RAM\Obj\fsl_gpio.pbi</file>
+            <file>$PROJ_DIR$\DEBUG_RAM\Obj\fsl_log.o</file>
+            <file>$PROJ_DIR$\DEBUG_RAM\Obj\clock_config.pbi</file>
+            <file>$PROJ_DIR$\DEBUG_RAM\Obj\pin_mux.pbi</file>
+            <file>$PROJ_DIR$\DEBUG_RAM\Obj\board.pbi</file>
+            <file>$PROJ_DIR$\DEBUG_RAM\Obj\SEGGER_RTT.o</file>
+            <file>$PROJ_DIR$\DEBUG_RAM\Obj\SEGGER_RTT_printf.pbi</file>
+            <file>$PROJ_DIR$\DEBUG_RAM\Obj\fsl_flexspi_nor_boot.pbi</file>
+            <file>$PROJ_DIR$\DEBUG_RAM\Obj\fsl_io.o</file>
+            <file>$PROJ_DIR$\DEBUG_RAM\Obj\xip_config.o</file>
+            <file>$PROJ_DIR$\DEBUG_RAM\Obj\fsl_clock.pbi</file>
+            <file>$PROJ_DIR$\DEBUG_RAM\Obj\SEGGER_RTT.pbi</file>
+            <file>$PROJ_DIR$\DEBUG_RAM\Obj\fsl_clock.o</file>
+            <file>$PROJ_DIR$\DEBUG_RAM\Obj\fsl_debug_console.pbi</file>
+            <file>$PROJ_DIR$\DEBUG_RAM\Obj\fsl_flexspi.pbi</file>
+            <file>$PROJ_DIR$\DEBUG_RAM\Obj\fsl_log.pbi</file>
+            <file>$PROJ_DIR$\DEBUG_RAM\Obj\fsl_io.pbi</file>
+            <file>$PROJ_DIR$\DEBUG_RAM\Obj\xip_config.pbi</file>
+            <file>$PROJ_DIR$\DEBUG_RAM\Obj\main.o</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdbool.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\stddef.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\ysizet.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\assert.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Normal.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\cmsis_iar.h</file>
+            <file>$PROJ_DIR$\DEBUG_RAM\Obj\system_MIMXRT1052.pbi</file>
+            <file>$PROJ_DIR$\DEBUG_RAM\Obj\clock_config.o</file>
+            <file>$PROJ_DIR$\DEBUG_RAM\Obj\fsl_lpuart.pbi</file>
+            <file>$PROJ_DIR$\DEBUG_RAM\Obj\board.o</file>
+            <file>$PROJ_DIR$\DEBUG_RAM\Obj\pin_mux.o</file>
+            <file>$PROJ_DIR$\DEBUG_RAM\Exe\KSDK2_MCIMXRT1052.out</file>
+            <file>$PROJ_DIR$\DEBUG_RAM\Obj\fsl_gpio.o</file>
+            <file>$PROJ_DIR$\DEBUG_RAM\Obj\fsl_flexspi.o</file>
+            <file>$PROJ_DIR$\DEBUG_RAM\Obj\SEGGER_RTT_printf.o</file>
+            <file>$PROJ_DIR$\DEBUG_RAM\Obj\startup_MIMXRT1052.o</file>
+            <file>$PROJ_DIR$\..\Library\CMSIS\Include\cmsis_compiler.h</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\fsl_device_registers.h</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\MIMXRT1052_features.h</file>
+            <file>$PROJ_DIR$\..\SEGGER\RTT\SEGGER_RTT.c</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\startup\system_MIMXRT1052.c</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\utilities\log\fsl_log.c</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\MIMXRT1052.h</file>
+            <file>$PROJ_DIR$\..\SEGGER\RTT\SEGGER_RTT_printf.c</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_clock.c</file>
+            <file>$PROJ_DIR$\..\Library\CMSIS\Include\mpu_armv7.h</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_gpio.c</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\utilities\log\fsl_log.h</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_flexspi.c</file>
+            <file>$PROJ_DIR$\..\Library\CMSIS\Include\core_cm7.h</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_gpio.h</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\utilities\fsl_debug_console.c</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\startup\system_MIMXRT1052.h</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\startup\startup_MIMXRT1052.s</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_lpuart.c</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_iomuxc.h</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\utilities\fsl_debug_console_conf.h</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_common.h</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_clock.h</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\utilities\io\fsl_io.c</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\utilities\io\fsl_io.h</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_common.c</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_flexspi.h</file>
+            <file>$PROJ_DIR$\..\Library\CMSIS\Include\cmsis_version.h</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_lpuart.h</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\utilities\fsl_debug_console.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\string.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\intrinsics.h</file>
+            <file>$PROJ_DIR$\..\SEGGER\RTT\SEGGER_RTT.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\iccarm_builtin.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
+            <file>$PROJ_DIR$\..\SEGGER\RTT\SEGGER_RTT_Conf.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdlib.h</file>
+            <file>$PROJ_DIR$\main.c</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\utilities\str\fsl_str.h</file>
+            <file>$PROJ_DIR$\..\Xip\xip_config.c</file>
+            <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdarg.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product_string.h</file>
+            <file>$PROJ_DIR$\..\Xip\external_flash_config.h</file>
+            <file>$PROJ_DIR$\..\Xip\fsl_flexspi_nor_boot.h</file>
+            <file>$PROJ_DIR$\..\Xip\fsl_flexspi_nor_boot.c</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product_stdlib.h</file>
+            <file>$PROJ_DIR$\DEBUG_RAM\Obj\KSDK2_MCIMXRT1052.pbd</file>
+        </outputs>
+        <file>
+            <name>$PROJ_DIR$\..\Board\board.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 43</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 17</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 72 38 33 51 35 84 80 71 2 0 32 91 88 93 97 50 79 36 86 34 37 52 63 64 56 66 77 59 39 83</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Board\pin_mux.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 44</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 16</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 33 34 91 84 35 4 36 86 37 97 50 69 32 80 51 72 38 88 93 52 63 71 56 66 77 59 39 83</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Board\clock_config.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 41</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 15</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 33 86 37 39 91 66 59 51 36 84 34 35 71 32 80 72 38 88 93 56 77 83 2 97 52 63 50</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>[ROOT_NODE]</name>
+            <outputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 45</file>
                 </tool>
             </outputs>
         </file>
@@ -194,7 +719,1936 @@
             <outputs>
                 <tool>
                     <name>ICCARM</name>
+                    <file> 18</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 24</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 37 81 91 33 88 93 80 85 83 38 35 82</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\startup\system_MIMXRT1052.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 12</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 40</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 91 88 66 38 56 84 51 33 37 52 63 50 77 59 39 83</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\utilities\log\fsl_log.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 14</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 28</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 33 35 84 36 71 34 91 66 74 86 37 56 70 32 80 51 72 38 88 93 97 52 63 50 61 77 59 39 83</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\SEGGER\RTT\SEGGER_RTT_printf.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 48</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 19</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 92 85 83 33 86 81 97 91 82 37 38 88 35</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_clock.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 25</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 23</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 33 91 39 32 88 66 59 51 80 72 38 35 36 84 86 34 37 56 77 83 71 93 97 52 63 50</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_gpio.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 46</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 13</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 33 39 91 66 59 51 32 88 93 71 80 72 38 35 36 84 86 34 37 56 77 83 64 97 52 63 50</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_flexspi.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 47</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 27</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 84 71 50 83 97 91 33 37 34 35 32 52 63 39 36 86 93 51 38 88 56 66 77 59 80 72 76</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\utilities\fsl_debug_console.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 7</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 26</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 33 72 83 51 93 56 32 61 91 80 79 37 97 71 35 66 77 86 70 89 38 88 36 84 34 52 63 59 39 92 50</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\startup\startup_MIMXRT1052.s</name>
+            <outputs>
+                <tool>
+                    <name>AARM</name>
+                    <file> 49</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_lpuart.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 9</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 42</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 50 72 38 51 35 97 84 80 33 71 32 91 88 93 52 63 36 86 34 37 56 66 77 59 39 83 78</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\utilities\io\fsl_io.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 21</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 29</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 80 33 51 72 38 35 83 32 78 71 91 88 93 56 77 70 36 84 86 34 37 66 59 39 74 97 52 63 50</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_common.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 6</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 10</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 51 33 32 72 35 83 80 38 97 91 88 93 52 63 77 36 84 86 34 37 56 66 59 39 71 50</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\main.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 31</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 11</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 33 71 80 35 2 51 72 38 64 32 91 88 66 59 39 81 79 4 82 36 84 86 34 37 56 77 83 0 93 97 52 63 50 85</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Xip\xip_config.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 22</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 30</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 33 91 39 34 66 59 51 71 37 84 36 86 35 32 38 88 80 72 93 56 77 83 94 97 52 63 50</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Xip\fsl_flexspi_nor_boot.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 8</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 20</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 32 91 38 64 33 35 84 88 2 71 80 51 72 66 59 39 0 37 36 86 34 93 56 77 83 95 97 52 63 50</file>
+                </tool>
+            </inputs>
+        </file>
+        <forcedrebuild>
+            <name>$PROJ_DIR$\..\Board\board.c</name>
+            <tool>ICCARM</tool>
+        </forcedrebuild>
+        <forcedrebuild>
+            <name>$PROJ_DIR$\..\Board\pin_mux.c</name>
+            <tool>ICCARM</tool>
+        </forcedrebuild>
+        <forcedrebuild>
+            <name>$PROJ_DIR$\..\Board\clock_config.c</name>
+            <tool>ICCARM</tool>
+        </forcedrebuild>
+        <forcedrebuild>
+            <name>$PROJ_DIR$\..\SEGGER\RTT\SEGGER_RTT.c</name>
+            <tool>ICCARM</tool>
+        </forcedrebuild>
+        <forcedrebuild>
+            <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\startup\system_MIMXRT1052.c</name>
+            <tool>ICCARM</tool>
+        </forcedrebuild>
+        <forcedrebuild>
+            <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\utilities\log\fsl_log.c</name>
+            <tool>ICCARM</tool>
+        </forcedrebuild>
+        <forcedrebuild>
+            <name>$PROJ_DIR$\..\SEGGER\RTT\SEGGER_RTT_printf.c</name>
+            <tool>ICCARM</tool>
+        </forcedrebuild>
+        <forcedrebuild>
+            <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_clock.c</name>
+            <tool>ICCARM</tool>
+        </forcedrebuild>
+        <forcedrebuild>
+            <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_gpio.c</name>
+            <tool>ICCARM</tool>
+        </forcedrebuild>
+        <forcedrebuild>
+            <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_flexspi.c</name>
+            <tool>ICCARM</tool>
+        </forcedrebuild>
+        <forcedrebuild>
+            <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\utilities\fsl_debug_console.c</name>
+            <tool>ICCARM</tool>
+        </forcedrebuild>
+        <forcedrebuild>
+            <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_lpuart.c</name>
+            <tool>ICCARM</tool>
+        </forcedrebuild>
+        <forcedrebuild>
+            <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\utilities\io\fsl_io.c</name>
+            <tool>ICCARM</tool>
+        </forcedrebuild>
+        <forcedrebuild>
+            <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_common.c</name>
+            <tool>ICCARM</tool>
+        </forcedrebuild>
+        <forcedrebuild>
+            <name>$PROJ_DIR$\main.c</name>
+            <tool>ICCARM</tool>
+        </forcedrebuild>
+        <forcedrebuild>
+            <name>$PROJ_DIR$\..\Xip\xip_config.c</name>
+            <tool>ICCARM</tool>
+        </forcedrebuild>
+        <forcedrebuild>
+            <name>$PROJ_DIR$\..\Xip\fsl_flexspi_nor_boot.c</name>
+            <tool>ICCARM</tool>
+        </forcedrebuild>
+    </configuration>
+    <configuration>
+        <name>DEBUG_SDRAM</name>
+        <outputs>
+            <file>$PROJ_DIR$\..\Board\board.h</file>
+            <file>$PROJ_DIR$\..\Board\board.c</file>
+            <file>$PROJ_DIR$\..\Board\clock_config.h</file>
+            <file>$PROJ_DIR$\..\Board\pin_mux.c</file>
+            <file>$PROJ_DIR$\..\Board\pin_mux.h</file>
+            <file>$PROJ_DIR$\..\Board\clock_config.c</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdbool.h</file>
+            <file>$TOOLKIT_DIR$\lib\dl7M_tln.a</file>
+            <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\stddef.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\ysizet.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\assert.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Normal.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\cmsis_iar.h</file>
+            <file>$PROJ_DIR$\DEBUG_SDRAM\Obj\fsl_debug_console.__cstat.et</file>
+            <file>$PROJ_DIR$\DEBUG_SDRAM\Obj\clock_config.pbi</file>
+            <file>$PROJ_DIR$\DEBUG_SDRAM\List\KSDK2_MCIMXRT1052.map</file>
+            <file>$PROJ_DIR$\DEBUG_SDRAM\Exe\KSDK2_MCIMXRT1052.out</file>
+            <file>$PROJ_DIR$\DEBUG_SDRAM\Obj\system_MIMXRT1052.pbi</file>
+            <file>$PROJ_DIR$\DEBUG_SDRAM\Obj\pin_mux.__cstat.et</file>
+            <file>$PROJ_DIR$\MIMXRT1052xxxxx_sdram.icf</file>
+            <file>$PROJ_DIR$\DEBUG_SDRAM\Obj\fsl_log.o</file>
+            <file>$PROJ_DIR$\DEBUG_SDRAM\Obj\fsl_gpio.o</file>
+            <file>$PROJ_DIR$\DEBUG_SDRAM\Obj\SEGGER_RTT_printf.__cstat.et</file>
+            <file>$PROJ_DIR$\DEBUG_SDRAM\Obj\board.__cstat.et</file>
+            <file>$PROJ_DIR$\DEBUG_SDRAM\Obj\fsl_io.__cstat.et</file>
+            <file>$PROJ_DIR$\DEBUG_SDRAM\Obj\fsl_log.__cstat.et</file>
+            <file>$PROJ_DIR$\DEBUG_SDRAM\Obj\SEGGER_RTT.__cstat.et</file>
+            <file>$PROJ_DIR$\DEBUG_SDRAM\Obj\fsl_common.__cstat.et</file>
+            <file>$PROJ_DIR$\DEBUG_SDRAM\Obj\main.pbi</file>
+            <file>$PROJ_DIR$\DEBUG_SDRAM\Obj\fsl_gpio.pbi</file>
+            <file>$PROJ_DIR$\DEBUG_SDRAM\Obj\fsl_common.pbi</file>
+            <file>$PROJ_DIR$\DEBUG_SDRAM\Obj\clock_config.__cstat.et</file>
+            <file>$PROJ_DIR$\DEBUG_SDRAM\Obj\xip_config.pbi</file>
+            <file>$PROJ_DIR$\DEBUG_SDRAM\Obj\fsl_clock.__cstat.et</file>
+            <file>$PROJ_DIR$\DEBUG_SDRAM\Obj\fsl_debug_console.pbi</file>
+            <file>$PROJ_DIR$\DEBUG_SDRAM\Obj\SEGGER_RTT.pbi</file>
+            <file>$PROJ_DIR$\DEBUG_SDRAM\Obj\fsl_flexspi.pbi</file>
+            <file>$PROJ_DIR$\DEBUG_SDRAM\Obj\board.pbi</file>
+            <file>$PROJ_DIR$\DEBUG_SDRAM\Obj\pin_mux.pbi</file>
+            <file>$PROJ_DIR$\DEBUG_SDRAM\Obj\xip_config.__cstat.et</file>
+            <file>$PROJ_DIR$\DEBUG_SDRAM\Obj\fsl_flexspi.__cstat.et</file>
+            <file>$PROJ_DIR$\DEBUG_SDRAM\Obj\fsl_common.o</file>
+            <file>$PROJ_DIR$\DEBUG_SDRAM\Obj\fsl_clock.o</file>
+            <file>$PROJ_DIR$\DEBUG_SDRAM\Obj\system_MIMXRT1052.__cstat.et</file>
+            <file>$PROJ_DIR$\DEBUG_SDRAM\Obj\SEGGER_RTT.o</file>
+            <file>$PROJ_DIR$\DEBUG_SDRAM\Obj\fsl_gpio.__cstat.et</file>
+            <file>$PROJ_DIR$\DEBUG_SDRAM\Obj\system_MIMXRT1052.o</file>
+            <file>$PROJ_DIR$\DEBUG_SDRAM\Obj\board.o</file>
+            <file>$PROJ_DIR$\DEBUG_SDRAM\Obj\xip_config.o</file>
+            <file>$PROJ_DIR$\DEBUG_SDRAM\Obj\fsl_lpuart.pbi</file>
+            <file>$PROJ_DIR$\DEBUG_SDRAM\Obj\fsl_clock.pbi</file>
+            <file>$PROJ_DIR$\DEBUG_SDRAM\Obj\fsl_log.pbi</file>
+            <file>$PROJ_DIR$\DEBUG_SDRAM\Obj\fsl_io.pbi</file>
+            <file>$PROJ_DIR$\DEBUG_SDRAM\Obj\SEGGER_RTT_printf.o</file>
+            <file>$PROJ_DIR$\DEBUG_SDRAM\Obj\fsl_flexspi.o</file>
+            <file>$PROJ_DIR$\DEBUG_SDRAM\Obj\fsl_flexspi_nor_boot.o</file>
+            <file>$PROJ_DIR$\DEBUG_SDRAM\Obj\SEGGER_RTT_printf.pbi</file>
+            <file>$PROJ_DIR$\DEBUG_SDRAM\Obj\fsl_flexspi_nor_boot.pbi</file>
+            <file>$PROJ_DIR$\DEBUG_SDRAM\Obj\startup_MIMXRT1052.o</file>
+            <file>$PROJ_DIR$\DEBUG_SDRAM\Obj\main.o</file>
+            <file>$PROJ_DIR$\DEBUG_SDRAM\Obj\fsl_io.o</file>
+            <file>$PROJ_DIR$\DEBUG_SDRAM\Obj\fsl_lpuart.o</file>
+            <file>$PROJ_DIR$\DEBUG_SDRAM\Obj\fsl_debug_console.o</file>
+            <file>$PROJ_DIR$\DEBUG_SDRAM\Obj\pin_mux.o</file>
+            <file>$PROJ_DIR$\DEBUG_SDRAM\Obj\main.__cstat.et</file>
+            <file>$PROJ_DIR$\DEBUG_SDRAM\Obj\clock_config.o</file>
+            <file>$PROJ_DIR$\DEBUG_SDRAM\Obj\fsl_flexspi_nor_boot.__cstat.et</file>
+            <file>$PROJ_DIR$\DEBUG_SDRAM\Obj\fsl_lpuart.__cstat.et</file>
+            <file>$PROJ_DIR$\..\Library\CMSIS\Include\cmsis_compiler.h</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\fsl_device_registers.h</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\MIMXRT1052_features.h</file>
+            <file>$PROJ_DIR$\..\SEGGER\RTT\SEGGER_RTT.c</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\startup\system_MIMXRT1052.c</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\utilities\log\fsl_log.c</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\MIMXRT1052.h</file>
+            <file>$PROJ_DIR$\..\SEGGER\RTT\SEGGER_RTT_printf.c</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_clock.c</file>
+            <file>$PROJ_DIR$\..\Library\CMSIS\Include\mpu_armv7.h</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_gpio.c</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\utilities\log\fsl_log.h</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_flexspi.c</file>
+            <file>$PROJ_DIR$\..\Library\CMSIS\Include\core_cm7.h</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_gpio.h</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\utilities\fsl_debug_console.c</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\startup\system_MIMXRT1052.h</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\startup\startup_MIMXRT1052.s</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_lpuart.c</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_iomuxc.h</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\utilities\fsl_debug_console_conf.h</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_common.h</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_clock.h</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\utilities\io\fsl_io.c</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\utilities\io\fsl_io.h</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_common.c</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_flexspi.h</file>
+            <file>$PROJ_DIR$\..\Library\CMSIS\Include\cmsis_version.h</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_lpuart.h</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\utilities\fsl_debug_console.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\string.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\intrinsics.h</file>
+            <file>$PROJ_DIR$\..\SEGGER\RTT\SEGGER_RTT.h</file>
+            <file>$TOOLKIT_DIR$\lib\m7M_tl.a</file>
+            <file>$TOOLKIT_DIR$\inc\c\iccarm_builtin.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
+            <file>$PROJ_DIR$\..\SEGGER\RTT\SEGGER_RTT_Conf.h</file>
+            <file>$TOOLKIT_DIR$\lib\rt7M_tl.a</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdlib.h</file>
+            <file>$PROJ_DIR$\main.c</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\utilities\str\fsl_str.h</file>
+            <file>$PROJ_DIR$\..\Xip\xip_config.c</file>
+            <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdarg.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product_string.h</file>
+            <file>$PROJ_DIR$\..\Xip\external_flash_config.h</file>
+            <file>$PROJ_DIR$\..\Xip\fsl_flexspi_nor_boot.h</file>
+            <file>$PROJ_DIR$\..\Xip\fsl_flexspi_nor_boot.c</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product_stdlib.h</file>
+            <file>$PROJ_DIR$\DEBUG_SDRAM\Obj\KSDK2_MCIMXRT1052.pbd</file>
+        </outputs>
+        <file>
+            <name>$PROJ_DIR$\..\Board\board.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 49</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 25</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 39</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 91 11 113 8 12 13 110 6 105 100 10 115 108 119 9 71 76 83 97 70 14 104 79 86 72 92 99 0 2 84</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 113 8 105 6 110 115 10 91 2 0 100 71 92 13 119 70 99 11 108 9 12 72 83 84 76 86 97 79 14 104</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Board\pin_mux.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 65</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 20</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 40</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 91 11 113 8 12 13 110 6 105 100 10 115 108 119 9 71 76 83 97 70 14 104 79 86 72 92 89 4</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 8 9 113 105 10 4 11 108 12 119 70 89 6 100 71 92 13 110 115 72 83 91 76 86 97 79 14 104</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Board\clock_config.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 67</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 33</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 16</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 2 91 11 113 8 12 13 110 6 105 100 10 115 108 119 9 71 76 83 97 70 14 104 79 86 72 92</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 8 10 14 9 86 79 71 105 113 11 108 12 91 6 100 92 13 110 115 76 97 104 2 119 72 83 70</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>[ROOT_NODE]</name>
+            <outputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 18 17</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\DEBUG_SDRAM\Exe\KSDK2_MCIMXRT1052.out</name>
+            <outputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 17</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 21 49 67 44 43 64 56 57 23 62 22 63 61 65 46 55 60 48 50 107 103 7</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\SEGGER\RTT\SEGGER_RTT.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 46</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 28</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 37</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 102 106 101 104 8 12 13 110 100 113 10 115</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 12 101 113 8 110 115 100 106 104 13 10 102</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\startup\system_MIMXRT1052.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 48</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 45</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 19</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 105 113 8 12 13 110 71 76 83 97 70 14 104 79 86 72</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 113 110 86 13 76 105 71 8 12 72 83 70 97 79 14 104</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\utilities\log\fsl_log.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 22</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 27</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 53</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 81 91 11 113 8 12 13 110 6 105 100 10 115 108 119 9 71 76 83 97 70 14 104 79 86 72 92 90 94</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 8 10 105 11 91 9 113 86 94 108 12 76 90 6 100 71 92 13 110 115 119 72 83 70 81 97 79 14 104</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\SEGGER\RTT\SEGGER_RTT_printf.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 55</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 24</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 58</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 102 106 101 104 8 12 13 110 108 113 10 119</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 114 106 104 8 108 101 119 113 102 12 13 110 10</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_clock.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 44</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 35</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 52</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 91 11 113 8 12 13 110 6 105 100 10 115 108 119 9 71 76 83 97 70 14 104 79 86 72 92</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 8 113 14 6 110 86 79 71 100 92 13 10 11 105 108 9 12 76 97 104 91 115 119 72 83 70</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_gpio.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 23</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 47</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 31</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 84 91 11 113 8 12 13 110 6 105 100 10 115 108 119 9 71 76 83 97 70 14 104 79 86 72 92</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 8 14 113 86 79 71 6 110 115 91 100 92 13 10 11 105 108 9 12 76 97 104 84 119 72 83 70</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_flexspi.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 56</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 42</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 38</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 96 9 113 8 12 13 110 10 71 76 83 105 97 70 14 104 79 86 72 91 11 6 100 115 108 119 92</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 105 91 70 104 119 113 8 12 9 10 6 72 83 14 11 108 115 71 13 110 76 86 97 79 100 92 96</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\utilities\fsl_debug_console.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 64</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 15</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 36</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 108 113 8 12 13 110 10 119 99 91 11 6 105 100 115 9 71 76 83 97 70 14 104 79 86 72 92 90 81 111</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 8 92 104 71 115 76 6 81 113 100 99 12 119 91 10 86 97 108 90 111 13 110 11 105 9 72 83 79 14 114 70</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\startup\startup_MIMXRT1052.s</name>
+            <outputs>
+                <tool>
+                    <name>AARM</name>
+                    <file> 60</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_lpuart.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 63</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 69</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 51</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 98 91 11 113 8 12 13 110 6 105 100 10 115 108 119 9 71 76 83 97 70 14 104 79 86 72 92</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 70 92 13 71 10 119 105 100 8 91 6 113 110 115 72 83 11 108 9 12 76 86 97 79 14 104 98</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\utilities\io\fsl_io.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 62</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 26</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 54</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 94 91 11 113 8 12 13 110 6 105 100 10 115 108 119 9 71 76 83 97 70 14 104 79 86 72 92 90 98</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 100 8 71 92 13 10 104 6 98 91 113 110 115 76 97 90 11 105 108 9 12 86 79 14 94 119 72 83 70</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_common.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 43</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 29</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 32</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 91 11 113 8 12 13 110 6 105 100 10 115 108 119 9 71 76 83 97 70 14 104 79 86 72 92</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 71 8 6 92 10 104 100 13 119 113 110 115 72 83 97 11 105 108 9 12 76 86 79 14 91 70</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\main.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 61</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 66</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 30</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 0 2 91 11 113 8 12 13 110 6 105 100 10 115 108 119 9 71 76 83 97 70 14 104 79 86 72 92 84 99 4 102 106 101</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 8 91 100 10 2 71 92 13 84 6 113 110 86 79 14 101 99 4 102 11 105 108 9 12 76 97 104 0 115 119 72 83 70 106</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Xip\xip_config.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 50</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
                     <file> 41</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 34</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 116 105 113 8 12 13 110 6 91 11 100 10 115 108 119 9 71 76 83 97 70 14 104 79 86 72 92</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 8 14 108 86 79 71 105 11 10 91 113 12 9 6 13 110 100 92 115 76 97 104 116 119 72 83 70</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Xip\fsl_flexspi_nor_boot.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 57</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 68</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 59</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 117 105 113 8 12 13 110 0 2 91 11 6 100 10 115 108 119 9 71 76 83 97 70 14 104 79 86 72 92 84</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 11 115 0 91 108 113 8 12 105 9 10 86 79 14 71 13 110 2 84 6 100 92 76 97 104 117 119 72 83 70</file>
+                </tool>
+            </inputs>
+        </file>
+    </configuration>
+    <configuration>
+        <name>RELEASE_QSPIFlash</name>
+        <outputs>
+            <file>$PROJ_DIR$\..\Board\board.h</file>
+            <file>$PROJ_DIR$\..\Board\board.c</file>
+            <file>$PROJ_DIR$\..\Board\clock_config.h</file>
+            <file>$PROJ_DIR$\..\Board\pin_mux.c</file>
+            <file>$PROJ_DIR$\..\Board\pin_mux.h</file>
+            <file>$PROJ_DIR$\..\Board\clock_config.c</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdbool.h</file>
+            <file>$TOOLKIT_DIR$\lib\dl7M_tln.a</file>
+            <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\stddef.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\ysizet.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\assert.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Normal.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\cmsis_iar.h</file>
+            <file>$PROJ_DIR$\RELEASE_QSPIFlash\Obj\fsl_flexspi_nor_boot.o</file>
+            <file>$PROJ_DIR$\RELEASE_QSPIFlash\Obj\fsl_flexspi_nor_boot.__cstat.et</file>
+            <file>$PROJ_DIR$\RELEASE_QSPIFlash\Obj\fsl_common.__cstat.et</file>
+            <file>$PROJ_DIR$\RELEASE_QSPIFlash\Obj\system_MIMXRT1052.__cstat.et</file>
+            <file>$PROJ_DIR$\RELEASE_QSPIFlash\Obj\main.__cstat.et</file>
+            <file>$PROJ_DIR$\RELEASE_QSPIFlash\Obj\fsl_debug_console.__cstat.et</file>
+            <file>$PROJ_DIR$\RELEASE_QSPIFlash\Obj\board.__cstat.et</file>
+            <file>$PROJ_DIR$\RELEASE_QSPIFlash\Obj\clock_config.__cstat.et</file>
+            <file>$PROJ_DIR$\RELEASE_QSPIFlash\Obj\SEGGER_RTT_printf.__cstat.et</file>
+            <file>$PROJ_DIR$\RELEASE_QSPIFlash\Obj\xip_config.__cstat.et</file>
+            <file>$PROJ_DIR$\RELEASE_QSPIFlash\Obj\SEGGER_RTT.pbi</file>
+            <file>$PROJ_DIR$\RELEASE_QSPIFlash\Obj\SEGGER_RTT.__cstat.et</file>
+            <file>$PROJ_DIR$\RELEASE_QSPIFlash\Obj\fsl_debug_console.o</file>
+            <file>$PROJ_DIR$\RELEASE_QSPIFlash\Obj\SEGGER_RTT_printf.pbi</file>
+            <file>$PROJ_DIR$\RELEASE_QSPIFlash\Obj\pin_mux.__cstat.et</file>
+            <file>$PROJ_DIR$\RELEASE_QSPIFlash\Obj\startup_MIMXRT1052.o</file>
+            <file>$PROJ_DIR$\RELEASE_QSPIFlash\Obj\board.o</file>
+            <file>$PROJ_DIR$\RELEASE_QSPIFlash\Obj\fsl_lpuart.o</file>
+            <file>$PROJ_DIR$\RELEASE_QSPIFlash\Obj\pin_mux.o</file>
+            <file>$PROJ_DIR$\RELEASE_QSPIFlash\Obj\fsl_io.__cstat.et</file>
+            <file>$PROJ_DIR$\RELEASE_QSPIFlash\Obj\SEGGER_RTT_printf.o</file>
+            <file>$PROJ_DIR$\RELEASE_QSPIFlash\Obj\fsl_clock.__cstat.et</file>
+            <file>$PROJ_DIR$\RELEASE_QSPIFlash\Obj\fsl_flexspi.o</file>
+            <file>$PROJ_DIR$\RELEASE_QSPIFlash\List\KSDK2_MCIMXRT1052.map</file>
+            <file>$PROJ_DIR$\RELEASE_QSPIFlash\Obj\fsl_flexspi.__cstat.et</file>
+            <file>$PROJ_DIR$\RELEASE_QSPIFlash\Obj\main.pbi</file>
+            <file>$PROJ_DIR$\RELEASE_QSPIFlash\Obj\fsl_log.__cstat.et</file>
+            <file>$PROJ_DIR$\RELEASE_QSPIFlash\Obj\fsl_gpio.__cstat.et</file>
+            <file>$PROJ_DIR$\RELEASE_QSPIFlash\Obj\fsl_lpuart.__cstat.et</file>
+            <file>$PROJ_DIR$\RELEASE_QSPIFlash\Obj\fsl_common.pbi</file>
+            <file>$PROJ_DIR$\RELEASE_QSPIFlash\Obj\board.pbi</file>
+            <file>$PROJ_DIR$\RELEASE_QSPIFlash\Obj\main.o</file>
+            <file>$PROJ_DIR$\RELEASE_QSPIFlash\Obj\fsl_log.pbi</file>
+            <file>$PROJ_DIR$\RELEASE_QSPIFlash\Obj\fsl_io.pbi</file>
+            <file>$PROJ_DIR$\RELEASE_QSPIFlash\Obj\clock_config.pbi</file>
+            <file>$PROJ_DIR$\RELEASE_QSPIFlash\Obj\xip_config.pbi</file>
+            <file>$PROJ_DIR$\RELEASE_QSPIFlash\Obj\fsl_io.o</file>
+            <file>$PROJ_DIR$\RELEASE_QSPIFlash\Obj\fsl_lpuart.pbi</file>
+            <file>$PROJ_DIR$\RELEASE_QSPIFlash\Obj\fsl_log.o</file>
+            <file>$PROJ_DIR$\RELEASE_QSPIFlash\Obj\fsl_debug_console.pbi</file>
+            <file>$PROJ_DIR$\RELEASE_QSPIFlash\Obj\fsl_flexspi.pbi</file>
+            <file>$PROJ_DIR$\RELEASE_QSPIFlash\Obj\clock_config.o</file>
+            <file>$PROJ_DIR$\RELEASE_QSPIFlash\Obj\fsl_gpio.pbi</file>
+            <file>$PROJ_DIR$\RELEASE_QSPIFlash\Obj\fsl_clock.pbi</file>
+            <file>$PROJ_DIR$\RELEASE_QSPIFlash\Obj\fsl_clock.o</file>
+            <file>$PROJ_DIR$\RELEASE_QSPIFlash\Obj\xip_config.o</file>
+            <file>$PROJ_DIR$\RELEASE_QSPIFlash\Obj\system_MIMXRT1052.o</file>
+            <file>$PROJ_DIR$\RELEASE_QSPIFlash\Exe\KSDK2_MCIMXRT1052.out</file>
+            <file>$PROJ_DIR$\RELEASE_QSPIFlash\Obj\pin_mux.pbi</file>
+            <file>$PROJ_DIR$\RELEASE_QSPIFlash\Obj\fsl_common.o</file>
+            <file>$PROJ_DIR$\RELEASE_QSPIFlash\Obj\SEGGER_RTT.o</file>
+            <file>$PROJ_DIR$\RELEASE_QSPIFlash\Obj\fsl_gpio.o</file>
+            <file>$PROJ_DIR$\RELEASE_QSPIFlash\Obj\system_MIMXRT1052.pbi</file>
+            <file>$PROJ_DIR$\RELEASE_QSPIFlash\Obj\fsl_flexspi_nor_boot.pbi</file>
+            <file>$PROJ_DIR$\..\Library\CMSIS\Include\cmsis_compiler.h</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\fsl_device_registers.h</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\MIMXRT1052_features.h</file>
+            <file>$PROJ_DIR$\..\SEGGER\RTT\SEGGER_RTT.c</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\startup\system_MIMXRT1052.c</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\utilities\log\fsl_log.c</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\MIMXRT1052.h</file>
+            <file>$PROJ_DIR$\..\SEGGER\RTT\SEGGER_RTT_printf.c</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_clock.c</file>
+            <file>$PROJ_DIR$\..\Library\CMSIS\Include\mpu_armv7.h</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_gpio.c</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\utilities\log\fsl_log.h</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_flexspi.c</file>
+            <file>$PROJ_DIR$\..\Library\CMSIS\Include\core_cm7.h</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_gpio.h</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\utilities\fsl_debug_console.c</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\startup\system_MIMXRT1052.h</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\startup\startup_MIMXRT1052.s</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_lpuart.c</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_iomuxc.h</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\utilities\fsl_debug_console_conf.h</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_common.h</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_clock.h</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\utilities\io\fsl_io.c</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\utilities\io\fsl_io.h</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_common.c</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_flexspi.h</file>
+            <file>$PROJ_DIR$\..\Library\CMSIS\Include\cmsis_version.h</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_lpuart.h</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\utilities\fsl_debug_console.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\string.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\intrinsics.h</file>
+            <file>$PROJ_DIR$\..\SEGGER\RTT\SEGGER_RTT.h</file>
+            <file>$TOOLKIT_DIR$\lib\m7M_tl.a</file>
+            <file>$TOOLKIT_DIR$\inc\c\iccarm_builtin.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
+            <file>$PROJ_DIR$\..\SEGGER\RTT\SEGGER_RTT_Conf.h</file>
+            <file>$TOOLKIT_DIR$\lib\rt7M_tl.a</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdlib.h</file>
+            <file>$PROJ_DIR$\main.c</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\utilities\str\fsl_str.h</file>
+            <file>$PROJ_DIR$\MIMXRT1052xxxxx_flexspi_nor.icf</file>
+            <file>$PROJ_DIR$\..\Xip\xip_config.c</file>
+            <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdarg.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product_string.h</file>
+            <file>$PROJ_DIR$\..\Xip\external_flash_config.h</file>
+            <file>$PROJ_DIR$\..\Xip\fsl_flexspi_nor_boot.h</file>
+            <file>$PROJ_DIR$\..\Xip\fsl_flexspi_nor_boot.c</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product_stdlib.h</file>
+            <file>$PROJ_DIR$\RELEASE_QSPIFlash\Obj\KSDK2_MCIMXRT1052.pbd</file>
+        </outputs>
+        <file>
+            <name>$PROJ_DIR$\..\Board\board.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 31</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 21</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 45</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 90 11 113 8 12 13 109 6 104 99 10 115 107 119 9 70 75 82 96 69 14 103 78 85 71 91 98 0 2 83</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 113 8 104 6 109 115 10 90 2 0 99 70 91 13 119 69 98 11 107 9 12 71 82 83 75 85 96 78 14 103</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Board\pin_mux.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 33</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 29</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 63</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 90 11 113 8 12 13 109 6 104 99 10 115 107 119 9 70 75 82 96 69 14 103 78 85 71 91 88 4</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 8 9 113 104 10 4 11 107 12 119 69 88 6 99 70 91 13 109 115 71 82 90 75 85 96 78 14 103</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Board\clock_config.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 56</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 22</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 49</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 2 90 11 113 8 12 13 109 6 104 99 10 115 107 119 9 70 75 82 96 69 14 103 78 85 71 91</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 8 10 14 9 85 78 70 104 113 11 107 12 90 6 99 91 13 109 115 75 96 103 2 119 71 82 69</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>[ROOT_NODE]</name>
+            <outputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 62 38</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\RELEASE_QSPIFlash\Exe\KSDK2_MCIMXRT1052.out</name>
+            <outputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 38</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 111 31 56 59 64 27 37 15 66 51 53 32 46 33 65 35 30 61 60 106 102 7</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\SEGGER\RTT\SEGGER_RTT.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 65</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 26</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 25</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 101 105 100 103 8 12 13 109 99 113 10 115</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 12 100 113 8 109 115 99 105 103 13 10 101</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\startup\system_MIMXRT1052.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 61</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 18</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 67</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 104 113 8 12 13 109 70 75 82 96 69 14 103 78 85 71</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 85 109 113 13 75 104 70 8 12 71 82 69 96 78 14 103</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\utilities\log\fsl_log.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 53</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 41</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 47</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 80 90 11 113 8 12 13 109 6 104 99 10 115 107 119 9 70 75 82 96 69 14 103 78 85 71 91 89 93</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 8 10 104 11 90 9 113 85 93 107 12 75 89 6 99 70 91 13 109 115 119 71 82 69 80 96 78 14 103</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\SEGGER\RTT\SEGGER_RTT_printf.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 35</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 23</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 28</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 101 105 100 103 8 12 13 109 107 113 10 119</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 114 105 103 8 107 100 119 113 101 12 13 109 10</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_clock.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 59</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 36</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 58</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 90 11 113 8 12 13 109 6 104 99 10 115 107 119 9 70 75 82 96 69 14 103 78 85 71 91</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 8 113 14 6 109 85 78 70 99 91 13 10 11 104 107 9 12 75 96 103 90 115 119 71 82 69</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_gpio.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 66</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 42</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 57</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 83 90 11 113 8 12 13 109 6 104 99 10 115 107 119 9 70 75 82 96 69 14 103 78 85 71 91</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 8 14 113 85 78 70 6 109 115 90 99 91 13 10 11 104 107 9 12 75 96 103 83 119 71 82 69</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_flexspi.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 37</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 39</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 55</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 95 9 113 8 12 13 109 10 70 75 82 104 96 69 14 103 78 85 71 90 11 6 99 115 107 119 91</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 104 90 69 103 119 113 8 12 9 10 6 71 82 14 11 107 115 70 13 109 75 85 96 78 99 91 95</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\utilities\fsl_debug_console.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 27</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 20</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 54</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 107 113 8 12 13 109 10 119 98 90 11 6 104 99 115 9 70 75 82 96 69 14 103 78 85 71 91 89 80 110</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 8 91 103 70 115 75 6 80 113 99 98 12 119 90 10 85 96 107 89 110 13 109 11 104 9 71 82 78 14 114 69</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\startup\startup_MIMXRT1052.s</name>
+            <outputs>
+                <tool>
+                    <name>AARM</name>
+                    <file> 30</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_lpuart.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 32</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 43</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 52</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 97 90 11 113 8 12 13 109 6 104 99 10 115 107 119 9 70 75 82 96 69 14 103 78 85 71 91</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 69 91 13 70 10 119 104 99 8 90 6 113 109 115 71 82 11 107 9 12 75 85 96 78 14 103 97</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\utilities\io\fsl_io.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 51</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 34</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 48</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 93 90 11 113 8 12 13 109 6 104 99 10 115 107 119 9 70 75 82 96 69 14 103 78 85 71 91 89 97</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 99 8 70 91 13 10 103 6 97 90 113 109 115 75 96 89 11 104 107 9 12 85 78 14 93 119 71 82 69</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_common.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 64</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 17</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 44</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 90 11 113 8 12 13 109 6 104 99 10 115 107 119 9 70 75 82 96 69 14 103 78 85 71 91</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 70 8 6 91 10 103 99 13 119 113 109 115 71 82 96 11 104 107 9 12 75 85 78 14 90 69</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\main.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 46</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 19</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 40</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 0 2 90 11 113 8 12 13 109 6 104 99 10 115 107 119 9 70 75 82 96 69 14 103 78 85 71 91 83 98 4 101 105 100</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 8 90 99 10 2 70 91 13 83 6 113 109 85 78 14 100 98 4 101 11 104 107 9 12 75 96 103 0 115 119 71 82 69 105</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Xip\xip_config.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 60</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 24</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 50</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 116 104 113 8 12 13 109 6 90 11 99 10 115 107 119 9 70 75 82 96 69 14 103 78 85 71 91</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 8 14 107 85 78 70 104 11 10 90 113 12 9 6 13 109 99 91 115 75 96 103 116 119 71 82 69</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Xip\fsl_flexspi_nor_boot.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 15</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 16</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 68</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 117 104 113 8 12 13 109 0 2 90 11 6 99 10 115 107 119 9 70 75 82 96 69 14 103 78 85 71 91 83</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 6 113 13 83 8 10 104 109 2 90 99 70 91 85 78 14 0 12 11 107 9 115 75 96 103 117 119 71 82 69</file>
+                </tool>
+            </inputs>
+        </file>
+    </configuration>
+    <configuration>
+        <name>RELEASE_RAM</name>
+        <outputs>
+            <file>$PROJ_DIR$\..\Board\board.h</file>
+            <file>$PROJ_DIR$\..\Board\board.c</file>
+            <file>$PROJ_DIR$\..\Board\clock_config.h</file>
+            <file>$PROJ_DIR$\..\Board\pin_mux.c</file>
+            <file>$PROJ_DIR$\..\Board\pin_mux.h</file>
+            <file>$PROJ_DIR$\..\Board\clock_config.c</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdbool.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\stddef.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\ysizet.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\assert.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Normal.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\cmsis_iar.h</file>
+            <file>$PROJ_DIR$\RELEASE_RAM\Obj\SEGGER_RTT.pbi</file>
+            <file>$PROJ_DIR$\RELEASE_RAM\Obj\SEGGER_RTT_printf.pbi</file>
+            <file>$PROJ_DIR$\RELEASE_RAM\Obj\fsl_flexspi_nor_boot.o</file>
+            <file>$PROJ_DIR$\RELEASE_RAM\Obj\fsl_flexspi_nor_boot.pbi</file>
+            <file>$PROJ_DIR$\RELEASE_RAM\Obj\system_MIMXRT1052.pbi</file>
+            <file>$PROJ_DIR$\RELEASE_RAM\Obj\fsl_gpio.pbi</file>
+            <file>$PROJ_DIR$\RELEASE_RAM\Obj\fsl_log.pbi</file>
+            <file>$PROJ_DIR$\RELEASE_RAM\Exe\KSDK2_MCIMXRT1052.out</file>
+            <file>$PROJ_DIR$\RELEASE_RAM\Obj\SEGGER_RTT_printf.o</file>
+            <file>$PROJ_DIR$\RELEASE_RAM\Obj\fsl_clock.o</file>
+            <file>$PROJ_DIR$\RELEASE_RAM\Obj\main.pbi</file>
+            <file>$PROJ_DIR$\RELEASE_RAM\Obj\startup_MIMXRT1052.o</file>
+            <file>$PROJ_DIR$\RELEASE_RAM\Obj\main.o</file>
+            <file>$PROJ_DIR$\RELEASE_RAM\Obj\xip_config.o</file>
+            <file>$PROJ_DIR$\RELEASE_RAM\Obj\fsl_clock.pbi</file>
+            <file>$PROJ_DIR$\RELEASE_RAM\Obj\fsl_lpuart.o</file>
+            <file>$PROJ_DIR$\RELEASE_RAM\Obj\system_MIMXRT1052.o</file>
+            <file>$PROJ_DIR$\RELEASE_RAM\Obj\fsl_gpio.o</file>
+            <file>$PROJ_DIR$\RELEASE_RAM\Obj\clock_config.o</file>
+            <file>$PROJ_DIR$\RELEASE_RAM\Obj\board.o</file>
+            <file>$PROJ_DIR$\RELEASE_RAM\Obj\fsl_flexspi.o</file>
+            <file>$PROJ_DIR$\RELEASE_RAM\Obj\fsl_io.o</file>
+            <file>$PROJ_DIR$\RELEASE_RAM\Obj\board.pbi</file>
+            <file>$PROJ_DIR$\RELEASE_RAM\Obj\clock_config.pbi</file>
+            <file>$PROJ_DIR$\RELEASE_RAM\Obj\fsl_log.o</file>
+            <file>$PROJ_DIR$\RELEASE_RAM\Obj\fsl_debug_console.pbi</file>
+            <file>$PROJ_DIR$\RELEASE_RAM\Obj\fsl_common.pbi</file>
+            <file>$PROJ_DIR$\RELEASE_RAM\Obj\fsl_common.o</file>
+            <file>$PROJ_DIR$\RELEASE_RAM\Obj\fsl_flexspi.pbi</file>
+            <file>$PROJ_DIR$\RELEASE_RAM\Obj\fsl_lpuart.pbi</file>
+            <file>$PROJ_DIR$\RELEASE_RAM\Obj\xip_config.pbi</file>
+            <file>$PROJ_DIR$\RELEASE_RAM\Obj\pin_mux.pbi</file>
+            <file>$PROJ_DIR$\RELEASE_RAM\Obj\pin_mux.o</file>
+            <file>$PROJ_DIR$\RELEASE_RAM\Obj\fsl_io.pbi</file>
+            <file>$PROJ_DIR$\RELEASE_RAM\Obj\fsl_debug_console.o</file>
+            <file>$PROJ_DIR$\RELEASE_RAM\Obj\SEGGER_RTT.o</file>
+            <file>$PROJ_DIR$\..\Library\CMSIS\Include\cmsis_compiler.h</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\fsl_device_registers.h</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\MIMXRT1052_features.h</file>
+            <file>$PROJ_DIR$\..\SEGGER\RTT\SEGGER_RTT.c</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\startup\system_MIMXRT1052.c</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\utilities\log\fsl_log.c</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\MIMXRT1052.h</file>
+            <file>$PROJ_DIR$\..\SEGGER\RTT\SEGGER_RTT_printf.c</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_clock.c</file>
+            <file>$PROJ_DIR$\..\Library\CMSIS\Include\mpu_armv7.h</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_gpio.c</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_flexspi.c</file>
+            <file>$PROJ_DIR$\..\Library\CMSIS\Include\core_cm7.h</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_gpio.h</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\utilities\fsl_debug_console.c</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\startup\system_MIMXRT1052.h</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\startup\startup_MIMXRT1052.s</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_lpuart.c</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_iomuxc.h</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_common.h</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_clock.h</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\utilities\io\fsl_io.c</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_common.c</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_flexspi.h</file>
+            <file>$PROJ_DIR$\..\Library\CMSIS\Include\cmsis_version.h</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\utilities\fsl_debug_console.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\string.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\iccarm_builtin.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdlib.h</file>
+            <file>$PROJ_DIR$\main.c</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
+            <file>$PROJ_DIR$\..\Xip\xip_config.c</file>
+            <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product_string.h</file>
+            <file>$PROJ_DIR$\..\Xip\external_flash_config.h</file>
+            <file>$PROJ_DIR$\..\Xip\fsl_flexspi_nor_boot.h</file>
+            <file>$PROJ_DIR$\..\Xip\fsl_flexspi_nor_boot.c</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product_stdlib.h</file>
+            <file>$PROJ_DIR$\RELEASE_RAM\Obj\KSDK2_MCIMXRT1052.pbd</file>
+        </outputs>
+        <file>
+            <name>$PROJ_DIR$\..\Board\board.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 33</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 36</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 70 12 7 51 9 78 76 69 2 0 6 83 81 84 88 50 75 10 79 8 11 52 62 63 56 65 74 59 13 77</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Board\pin_mux.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 46</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 45</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 7 8 83 78 9 4 10 79 11 88 50 68 6 76 51 70 12 81 84 52 62 69 56 65 74 59 13 77</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Board\clock_config.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 32</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 37</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 7 79 11 13 83 65 59 51 10 78 8 9 69 6 76 70 12 81 84 56 74 77 2 88 52 62 50</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>[ROOT_NODE]</name>
+            <outputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 21</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\SEGGER\RTT\SEGGER_RTT.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 49</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 14</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\startup\system_MIMXRT1052.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 30</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 18</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\utilities\log\fsl_log.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 38</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 20</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\SEGGER\RTT\SEGGER_RTT_printf.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 22</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 15</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_clock.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 23</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 28</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 7 83 13 6 81 65 59 51 76 70 12 9 10 78 79 8 11 56 74 77 69 84 88 52 62 50</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_gpio.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 31</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 19</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 7 13 83 65 59 51 6 81 84 69 76 70 12 9 10 78 79 8 11 56 74 77 63 88 52 62 50</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_flexspi.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 34</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 42</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 78 69 50 77 88 83 7 11 8 9 6 52 62 13 10 79 84 51 12 81 56 65 74 59 76 70 73</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\utilities\fsl_debug_console.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 48</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 39</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\startup\startup_MIMXRT1052.s</name>
+            <outputs>
+                <tool>
+                    <name>AARM</name>
+                    <file> 25</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_lpuart.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 29</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 43</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\utilities\io\fsl_io.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 35</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 47</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_common.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 41</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 40</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 51 7 6 70 9 77 76 12 88 83 81 84 52 62 74 10 78 79 8 11 56 65 59 13 69 50</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\main.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 26</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 24</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Xip\xip_config.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 27</file>
                 </tool>
                 <tool>
                     <name>BICOMP</name>
@@ -203,318 +2657,7 @@
             </outputs>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\SEGGER\RTT\SEGGER_RTT_printf.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 43</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 45</file>
-                </tool>
-            </outputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\main.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 36</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 48</file>
-                </tool>
-            </outputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\utilities\io\fsl_io.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 78</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 56</file>
-                </tool>
-            </outputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\utilities\log\fsl_log.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 76</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 57</file>
-                </tool>
-            </outputs>
-        </file>
-        <file>
             <name>$PROJ_DIR$\..\Xip\fsl_flexspi_nor_boot.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 37</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 47</file>
-                </tool>
-            </outputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\Board\pin_mux.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 81</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 40</file>
-                </tool>
-            </outputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\Xip\xip_config.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 61</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 63</file>
-                </tool>
-            </outputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\Board\board.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 83</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 53</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 26 17 29 7 28 24 18 1 67 71 25 60 2 27 23 65 13 9 21 8 20 62 75 12 64 4 73 74 59 22</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\Board\clock_config.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 77</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 38</file>
-                </tool>
-            </outputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\utilities\fsl_debug_console.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 39</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 46</file>
-                </tool>
-            </outputs>
-        </file>
-    </configuration>
-    <configuration>
-        <name>DEBUG_RAM</name>
-        <outputs>
-            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_clock.c</file>
-            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_common.h</file>
-            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_clock.h</file>
-            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\startup\system_MIMXRT1052.c</file>
-            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\startup\system_MIMXRT1052.h</file>
-            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\startup\startup_MIMXRT1052.s</file>
-            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_common.c</file>
-            <file>$TOOLKIT_DIR$\inc\c\stdbool.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\stddef.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\assert.h</file>
-            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_flexspi.c</file>
-            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_gpio.c</file>
-            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_gpio.h</file>
-            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\utilities\fsl_debug_console.h</file>
-            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_lpuart.c</file>
-            <file>$PROJ_DIR$\DEBUG_RAM\Obj\fsl_flexspi.o</file>
-            <file>$PROJ_DIR$\DEBUG_RAM\Obj\fsl_lpuart.o</file>
-            <file>$PROJ_DIR$\DEBUG_RAM\Obj\fsl_gpio.o</file>
-            <file>$PROJ_DIR$\DEBUG_RAM\Obj\xip_config.o</file>
-            <file>$PROJ_DIR$\DEBUG_RAM\Obj\xip_config.pbi</file>
-            <file>$PROJ_DIR$\..\SEGGER\RTT\SEGGER_RTT.c</file>
-            <file>$PROJ_DIR$\..\SEGGER\RTT\SEGGER_RTT_printf.c</file>
-            <file>$PROJ_DIR$\DEBUG_RAM\Obj\fsl_debug_console.pbi</file>
-            <file>$PROJ_DIR$\DEBUG_RAM\Obj\system_MIMXRT1052.pbi</file>
-            <file>$PROJ_DIR$\DEBUG_RAM\Exe\KSDK2_MCIMXRT1052.out</file>
-            <file>$PROJ_DIR$\DEBUG_RAM\Obj\SEGGER_RTT.pbi</file>
-            <file>$PROJ_DIR$\DEBUG_RAM\Obj\SEGGER_RTT_printf.pbi</file>
-            <file>$PROJ_DIR$\DEBUG_RAM\Obj\fsl_io.pbi</file>
-            <file>$PROJ_DIR$\DEBUG_RAM\Obj\main.pbi</file>
-            <file>$PROJ_DIR$\DEBUG_RAM\Obj\KSDK2_MCIMXRT1052.pbd</file>
-            <file>$PROJ_DIR$\DEBUG_RAM\Obj\fsl_log.pbi</file>
-            <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\ysizet.h</file>
-            <file>$PROJ_DIR$\main.c</file>
-            <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\stdlib.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\iccarm_builtin.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\DLib_Product_stdlib.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\DLib_Product_string.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\string.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Normal.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
-            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\utilities\io\fsl_io.c</file>
-            <file>$PROJ_DIR$\DEBUG_RAM\Obj\board.pbi</file>
-            <file>$PROJ_DIR$\DEBUG_RAM\Obj\fsl_common.pbi</file>
-            <file>$PROJ_DIR$\DEBUG_RAM\Obj\system_MIMXRT1052.o</file>
-            <file>$PROJ_DIR$\DEBUG_RAM\Obj\fsl_log.o</file>
-            <file>$PROJ_DIR$\DEBUG_RAM\Obj\fsl_clock.pbi</file>
-            <file>$PROJ_DIR$\DEBUG_RAM\Obj\main.o</file>
-            <file>$PROJ_DIR$\DEBUG_RAM\Obj\fsl_io.o</file>
-            <file>$PROJ_DIR$\DEBUG_RAM\Obj\fsl_debug_console.o</file>
-            <file>$PROJ_DIR$\DEBUG_RAM\Obj\SEGGER_RTT.o</file>
-            <file>$PROJ_DIR$\DEBUG_RAM\Obj\clock_config.pbi</file>
-            <file>$PROJ_DIR$\DEBUG_RAM\Obj\SEGGER_RTT_printf.o</file>
-            <file>$PROJ_DIR$\DEBUG_RAM\Obj\startup_MIMXRT1052.o</file>
-            <file>$PROJ_DIR$\DEBUG_RAM\Obj\pin_mux.pbi</file>
-            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\utilities\log\fsl_log.c</file>
-            <file>$PROJ_DIR$\..\Xip\external_flash_config.h</file>
-            <file>$PROJ_DIR$\..\Xip\fsl_flexspi_nor_boot.c</file>
-            <file>$PROJ_DIR$\..\Xip\fsl_flexspi_nor_boot.h</file>
-            <file>$PROJ_DIR$\DEBUG_RAM\Obj\fsl_flexspi_nor_boot.pbi</file>
-            <file>$PROJ_DIR$\DEBUG_RAM\Obj\fsl_flexspi_nor_boot.o</file>
-            <file>$TOOLKIT_DIR$\inc\c\cmsis_iar.h</file>
-            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\fsl_device_registers.h</file>
-            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\MIMXRT1052_features.h</file>
-            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\MIMXRT1052.h</file>
-            <file>$PROJ_DIR$\..\Library\CMSIS\Include\cmsis_compiler.h</file>
-            <file>$PROJ_DIR$\..\Board\pin_mux.c</file>
-            <file>$PROJ_DIR$\..\Board\clock_config.h</file>
-            <file>$PROJ_DIR$\..\Xip\xip_config.c</file>
-            <file>$PROJ_DIR$\..\Board\board.c</file>
-            <file>$PROJ_DIR$\..\Board\clock_config.c</file>
-            <file>$PROJ_DIR$\..\Board\board.h</file>
-            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\utilities\fsl_debug_console.c</file>
-            <file>$PROJ_DIR$\..\Library\CMSIS\Include\cmsis_version.h</file>
-            <file>$PROJ_DIR$\..\Library\CMSIS\Include\mpu_armv7.h</file>
-            <file>$PROJ_DIR$\..\Library\CMSIS\Include\core_cm7.h</file>
-            <file>$PROJ_DIR$\DEBUG_RAM\Obj\fsl_clock.o</file>
-            <file>$PROJ_DIR$\DEBUG_RAM\Obj\fsl_common.o</file>
-            <file>$PROJ_DIR$\DEBUG_RAM\Obj\pin_mux.o</file>
-            <file>$PROJ_DIR$\DEBUG_RAM\Obj\clock_config.o</file>
-            <file>$PROJ_DIR$\DEBUG_RAM\Obj\board.o</file>
-            <file>$PROJ_DIR$\DEBUG_RAM\Obj\fsl_flexspi.pbi</file>
-            <file>$PROJ_DIR$\DEBUG_RAM\Obj\fsl_gpio.pbi</file>
-            <file>$PROJ_DIR$\DEBUG_RAM\Obj\fsl_lpuart.pbi</file>
-        </outputs>
-        <file>
-            <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_clock.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 79</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 49</file>
-                </tool>
-            </outputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\startup\system_MIMXRT1052.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 47</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 23</file>
-                </tool>
-            </outputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\startup\startup_MIMXRT1052.s</name>
-            <outputs>
-                <tool>
-                    <name>AARM</name>
-                    <file> 56</file>
-                </tool>
-            </outputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_common.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 80</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 46</file>
-                </tool>
-            </outputs>
-        </file>
-        <file>
-            <name>[ROOT_NODE]</name>
-            <outputs>
-                <tool>
-                    <name>ILINK</name>
-                    <file> 24</file>
-                </tool>
-            </outputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_flexspi.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 15</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 84</file>
-                </tool>
-            </outputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_gpio.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 17</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 85</file>
-                </tool>
-            </outputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_lpuart.c</name>
             <outputs>
                 <tool>
                     <name>ICCARM</name>
@@ -522,87 +2665,141 @@
                 </tool>
                 <tool>
                     <name>BICOMP</name>
-                    <file> 86</file>
+                    <file> 17</file>
                 </tool>
             </outputs>
         </file>
+    </configuration>
+    <configuration>
+        <name>RELEASE_SDRAM</name>
+        <outputs>
+            <file>$PROJ_DIR$\..\Board\board.h</file>
+            <file>$PROJ_DIR$\..\Board\board.c</file>
+            <file>$PROJ_DIR$\..\Board\clock_config.h</file>
+            <file>$PROJ_DIR$\..\Board\pin_mux.c</file>
+            <file>$PROJ_DIR$\..\Board\pin_mux.h</file>
+            <file>$PROJ_DIR$\..\Board\clock_config.c</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdbool.h</file>
+            <file>$TOOLKIT_DIR$\lib\dl7M_tln.a</file>
+            <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\stddef.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\ysizet.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\assert.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Normal.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\cmsis_iar.h</file>
+            <file>$PROJ_DIR$\MIMXRT1052xxxxx_sdram.icf</file>
+            <file>$PROJ_DIR$\..\Library\CMSIS\Include\cmsis_compiler.h</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\fsl_device_registers.h</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\MIMXRT1052_features.h</file>
+            <file>$PROJ_DIR$\..\SEGGER\RTT\SEGGER_RTT.c</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\startup\system_MIMXRT1052.c</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\utilities\log\fsl_log.c</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\MIMXRT1052.h</file>
+            <file>$PROJ_DIR$\..\SEGGER\RTT\SEGGER_RTT_printf.c</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_clock.c</file>
+            <file>$PROJ_DIR$\..\Library\CMSIS\Include\mpu_armv7.h</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_gpio.c</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\utilities\log\fsl_log.h</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_flexspi.c</file>
+            <file>$PROJ_DIR$\..\Library\CMSIS\Include\core_cm7.h</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_gpio.h</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\utilities\fsl_debug_console.c</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\startup\system_MIMXRT1052.h</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\startup\startup_MIMXRT1052.s</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_lpuart.c</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_iomuxc.h</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\utilities\fsl_debug_console_conf.h</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_common.h</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_clock.h</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\utilities\io\fsl_io.c</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\utilities\io\fsl_io.h</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_common.c</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_flexspi.h</file>
+            <file>$PROJ_DIR$\..\Library\CMSIS\Include\cmsis_version.h</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_lpuart.h</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\utilities\fsl_debug_console.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\string.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\intrinsics.h</file>
+            <file>$PROJ_DIR$\..\SEGGER\RTT\SEGGER_RTT.h</file>
+            <file>$TOOLKIT_DIR$\lib\m7M_tl.a</file>
+            <file>$TOOLKIT_DIR$\inc\c\iccarm_builtin.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
+            <file>$PROJ_DIR$\..\SEGGER\RTT\SEGGER_RTT_Conf.h</file>
+            <file>$TOOLKIT_DIR$\lib\rt7M_tl.a</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdlib.h</file>
+            <file>$PROJ_DIR$\main.c</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\utilities\str\fsl_str.h</file>
+            <file>$PROJ_DIR$\..\Xip\xip_config.c</file>
+            <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdarg.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product_string.h</file>
+            <file>$PROJ_DIR$\..\Xip\external_flash_config.h</file>
+            <file>$PROJ_DIR$\..\Xip\fsl_flexspi_nor_boot.h</file>
+            <file>$PROJ_DIR$\..\Xip\fsl_flexspi_nor_boot.c</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product_stdlib.h</file>
+            <file>$PROJ_DIR$\RELEASE_SDRAM\Obj\board.o</file>
+            <file>$PROJ_DIR$\RELEASE_SDRAM\Obj\system_MIMXRT1052.pbi</file>
+            <file>$PROJ_DIR$\RELEASE_SDRAM\Obj\fsl_io.pbi</file>
+            <file>$PROJ_DIR$\RELEASE_SDRAM\Obj\SEGGER_RTT.o</file>
+            <file>$PROJ_DIR$\RELEASE_SDRAM\Obj\fsl_log.pbi</file>
+            <file>$PROJ_DIR$\RELEASE_SDRAM\Obj\fsl_gpio.pbi</file>
+            <file>$PROJ_DIR$\RELEASE_SDRAM\Obj\fsl_flexspi.pbi</file>
+            <file>$PROJ_DIR$\RELEASE_SDRAM\Obj\fsl_lpuart.o</file>
+            <file>$PROJ_DIR$\RELEASE_SDRAM\Obj\fsl_debug_console.pbi</file>
+            <file>$PROJ_DIR$\RELEASE_SDRAM\Obj\SEGGER_RTT.pbi</file>
+            <file>$PROJ_DIR$\RELEASE_SDRAM\Obj\fsl_clock.pbi</file>
+            <file>$PROJ_DIR$\RELEASE_SDRAM\Obj\xip_config.o</file>
+            <file>$PROJ_DIR$\RELEASE_SDRAM\Obj\SEGGER_RTT_printf.pbi</file>
+            <file>$PROJ_DIR$\RELEASE_SDRAM\Obj\fsl_flexspi_nor_boot.pbi</file>
+            <file>$PROJ_DIR$\RELEASE_SDRAM\Obj\fsl_flexspi_nor_boot.o</file>
+            <file>$PROJ_DIR$\RELEASE_SDRAM\Obj\pin_mux.o</file>
+            <file>$PROJ_DIR$\RELEASE_SDRAM\Obj\fsl_clock.o</file>
+            <file>$PROJ_DIR$\RELEASE_SDRAM\Obj\fsl_debug_console.o</file>
+            <file>$PROJ_DIR$\RELEASE_SDRAM\Obj\startup_MIMXRT1052.o</file>
+            <file>$PROJ_DIR$\RELEASE_SDRAM\Obj\fsl_flexspi.o</file>
+            <file>$PROJ_DIR$\RELEASE_SDRAM\Obj\fsl_common.pbi</file>
+            <file>$PROJ_DIR$\RELEASE_SDRAM\Obj\fsl_gpio.o</file>
+            <file>$PROJ_DIR$\RELEASE_SDRAM\Obj\SEGGER_RTT_printf.o</file>
+            <file>$PROJ_DIR$\RELEASE_SDRAM\Obj\fsl_lpuart.pbi</file>
+            <file>$PROJ_DIR$\RELEASE_SDRAM\Obj\system_MIMXRT1052.o</file>
+            <file>$PROJ_DIR$\RELEASE_SDRAM\Obj\main.o</file>
+            <file>$PROJ_DIR$\RELEASE_SDRAM\Obj\fsl_io.o</file>
+            <file>$PROJ_DIR$\RELEASE_SDRAM\Obj\clock_config.o</file>
+            <file>$PROJ_DIR$\RELEASE_SDRAM\Obj\fsl_log.o</file>
+            <file>$PROJ_DIR$\RELEASE_SDRAM\Obj\pin_mux.pbi</file>
+            <file>$PROJ_DIR$\RELEASE_SDRAM\Obj\clock_config.pbi</file>
+            <file>$PROJ_DIR$\RELEASE_SDRAM\Obj\fsl_common.o</file>
+            <file>$PROJ_DIR$\RELEASE_SDRAM\Obj\board.pbi</file>
+            <file>$PROJ_DIR$\RELEASE_SDRAM\Obj\KSDK2_MCIMXRT1052.pbd</file>
+            <file>$PROJ_DIR$\RELEASE_SDRAM\Obj\xip_config.pbi</file>
+            <file>$PROJ_DIR$\RELEASE_SDRAM\Exe\KSDK2_MCIMXRT1052.out</file>
+            <file>$PROJ_DIR$\RELEASE_SDRAM\List\KSDK2_MCIMXRT1052.map</file>
+            <file>$PROJ_DIR$\RELEASE_SDRAM\Obj\main.pbi</file>
+        </outputs>
         <file>
-            <name>$PROJ_DIR$\..\SEGGER\RTT\SEGGER_RTT.c</name>
+            <name>$PROJ_DIR$\..\Board\board.c</name>
             <outputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 53</file>
+                    <file> 66</file>
                 </tool>
                 <tool>
                     <name>BICOMP</name>
-                    <file> 25</file>
+                    <file> 98</file>
                 </tool>
             </outputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\SEGGER\RTT\SEGGER_RTT_printf.c</name>
-            <outputs>
+            <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 55</file>
+                    <file> 37 11 59 8 12 13 56 6 51 46 10 61 54 65 9 17 22 29 43 16 14 50 25 32 18 38 45 0 2 30</file>
                 </tool>
                 <tool>
                     <name>BICOMP</name>
-                    <file> 26</file>
+                    <file> 59 8 51 6 56 61 10 37 2 0 46 17 38 13 65 16 45 11 54 9 12 18 29 30 22 32 43 25 14 50</file>
                 </tool>
-            </outputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\main.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 50</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 28</file>
-                </tool>
-            </outputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\utilities\io\fsl_io.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 51</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 27</file>
-                </tool>
-            </outputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\utilities\log\fsl_log.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 48</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 30</file>
-                </tool>
-            </outputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\Xip\fsl_flexspi_nor_boot.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 63</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 62</file>
-                </tool>
-            </outputs>
+            </inputs>
         </file>
         <file>
             <name>$PROJ_DIR$\..\Board\pin_mux.c</name>
@@ -613,39 +2810,17 @@
                 </tool>
                 <tool>
                     <name>BICOMP</name>
-                    <file> 57</file>
-                </tool>
-            </outputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\Xip\xip_config.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 18</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 19</file>
-                </tool>
-            </outputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\Board\board.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 83</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 45</file>
+                    <file> 95</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
+                    <name>ICCARM</name>
+                    <file> 37 11 59 8 12 13 56 6 51 46 10 61 54 65 9 17 22 29 43 16 14 50 25 32 18 38 35 4</file>
+                </tool>
+                <tool>
                     <name>BICOMP</name>
-                    <file> 2 41 31 65 32 43 39 1 70 74 7 40 42 38 37 68 13 9 35 8 34 66 78 12 67 4 76 77 64 36</file>
+                    <file> 8 9 59 51 10 4 11 54 12 65 16 35 6 46 17 38 13 56 61 18 29 37 22 32 43 25 14 50</file>
                 </tool>
             </inputs>
         </file>
@@ -654,121 +2829,165 @@
             <outputs>
                 <tool>
                     <name>ICCARM</name>
+                    <file> 93</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 96</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 2 37 11 59 8 12 13 56 6 51 46 10 61 54 65 9 17 22 29 43 16 14 50 25 32 18 38</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 8 10 14 9 32 25 17 51 59 11 54 12 37 6 46 38 13 56 61 22 43 50 2 65 18 29 16</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>[ROOT_NODE]</name>
+            <outputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 101 102</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\SEGGER\RTT\SEGGER_RTT.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 69</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 75</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 48 52 47 50 8 12 13 56 46 59 10 61</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\startup\system_MIMXRT1052.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 90</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 67</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 51 59 8 12 13 56 17 22 29 43 16 14 50 25 32 18</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 59 56 32 13 22 51 17 8 12 18 29 16 43 25 14 50</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\utilities\log\fsl_log.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 94</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 70</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 27 37 11 59 8 12 13 56 6 51 46 10 61 54 65 9 17 22 29 43 16 14 50 25 32 18 38 36 40</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 8 10 51 11 37 9 59 32 40 54 12 22 36 6 46 17 38 13 56 61 65 18 29 16 27 43 25 14 50</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\SEGGER\RTT\SEGGER_RTT_printf.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 88</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 78</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 48 52 47 50 8 12 13 56 54 59 10 65</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_clock.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
                     <file> 82</file>
                 </tool>
                 <tool>
                     <name>BICOMP</name>
-                    <file> 54</file>
+                    <file> 76</file>
                 </tool>
             </outputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\utilities\fsl_debug_console.c</name>
-            <outputs>
+            <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 52</file>
+                    <file> 37 11 59 8 12 13 56 6 51 46 10 61 54 65 9 17 22 29 43 16 14 50 25 32 18 38</file>
                 </tool>
                 <tool>
                     <name>BICOMP</name>
-                    <file> 22</file>
+                    <file> 8 59 14 6 56 32 25 17 46 38 13 10 11 51 54 9 12 22 43 50 37 61 65 18 29 16</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_gpio.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 87</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 71</file>
                 </tool>
             </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 30 37 11 59 8 12 13 56 6 51 46 10 61 54 65 9 17 22 29 43 16 14 50 25 32 18 38</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 8 14 59 32 25 17 6 56 61 37 46 38 13 10 11 51 54 9 12 22 43 50 30 65 18 29 16</file>
+                </tool>
+            </inputs>
         </file>
-    </configuration>
-    <configuration>
-        <name>RELEASE_QSPIFlash</name>
-        <outputs>
-            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_clock.c</file>
-            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_common.h</file>
-            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_clock.h</file>
-            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\startup\system_MIMXRT1052.c</file>
-            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\startup\system_MIMXRT1052.h</file>
-            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\startup\startup_MIMXRT1052.s</file>
-            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_common.c</file>
-            <file>$TOOLKIT_DIR$\inc\c\stdbool.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\stddef.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\assert.h</file>
-            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_flexspi.c</file>
-            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_gpio.c</file>
-            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_gpio.h</file>
-            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\utilities\fsl_debug_console.h</file>
-            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_lpuart.c</file>
-            <file>$PROJ_DIR$\..\SEGGER\RTT\SEGGER_RTT.c</file>
-            <file>$PROJ_DIR$\..\SEGGER\RTT\SEGGER_RTT_printf.c</file>
-            <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\ysizet.h</file>
-            <file>$PROJ_DIR$\main.c</file>
-            <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\stdlib.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\iccarm_builtin.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\DLib_Product_stdlib.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\DLib_Product_string.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\string.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Normal.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
-            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\utilities\io\fsl_io.c</file>
-            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\utilities\log\fsl_log.c</file>
-            <file>$PROJ_DIR$\..\Xip\external_flash_config.h</file>
-            <file>$PROJ_DIR$\..\Xip\fsl_flexspi_nor_boot.c</file>
-            <file>$PROJ_DIR$\..\Xip\fsl_flexspi_nor_boot.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\cmsis_iar.h</file>
-            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\fsl_device_registers.h</file>
-            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\MIMXRT1052_features.h</file>
-            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\MIMXRT1052.h</file>
-            <file>$PROJ_DIR$\..\Library\CMSIS\Include\cmsis_compiler.h</file>
-            <file>$PROJ_DIR$\..\Board\pin_mux.c</file>
-            <file>$PROJ_DIR$\..\Board\clock_config.h</file>
-            <file>$PROJ_DIR$\..\Xip\xip_config.c</file>
-            <file>$PROJ_DIR$\..\Board\board.c</file>
-            <file>$PROJ_DIR$\..\Board\clock_config.c</file>
-            <file>$PROJ_DIR$\..\Board\board.h</file>
-            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\utilities\fsl_debug_console.c</file>
-            <file>$PROJ_DIR$\..\Library\CMSIS\Include\cmsis_version.h</file>
-            <file>$PROJ_DIR$\..\Library\CMSIS\Include\mpu_armv7.h</file>
-            <file>$PROJ_DIR$\..\Library\CMSIS\Include\core_cm7.h</file>
-            <file>$PROJ_DIR$\RELEASE_QSPIFlash\Exe\KSDK2_MCIMXRT1052.out</file>
-            <file>$PROJ_DIR$\RELEASE_QSPIFlash\Obj\KSDK2_MCIMXRT1052.pbd</file>
-            <file>$PROJ_DIR$\RELEASE_QSPIFlash\Obj\startup_MIMXRT1052.o</file>
-            <file>$PROJ_DIR$\RELEASE_QSPIFlash\Obj\board.pbi</file>
-            <file>$PROJ_DIR$\RELEASE_QSPIFlash\Obj\main.pbi</file>
-            <file>$PROJ_DIR$\RELEASE_QSPIFlash\Obj\SEGGER_RTT_printf.o</file>
-            <file>$PROJ_DIR$\RELEASE_QSPIFlash\Obj\fsl_debug_console.o</file>
-            <file>$PROJ_DIR$\RELEASE_QSPIFlash\Obj\clock_config.pbi</file>
-            <file>$PROJ_DIR$\RELEASE_QSPIFlash\Obj\fsl_io.o</file>
-            <file>$PROJ_DIR$\RELEASE_QSPIFlash\Obj\fsl_flexspi.pbi</file>
-            <file>$PROJ_DIR$\RELEASE_QSPIFlash\Obj\SEGGER_RTT_printf.pbi</file>
-            <file>$PROJ_DIR$\RELEASE_QSPIFlash\Obj\fsl_gpio.pbi</file>
-            <file>$PROJ_DIR$\RELEASE_QSPIFlash\Obj\fsl_log.o</file>
-            <file>$PROJ_DIR$\RELEASE_QSPIFlash\Obj\fsl_common.pbi</file>
-            <file>$PROJ_DIR$\RELEASE_QSPIFlash\Obj\xip_config.pbi</file>
-            <file>$PROJ_DIR$\RELEASE_QSPIFlash\Obj\fsl_flexspi_nor_boot.o</file>
-            <file>$PROJ_DIR$\RELEASE_QSPIFlash\Obj\xip_config.o</file>
-            <file>$PROJ_DIR$\RELEASE_QSPIFlash\Obj\fsl_lpuart.pbi</file>
-            <file>$PROJ_DIR$\RELEASE_QSPIFlash\Obj\system_MIMXRT1052.pbi</file>
-            <file>$PROJ_DIR$\RELEASE_QSPIFlash\Obj\fsl_flexspi_nor_boot.pbi</file>
-            <file>$PROJ_DIR$\RELEASE_QSPIFlash\Obj\fsl_log.pbi</file>
-            <file>$PROJ_DIR$\RELEASE_QSPIFlash\Obj\main.o</file>
-            <file>$PROJ_DIR$\RELEASE_QSPIFlash\Obj\SEGGER_RTT.o</file>
-            <file>$PROJ_DIR$\RELEASE_QSPIFlash\Obj\fsl_clock.pbi</file>
-            <file>$PROJ_DIR$\RELEASE_QSPIFlash\Obj\fsl_io.pbi</file>
-            <file>$PROJ_DIR$\RELEASE_QSPIFlash\Obj\pin_mux.pbi</file>
-            <file>$PROJ_DIR$\RELEASE_QSPIFlash\Obj\SEGGER_RTT.pbi</file>
-            <file>$PROJ_DIR$\RELEASE_QSPIFlash\Obj\fsl_lpuart.o</file>
-            <file>$PROJ_DIR$\RELEASE_QSPIFlash\Obj\fsl_debug_console.pbi</file>
-            <file>$PROJ_DIR$\RELEASE_QSPIFlash\Obj\system_MIMXRT1052.o</file>
-            <file>$PROJ_DIR$\RELEASE_QSPIFlash\Obj\clock_config.o</file>
-            <file>$PROJ_DIR$\RELEASE_QSPIFlash\Obj\fsl_common.o</file>
-            <file>$PROJ_DIR$\RELEASE_QSPIFlash\Obj\fsl_gpio.o</file>
-            <file>$PROJ_DIR$\RELEASE_QSPIFlash\Obj\board.o</file>
-            <file>$PROJ_DIR$\RELEASE_QSPIFlash\Obj\pin_mux.o</file>
-            <file>$PROJ_DIR$\RELEASE_QSPIFlash\Obj\fsl_clock.o</file>
-            <file>$PROJ_DIR$\RELEASE_QSPIFlash\Obj\fsl_flexspi.o</file>
-        </outputs>
         <file>
-            <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_clock.c</name>
+            <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_flexspi.c</name>
             <outputs>
                 <tool>
                     <name>ICCARM</name>
@@ -776,77 +2995,49 @@
                 </tool>
                 <tool>
                     <name>BICOMP</name>
-                    <file> 73</file>
+                    <file> 72</file>
                 </tool>
             </outputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\startup\system_MIMXRT1052.c</name>
-            <outputs>
+            <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 79</file>
+                    <file> 42 9 59 8 12 13 56 10 17 22 29 51 43 16 14 50 25 32 18 37 11 6 46 61 54 65 38</file>
                 </tool>
                 <tool>
                     <name>BICOMP</name>
-                    <file> 68</file>
+                    <file> 51 37 16 50 65 59 8 12 9 10 6 18 29 14 11 54 61 17 13 56 22 32 43 25 46 38 42</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\utilities\fsl_debug_console.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 83</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 74</file>
                 </tool>
             </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 54 59 8 12 13 56 10 65 45 37 11 6 51 46 61 9 17 22 29 43 16 14 50 25 32 18 38 36 27 57</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 8 38 50 17 61 22 6 27 59 46 45 12 65 37 10 32 43 54 36 57 13 56 11 51 9 18 29 25 14 60 16</file>
+                </tool>
+            </inputs>
         </file>
         <file>
             <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\startup\startup_MIMXRT1052.s</name>
             <outputs>
                 <tool>
                     <name>AARM</name>
-                    <file> 52</file>
-                </tool>
-            </outputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_common.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 81</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 63</file>
-                </tool>
-            </outputs>
-        </file>
-        <file>
-            <name>[ROOT_NODE]</name>
-            <outputs>
-                <tool>
-                    <name>ILINK</name>
-                    <file> 50</file>
-                </tool>
-            </outputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_flexspi.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 86</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 59</file>
-                </tool>
-            </outputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_gpio.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 82</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 61</file>
+                    <file> 84</file>
                 </tool>
             </outputs>
         </file>
@@ -855,139 +3046,110 @@
             <outputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 77</file>
+                    <file> 73</file>
                 </tool>
                 <tool>
                     <name>BICOMP</name>
-                    <file> 67</file>
+                    <file> 89</file>
                 </tool>
             </outputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\SEGGER\RTT\SEGGER_RTT.c</name>
-            <outputs>
+            <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 72</file>
+                    <file> 44 37 11 59 8 12 13 56 6 51 46 10 61 54 65 9 17 22 29 43 16 14 50 25 32 18 38</file>
                 </tool>
                 <tool>
                     <name>BICOMP</name>
-                    <file> 76</file>
+                    <file> 16 38 13 17 10 65 51 46 8 37 6 59 56 61 18 29 11 54 9 12 22 32 43 25 14 50 44</file>
                 </tool>
-            </outputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\SEGGER\RTT\SEGGER_RTT_printf.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 55</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 60</file>
-                </tool>
-            </outputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\main.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 71</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 54</file>
-                </tool>
-            </outputs>
+            </inputs>
         </file>
         <file>
             <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\utilities\io\fsl_io.c</name>
             <outputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 58</file>
+                    <file> 92</file>
                 </tool>
                 <tool>
                     <name>BICOMP</name>
-                    <file> 74</file>
+                    <file> 68</file>
                 </tool>
             </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 40 37 11 59 8 12 13 56 6 51 46 10 61 54 65 9 17 22 29 43 16 14 50 25 32 18 38 36 44</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 46 8 17 38 13 10 50 6 44 37 59 56 61 22 43 36 11 51 54 9 12 32 25 14 40 65 18 29 16</file>
+                </tool>
+            </inputs>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\utilities\log\fsl_log.c</name>
+            <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_common.c</name>
             <outputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 62</file>
+                    <file> 97</file>
                 </tool>
                 <tool>
                     <name>BICOMP</name>
-                    <file> 70</file>
+                    <file> 86</file>
                 </tool>
             </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 37 11 59 8 12 13 56 6 51 46 10 61 54 65 9 17 22 29 43 16 14 50 25 32 18 38</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 17 8 6 38 10 50 46 13 65 59 56 61 18 29 43 11 51 54 9 12 22 32 25 14 37 16</file>
+                </tool>
+            </inputs>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\Xip\fsl_flexspi_nor_boot.c</name>
+            <name>$PROJ_DIR$\main.c</name>
             <outputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 65</file>
+                    <file> 91</file>
                 </tool>
                 <tool>
                     <name>BICOMP</name>
-                    <file> 69</file>
+                    <file> 103</file>
                 </tool>
             </outputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\Board\pin_mux.c</name>
-            <outputs>
+            <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 84</file>
+                    <file> 0 2 37 11 59 8 12 13 56 6 51 46 10 61 54 65 9 17 22 29 43 16 14 50 25 32 18 38 30 45 4 48 52 47</file>
                 </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 75</file>
-                </tool>
-            </outputs>
+            </inputs>
         </file>
         <file>
             <name>$PROJ_DIR$\..\Xip\xip_config.c</name>
             <outputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 66</file>
+                    <file> 77</file>
                 </tool>
                 <tool>
                     <name>BICOMP</name>
-                    <file> 64</file>
-                </tool>
-            </outputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\Board\board.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 83</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 53</file>
+                    <file> 100</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
-                    <name>BICOMP</name>
-                    <file> 26 17 29 7 28 24 18 1 41 45 25 36 2 27 23 39 13 9 21 8 20 37 49 12 38 4 47 48 35 22</file>
+                    <name>ICCARM</name>
+                    <file> 62 51 59 8 12 13 56 6 37 11 46 10 61 54 65 9 17 22 29 43 16 14 50 25 32 18 38</file>
                 </tool>
             </inputs>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\Board\clock_config.c</name>
+            <name>$PROJ_DIR$\..\Xip\fsl_flexspi_nor_boot.c</name>
             <outputs>
                 <tool>
                     <name>ICCARM</name>
@@ -995,38 +3157,30 @@
                 </tool>
                 <tool>
                     <name>BICOMP</name>
-                    <file> 57</file>
+                    <file> 79</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
-                    <name>BICOMP</name>
-                    <file> 17 18 35 8 4 48 36 29 26 9 21 20 1 7 25 2 27 28 24 38 47 22 41 23 37 49 39</file>
+                    <name>ICCARM</name>
+                    <file> 63 51 59 8 12 13 56 0 2 37 11 6 46 10 61 54 65 9 17 22 29 43 16 14 50 25 32 18 38 30</file>
                 </tool>
             </inputs>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\utilities\fsl_debug_console.c</name>
+            <name>$PROJ_DIR$\RELEASE_SDRAM\Exe\KSDK2_MCIMXRT1052.out</name>
             <outputs>
                 <tool>
-                    <name>ICCARM</name>
-                    <file> 56</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 78</file>
+                    <name>ILINK</name>
+                    <file> 102</file>
                 </tool>
             </outputs>
+            <inputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 15 66 93 82 97 83 85 80 87 92 94 73 91 81 69 88 84 90 77 53 49 7</file>
+                </tool>
+            </inputs>
         </file>
-    </configuration>
-    <configuration>
-        <name>RELEASE_RAM</name>
-        <outputs>
-            <file>$PROJ_DIR$\main.c</file>
-            <file>$PROJ_DIR$\..\Xip\external_flash_config.h</file>
-            <file>$PROJ_DIR$\..\Xip\fsl_flexspi_nor_boot.c</file>
-            <file>$PROJ_DIR$\..\Xip\fsl_flexspi_nor_boot.h</file>
-            <file>$PROJ_DIR$\..\Xip\xip_config.c</file>
-        </outputs>
     </configuration>
 </project>

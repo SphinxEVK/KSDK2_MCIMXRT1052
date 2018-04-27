@@ -90,7 +90,7 @@
 #define BOARD_USER_BUTTON_NAME "SW8"
 
 /*! @brief The hyper flash size */
-#define BOARD_FLASH_SIZE    (0x4000000U)
+#define BOARD_FLASH_SIZE    (0x2000000U)
 
 /*! @brief The ENET PHY address. */
 #define BOARD_ENET0_PHY_ADDRESS (0x02U) /* Phy address of enet port 0. */

@@ -93,6 +93,8 @@ int main(void)
 	//uint32_t vendorID = QSPIFlash_25Q128JVSQ.init((void*)FlexSPI_AHB_BASE, 0, 0);
 	//QSPIFlash_25Q128JVSQ.write(FlexSPI_AHB_BASE, sizeof("HELLOWORLD"), "HELLOWORLD");
 	//memcpy(string, (uint8_t*)FlexSPI_AHB_BASE, sizeof("HELLOWORLD"));
+	
+	//uint8_t str[] = {0x01, 0x02, 0x03, 0x04};
 
     while (1)
     {

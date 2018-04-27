@@ -56,7 +56,7 @@ const flexspi_nor_config_t qspi_config = {
             .deviceModeSeq.seqNum = 1,
             .deviceModeSeq.seqId = 4,
             .deviceModeArg = 0x000200,  //Set QE
-            .deviceType = kFlexSpiDeviceType_SerialNOR,
+            .deviceType = kFlexSpiDeviceType_SerialNOR,//kFlexSpiDeviceType_SerialNOR,
 
             .sflashPadType = kSerialFlash_4Pads,
             .serialClkFreq = kFlexSpiSerialClk_166MHz,   // 80Mhz for winbond, 100Mhz for GD, 133Mhz for ISSI

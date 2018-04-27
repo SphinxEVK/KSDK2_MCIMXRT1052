@@ -34,10 +34,10 @@
 #include "fsl_flexspi_nor_boot.h"
 
 #if defined(XIP_BOOT_HEADER_ENABLE) && (XIP_BOOT_HEADER_ENABLE == 1)
-#if defined(__CC_ARM) || defined(__GNUC__)
-    __attribute__((section(".boot_hdr.ivt")))
-#elif defined(__ICCARM__)
-#pragma location=".boot_hdr.ivt"
+	#if defined(__CC_ARM) || defined(__GNUC__)
+    	__attribute__((section(".boot_hdr.ivt")))
+	#elif defined(__ICCARM__)
+		#pragma location=".boot_hdr.ivt"
 #endif
 /************************************* 
  *  IVT Data 
@@ -58,6 +58,15 @@ const ivt image_vector_table = {
 #elif defined(__ICCARM__)
 	#pragma location=".boot_hdr.boot_data"
 #endif
+/************************************* 
+ *  Boot Data 
+ *************************************/
+const BOOT_DATA_T boot_data = {
+  FLASH_BASE,                 /* boot start location */
+  FLASH_SIZE,                 /* size */
+  PLUGIN_FLAG,                /* Plugin flag*/
+  0xFFFFFFFF  				  /* empty - extra data word */
+};
 
 #if (defined(XIP_BOOT_HEADER_DCD_ENABLE) && (XIP_BOOT_HEADER_DCD_ENABLE == 1))
 	#if defined(__CC_ARM) || defined(__GNUC__)
@@ -65,6 +74,9 @@ const ivt image_vector_table = {
 	#elif defined(__ICCARM__)
 		#pragma location=".boot_hdr.dcd_data"
 	#endif
+	/************************************* 
+ 	*  DCD Data 
+ 	 *************************************/
 	const uint8_t dcd_sdram[1044] = {
 		/*0000*/ 0xD2, 0x04, 0x14, 0x41, 0xCC, 0x02, 0xF4, 0x04, 0x40, 0x0F, 0xC0, 0x68, 0xFF, 0xFF, 0xFF, 0xFF, 
 		/*0010*/ 0x40, 0x0F, 0xC0, 0x6C, 0xFF, 0xFF, 0xFF, 0xFF, 0x40, 0x0F, 0xC0, 0x70, 0xFF, 0xFF, 0xFF, 0xFF, 
@@ -137,15 +149,6 @@ const ivt image_vector_table = {
 	const uint8_t dcd_data[] = {0x00, 0x00};
 #endif
 
-/************************************* 
- *  Boot Data 
- *************************************/
-const BOOT_DATA_T boot_data = {
-  FLASH_BASE,                 /* boot start location */
-  FLASH_SIZE,                 /* size */
-  PLUGIN_FLAG,                /* Plugin flag*/
-  0xFFFFFFFF  				  /* empty - extra data word */
-};
 #endif
 
 
