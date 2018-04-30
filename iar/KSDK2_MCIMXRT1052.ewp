@@ -346,6 +346,7 @@
                 <option>
                     <name>CCIncludePath2</name>
                     <state>$PROJ_DIR$\..\App</state>
+                    <state>$PROJ_DIR$\..\App\testbench</state>
                     <state>$PROJ_DIR$\..\Board</state>
                     <state>$PROJ_DIR$\..\Drivers</state>
                     <state>$PROJ_DIR$\..\Library</state>
@@ -1258,8 +1259,6 @@
                     <state>DEBUG</state>
                     <state>CPU_MIMXRT1052DVL6B</state>
                     <state>XIP_EXTERNAL_FLASH=1</state>
-                    <state>XIP_BOOT_HEADER_ENABLE=1</state>
-                    <state>XIP_BOOT_HEADER_DCD_ENABLE=0</state>
                 </option>
                 <option>
                     <name>CCPreprocFile</name>
@@ -1385,6 +1384,7 @@
                 <option>
                     <name>CCIncludePath2</name>
                     <state>$PROJ_DIR$\..\App</state>
+                    <state>$PROJ_DIR$\..\App\testbench</state>
                     <state>$PROJ_DIR$\..\Board</state>
                     <state>$PROJ_DIR$\..\Drivers</state>
                     <state>$PROJ_DIR$\..\Library</state>
@@ -2298,9 +2298,10 @@
                     <name>CCDefines</name>
                     <state>DEBUG</state>
                     <state>CPU_MIMXRT1052DVL6B</state>
+                    <state>USE_EXTERNAL_SDRAM=1</state>
                     <state>XIP_EXTERNAL_FLASH=1</state>
-                    <state>XIP_BOOT_HEADER_ENABLE=1</state>
-                    <state>XIP_BOOT_HEADER_DCD_ENABLE=1</state>
+                    <state>XIP_BOOT_HEADER_DCD_ENABLE=0</state>
+                    <state>SKIP_SYSCLK_INIT</state>
                 </option>
                 <option>
                     <name>CCPreprocFile</name>
@@ -3465,6 +3466,7 @@
                 <option>
                     <name>CCIncludePath2</name>
                     <state>$PROJ_DIR$\..\App</state>
+                    <state>$PROJ_DIR$\..\App\testbench</state>
                     <state>$PROJ_DIR$\..\Board</state>
                     <state>$PROJ_DIR$\..\Drivers</state>
                     <state>$PROJ_DIR$\..\Library</state>
@@ -4377,7 +4379,6 @@
                     <state>DEBUG</state>
                     <state>CPU_MIMXRT1052DVL6B</state>
                     <state>XIP_EXTERNAL_FLASH=1</state>
-                    <state>XIP_BOOT_HEADER_ENABLE=1</state>
                     <state>XIP_BOOT_HEADER_DCD_ENABLE=0</state>
                 </option>
                 <option>
@@ -4504,6 +4505,7 @@
                 <option>
                     <name>CCIncludePath2</name>
                     <state>$PROJ_DIR$\..\App</state>
+                    <state>$PROJ_DIR$\..\App\testbench</state>
                     <state>$PROJ_DIR$\..\Board</state>
                     <state>$PROJ_DIR$\..\Drivers</state>
                     <state>$PROJ_DIR$\..\Library</state>
@@ -5417,8 +5419,8 @@
                     <name>CCDefines</name>
                     <state>DEBUG</state>
                     <state>CPU_MIMXRT1052DVL6B</state>
+                    <state>USE_EXTERNAL_SDRAM=1</state>
                     <state>XIP_EXTERNAL_FLASH=1</state>
-                    <state>XIP_BOOT_HEADER_ENABLE=1</state>
                     <state>XIP_BOOT_HEADER_DCD_ENABLE=1</state>
                 </option>
                 <option>
@@ -5545,6 +5547,7 @@
                 <option>
                     <name>CCIncludePath2</name>
                     <state>$PROJ_DIR$\..\App</state>
+                    <state>$PROJ_DIR$\..\App\testbench</state>
                     <state>$PROJ_DIR$\..\Board</state>
                     <state>$PROJ_DIR$\..\Drivers</state>
                     <state>$PROJ_DIR$\..\Library</state>
@@ -6348,6 +6351,12 @@
                 </file>
                 <file>
                     <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_lpuart.h</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_semc.c</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_semc.h</name>
                 </file>
             </group>
             <group>

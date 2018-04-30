@@ -183,7 +183,7 @@ int memtest(void)
 #define BASE_ADDRESS  ((volatile databus_width *)SDRAM_ADDR)
 #define NUM_BYTES     (SDRAM_SIZE)
 
-  if((memtest_databus(BASE_ADDRESS) != 0) ||
+  if((memtest_databus(BASE_ADDRESS) != NULL) ||
      (memtest_addressbus(BASE_ADDRESS, NUM_BYTES) != NULL) ||
      (memtest_device(BASE_ADDRESS, NUM_BYTES) != NULL))
   {

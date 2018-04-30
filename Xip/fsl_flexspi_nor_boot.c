@@ -33,7 +33,7 @@
 
 #include "fsl_flexspi_nor_boot.h"
 
-#if defined(XIP_BOOT_HEADER_ENABLE) && (XIP_BOOT_HEADER_ENABLE == 1)
+#if (defined(XIP_EXTERNAL_FLASH) && (XIP_EXTERNAL_FLASH == 1))
 	#if defined(__CC_ARM) || defined(__GNUC__)
     	__attribute__((section(".boot_hdr.ivt")))
 	#elif defined(__ICCARM__)
@@ -68,15 +68,16 @@ const BOOT_DATA_T boot_data = {
   0xFFFFFFFF  				  /* empty - extra data word */
 };
 
-#if (defined(XIP_BOOT_HEADER_DCD_ENABLE) && (XIP_BOOT_HEADER_DCD_ENABLE == 1))
+#if (defined(USE_EXTERNAL_SDRAM) && (USE_EXTERNAL_SDRAM == 1)) && \
+	(defined(XIP_BOOT_HEADER_DCD_ENABLE) && (XIP_BOOT_HEADER_DCD_ENABLE == 1))
 	#if defined(__CC_ARM) || defined(__GNUC__)
 		__attribute__((section(".boot_hdr.dcd_data")))
 	#elif defined(__ICCARM__)
 		#pragma location=".boot_hdr.dcd_data"
 	#endif
 	/************************************* 
- 	*  DCD Data 
- 	 *************************************/
+	*  DCD Data 
+	 *************************************/
 	const uint8_t dcd_sdram[1044] = {
 		/*0000*/ 0xD2, 0x04, 0x14, 0x41, 0xCC, 0x02, 0xF4, 0x04, 0x40, 0x0F, 0xC0, 0x68, 0xFF, 0xFF, 0xFF, 0xFF, 
 		/*0010*/ 0x40, 0x0F, 0xC0, 0x6C, 0xFF, 0xFF, 0xFF, 0xFF, 0x40, 0x0F, 0xC0, 0x70, 0xFF, 0xFF, 0xFF, 0xFF, 

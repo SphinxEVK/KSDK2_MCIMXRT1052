@@ -7216,6 +7216,12 @@
                 <file>
                     <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_lpuart.h</name>
                 </file>
+                <file>
+                    <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_semc.c</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_semc.h</name>
+                </file>
             </group>
             <group>
                 <name>startup</name>

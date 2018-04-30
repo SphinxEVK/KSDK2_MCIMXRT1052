@@ -84,7 +84,7 @@
 
 uint32_t SystemCoreClock = DEFAULT_SYSTEM_CLOCK;
 
-#if (defined(XIP_BOOT_HEADER_DCD_ENABLE) && (XIP_BOOT_HEADER_DCD_ENABLE == 1))
+#if !(defined(XIP_BOOT_HEADER_DCD_ENABLE) && (XIP_BOOT_HEADER_DCD_ENABLE == 1))
 /* ----------------------------------------------------------------------------
    -- SDRAM_WaitIpCmdDone()
    ---------------------------------------------------------------------------- */
@@ -114,9 +114,19 @@ void SDRAM_Init(void)
   CCM->CCGR5 = 0xFFFFFFFF;
   
   
-  CCM_ANALOG->PLL_SYS = 0x00002001;//Enable PLL output, Fout=Fref*22
-  CCM_ANALOG->PFD_528 = 0x001d0000;
-  CCM->CBCDR = 0x00010D40;
+  CCM_ANALOG->PLL_SYS = 0x00002001;		//Enable PLL2 output, Fout=Fref*22
+  CCM_ANALOG->PFD_528 = 0x001d0000;	//Set PLL2_PFD2 fractional divide value as 0x1D. PLL2_PFD2 = 528*18/29 = 327.72Mhz
+  CCM_ANALOG->PLL_USB1 = 0x00003040;	//Enable PLL3 output
+  CCM_ANALOG->PFD_480 = 0x00001200;	//Set PLL3_PFD1 fractional divide value as 0x12. PLL3_PFD1 = 480*18/18 = 480Mhz
+  CCM->CBCDR = 0x00010D40;		    //0x00000D40: SEMC Clock at 327.7Mhz	(source: PLL2_PFD2-327.72Mhz)
+  								    //0x00010D40: SEMC Clock at 163.8Mhz	(source: PLL2_PFD2-327.72Mhz)
+  								    //0x00020D40: SEMC Clock at 109.2Mhz	(source: PLL2_PFD2-327.72Mhz)
+  								    //0x00030D40: SEMC Clock at 81.9Mhz	(source: PLL2_PFD2-327.72Mhz)
+  								    //0x00040D40: SEMC Clock at 65.5Mhz	(source: PLL2_PFD2-327.72Mhz)
+  								    //0x00050D40: SEMC Clock at 54.6Mhz	(source: PLL2_PFD2-327.72Mhz)
+  								    //0x00060D40: SEMC Clock at 46.8Mhz	(source: PLL2_PFD2-327.72Mhz)
+  								    //0x00070D40: SEMC Clock at 41.0Mhz	(source: PLL2_PFD2-327.72Mhz)
+  								    //0x00010DC0: SEMC Clock at ???	(source: PLL3_PFD1-???)
    
   /* SDRAM IO MUX Config */
   IOMUXC->SW_MUX_CTL_PAD[0] = 0x00000000;
@@ -313,7 +323,8 @@ void SystemInit (void) {
     }
 #endif
 	
-#if (defined(XIP_BOOT_HEADER_DCD_ENABLE) && (XIP_BOOT_HEADER_DCD_ENABLE == 1))
+#if (defined(USE_EXTERNAL_SDRAM) && (USE_EXTERNAL_SDRAM == 1)) && \
+	(defined(XIP_BOOT_HEADER_DCD_ENABLE) && (XIP_BOOT_HEADER_DCD_ENABLE == 0))
 	SDRAM_Init();
 #endif
 
