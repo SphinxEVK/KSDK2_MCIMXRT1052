@@ -99,7 +99,8 @@ int main(void)
 	//uint8_t str[] = {0x01, 0x02, 0x03, 0x04};
 	
 #if (defined(USE_EXTERNAL_SDRAM) && (USE_EXTERNAL_SDRAM == 1))	
-	SCB_DisableDCache();
+	BOARD_InitSEMC();
+	//SCB_DisableDCache();
     //SCB_DisableICache();
 	if(1==sdram_test(0x12ABCDEF))
 	{

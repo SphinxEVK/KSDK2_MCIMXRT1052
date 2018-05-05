@@ -6252,6 +6252,9 @@
                 <name>$PROJ_DIR$\..\App\testbench\bsp_sdram.h</name>
             </file>
         </group>
+        <file>
+            <name>$PROJ_DIR$\..\App\main.c</name>
+        </file>
     </group>
     <group>
         <name>Board</name>
@@ -6445,7 +6448,4 @@
             <name>$PROJ_DIR$\..\Xip\xip_config.c</name>
         </file>
     </group>
-    <file>
-        <name>$PROJ_DIR$\..\main.c</name>
-    </file>
 </project>

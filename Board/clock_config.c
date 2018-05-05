@@ -303,6 +303,6 @@ void BOARD_BootClockRUN(void)
     CCM_ANALOG->MISC1 =
         (CCM_ANALOG->MISC1 & (~CCM_ANALOG_MISC1_LVDS1_CLK_SEL_MASK)) | CCM_ANALOG_MISC1_LVDS1_CLK_SEL(0);
     /* Set SystemCoreClock variable. */
-    SystemCoreClock = BOARD_BOOTCLOCKRUN_CORE_CLOCK;
+    SystemCoreClock = CLOCK_GetFreq(kCLOCK_CpuClk);
 }
 

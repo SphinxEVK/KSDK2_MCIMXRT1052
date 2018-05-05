@@ -84,7 +84,7 @@
                 </option>
                 <option>
                     <name>OCDynDriverList</name>
-                    <state>JLINK_ID</state>
+                    <state>ARMSIM_ID</state>
                 </option>
                 <option>
                     <name>OCLastSavedByProductVersion</name>
@@ -725,7 +725,7 @@
                 <debug>1</debug>
                 <option>
                     <name>JLinkSpeed</name>
-                    <state>4000</state>
+                    <state>200</state>
                 </option>
                 <option>
                     <name>CCJLinkDoLogfile</name>
@@ -2936,11 +2936,11 @@
                 </option>
                 <option>
                     <name>MacOverride</name>
-                    <state>0</state>
+                    <state>1</state>
                 </option>
                 <option>
                     <name>MacFile</name>
-                    <state></state>
+                    <state>$PROJ_DIR$\CoreCycle.mac</state>
                 </option>
                 <option>
                     <name>MemOverride</name>

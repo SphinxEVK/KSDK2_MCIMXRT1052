@@ -1,4 +1,4 @@
-﻿File generated Mon Apr 30 21:00:08 2018
+﻿File generated Thu May  3 16:28:59 2018
 
 Pass 1 of 1
 Starting fragment-style flashloader pass.
@@ -17,41 +17,34 @@ page size is 256 (0x100)
 filler is 0xff
 buffer size is 262144 (0x40000)
 SimpleCode records (after offset):
-  Record 0: @ 0x60000000 [512 (0x200) bytes] 0x60000000 - 0x600001ff [46 43 46]
-  Record 1: @ 0x60001000 [32 (0x20) bytes] 0x60001000 - 0x6000101f [d1 0 20]
-  Record 2: @ 0x60001020 [16 (0x10) bytes] 0x60001020 - 0x6000102f [0 0 0]
-  Record 3: @ 0x60002000 [1024 (0x400) bytes] 0x60002000 - 0x600023ff [0 0 2]
-  Record 4: @ 0x60002400 [8368 (0x20b0) bytes] 0x60002400 - 0x600044af [70 b5 4]
+  Record 0: @ 0x60001000 [32 (0x20) bytes] 0x60001000 - 0x6000101f [d1 0 20]
+  Record 1: @ 0x60001020 [16 (0x10) bytes] 0x60001020 - 0x6000102f [0 0 0]
+  Record 2: @ 0x60002000 [1024 (0x400) bytes] 0x60002000 - 0x600023ff [0 0 2]
+  Record 3: @ 0x60002400 [15160 (0x3b38) bytes] 0x60002400 - 0x60005f37 [bf f3 4f]
 Base of flash at 0x60000000
-->init       : base @ 0x60000000, image size 0x44b0
+->init       : base @ 0x60000000, image size 0x4f38
       Args: (argc = 0)
-  timing(init): 0.0313 (CPU) 0.0130 (elapsed)
+  timing(init): 0.0156 (CPU) 0.0160 (elapsed)
 Transaction list:
-  Transaction @ 0x60000000 + 0x0 (0x200 bytes) 1 packet(s).
-    Will erase 1 block(s):
-      0: 0x60000000 (0x1000 bytes)
   Transaction @ 0x60001000 + 0x0 (0x100 bytes) 1 packet(s).
     Will erase 1 block(s):
       0: 0x60001000 (0x1000 bytes)
-  Transaction @ 0x60002000 + 0x0 (0x2500 bytes) 3 packet(s).
-    Will erase 3 block(s):
+  Transaction @ 0x60002000 + 0x0 (0x4000 bytes) 4 packet(s).
+    Will erase 4 block(s):
       0: 0x60002000 (0x1000 bytes)
       1: 0x60003000 (0x1000 bytes)
       2: 0x60004000 (0x1000 bytes)
-->multi_erase: 1 blocks (0x8 bytes in buffer) [0 0 0]
-  timing(erase): 0.0000 (CPU) 0.0450 (elapsed)
-->write      : @ 0x60000000 (0x200 bytes, offset 0x0 into block @ 0x60000000) [46 43 46]
-  timing(write): 0.0000 (CPU) 0.0080 (elapsed)
+      3: 0x60005000 (0x1000 bytes)
 ->multi_erase: 1 blocks (0x8 bytes in buffer) [0 10 0]
-  timing(erase): 0.0000 (CPU) 0.0420 (elapsed)
+  timing(erase): 0.0313 (CPU) 0.0370 (elapsed)
 ->write      : @ 0x60001000 (0x100 bytes, offset 0x0 into block @ 0x60001000) [d1 0 20]
-  timing(write): 0.0000 (CPU) 0.0080 (elapsed)
-->multi_erase: 3 blocks (0x18 bytes in buffer) [0 20 0]
-  timing(erase): 0.0000 (CPU) 0.1170 (elapsed)
-->write      : @ 0x60002000 (0x2500 bytes, offset 0x0 into block @ 0x60002000) [0 0 2]
-  timing(write): 0.0000 (CPU) 0.0220 (elapsed)
+  timing(write): 0.0156 (CPU) 0.0110 (elapsed)
+->multi_erase: 4 blocks (0x20 bytes in buffer) [0 20 0]
+  timing(erase): 0.0000 (CPU) 0.1250 (elapsed)
+->write      : @ 0x60002000 (0x4000 bytes, offset 0x0 into block @ 0x60002000) [0 0 2]
+  timing(write): 0.0000 (CPU) 0.0340 (elapsed)
 ->signoff
-  timing(signoff): 0.0000 (CPU) 0.0090 (elapsed)
-Duration:   0.78 (CPU)   1.28 (elapsed)
-  of which on target: 0.0313 (CPU) 0.2640 (elapsed)
+  timing(signoff): 0.0000 (CPU) 0.0110 (elapsed)
+Duration:   1.08 (CPU)   1.82 (elapsed)
+  of which on target: 0.0625 (CPU) 0.2340 (elapsed)
 Flash loading pass finished

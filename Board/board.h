@@ -289,6 +289,8 @@ void BOARD_InitDebugConsole(void);
 
 void BOARD_ConfigMPU(void);
 
+extern status_t BOARD_InitSEMC(void);
+
 #if defined(__cplusplus)
 }
 #endif /* __cplusplus */
