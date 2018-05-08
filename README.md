@@ -25,3 +25,5 @@
 **/SEGGER/:** SEGGER提供的RTT文件，可用于在线调试。
 
 **/Xip/:** iMX.RT片外执行必须依赖的一些文件。除非特别了解，否则不要修改。
+
+## V0.4 添加CSI设备框架及MT9V034支持，采集了全分辨率数据并存放在SDRAM的最后2MByte(non-cacheable)空间。
