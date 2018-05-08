@@ -26,9 +26,9 @@
 /* 内存数据总线宽度 */
 typedef uint16_t databus_width;
 
-static databus_width   memtest_databus(volatile databus_width * address);
-static databus_width * memtest_addressbus(volatile databus_width * address_base, unsigned long length);
-static databus_width * memtest_device(volatile databus_width * address_base, unsigned long length);
+__ramfunc static databus_width   memtest_databus(volatile databus_width * address);
+__ramfunc static databus_width * memtest_addressbus(volatile databus_width * address_base, unsigned long length);
+__ramfunc static databus_width * memtest_device(volatile databus_width * address_base, unsigned long length);
 
 /*******************************************************************************
 * 名    称: memtest_databus
@@ -39,7 +39,7 @@ static databus_width * memtest_device(volatile databus_width * address_base, uns
 * 描    述: 内存数据总线测试
 * 注意事项: 该操作会摧毁内存指定地址的数据, Cache可能会影响测试的结果, 敬请注意
 *******************************************************************************/
-databus_width memtest_databus(volatile databus_width * address)
+__ramfunc databus_width memtest_databus(volatile databus_width * address)
 {
   databus_width pattern;
 
@@ -67,7 +67,7 @@ databus_width memtest_databus(volatile databus_width * address)
 * 描    述: 内存地址总线测试
 * 注意事项: 该操作会摧毁内存中所有数据, Cache可能会影响测试的结果, 敬请注意
 *******************************************************************************/
-databus_width * memtest_addressbus(volatile databus_width * address_base, unsigned long length)
+__ramfunc databus_width * memtest_addressbus(volatile databus_width * address_base, unsigned long length)
 {
   unsigned long address_mask = (length / sizeof(databus_width) - 1);
   unsigned long offset;
@@ -130,7 +130,7 @@ databus_width * memtest_addressbus(volatile databus_width * address_base, unsign
 * 描    述: 内存测试
 * 注意事项: 该操作会摧毁内存中所有数据, Cache可能会影响测试的结果, 敬请注意
 *******************************************************************************/
-databus_width * memtest_device(volatile databus_width * address_base, unsigned long length)
+__ramfunc databus_width * memtest_device(volatile databus_width * address_base, unsigned long length)
 {
   unsigned long offset;
   unsigned long word_length = length / sizeof(databus_width);
@@ -178,7 +178,7 @@ databus_width * memtest_device(volatile databus_width * address_base, unsigned l
 * 描    述: 内存测试
 * 注意事项: 该操作会摧毁内存中所有数据, Cache可能会影响测试的结果, 敬请注意
 *******************************************************************************/
-int memtest(void)
+__ramfunc int memtest(void)
 {
 #define BASE_ADDRESS  ((volatile databus_width *)SDRAM_ADDR)
 #define NUM_BYTES     (SDRAM_SIZE)
@@ -207,7 +207,7 @@ int memtest(void)
 * 描    述: SDRAM读写测试
 * 注意事项: 该操作会摧毁SDRAM中保存的所有数据, 敬请注意
 *******************************************************************************/
-int32_t sdram_test(uint32_t data)
+__ramfunc int32_t sdram_test(uint32_t data)
 {
   /* 不允许编译器优化 */
   volatile uint32_t * write_uint32, *read_uint32;
@@ -222,8 +222,12 @@ int32_t sdram_test(uint32_t data)
   /* 四字节写入 */
   write_uint32 = (uint32_t *)SDRAM_ADDR;
   read_uint32 = (uint32_t *)SDRAM_ADDR;
-  pattern = data & 0xFFFFFFFF;
-
+  pattern = data & 0xFFFFFFFF;  
+  
+#if defined(__ICCARM__)
+	
+#endif
+  //#pragma unroll = 1024
   for(i = 0; i < (SDRAM_SIZE / sizeof(pattern)); i++)
   {
     *write_uint32++ = pattern;

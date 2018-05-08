@@ -106,11 +106,13 @@ place at address mem: m_boot_hdr_conf_start { readonly section .boot_hdr.conf };
 place at address mem: m_boot_hdr_ivt_start { readonly section .boot_hdr.ivt };
 place at address mem: m_boot_hdr_boot_data_start { readonly section .boot_hdr.boot_data };
 place at address mem: m_boot_hdr_dcd_data_start { readonly section .boot_hdr.dcd_data };
+place at address mem: m_ncache_start		{ section .csi_data };
 
 place in TEXT_region                        { readonly };
-place in DATA3_region                        { block RW };
-place in DATA3_region                        { block ZI };
-place in DATA3_region                        { last block HEAP };
-place in NCACHE_region                     { block NCACHE_VAR };
+place in DATA_region						{ block RW };
+/*place in DATA3_region                        { block RW };*/
+place in DATA3_region                       { block ZI };
+place in DATA3_region                       { last block HEAP };
+place in NCACHE_region                     	{ block NCACHE_VAR };
 place in CSTACK_region                      { block CSTACK };
 

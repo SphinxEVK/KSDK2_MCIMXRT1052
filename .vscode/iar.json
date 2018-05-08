@@ -1,0 +1,7 @@
+{
+    "iar.enabled": true,
+    "version": 1,
+    "path": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.0\\",
+    "project": "${workspaceFolder}\\iar\\KSDK2_MCIMXRT1052.ewp",
+    "config": "DEBUG_QSPIFlash"
+}

@@ -16,14 +16,14 @@
         <LeaveTargetRunning>_ 0</LeaveTargetRunning>
     </JLinkDriver>
     <DebugChecksum>
-        <Checksum>3465659499</Checksum>
+        <Checksum>2374398094</Checksum>
     </DebugChecksum>
     <CodeCoverage>
         <Enabled>_ 0</Enabled>
     </CodeCoverage>
     <Disassembly>
-        <InstrCount>0</InstrCount>
         <MixedMode>1</MixedMode>
+        <InstrCount>0</InstrCount>
     </Disassembly>
     <Exceptions>
         <StopOnUncaught>_ 0</StopOnUncaught>
@@ -36,9 +36,9 @@
         <OverrideDefaultClocks>0</OverrideDefaultClocks>
         <CpuClock>96000000</CpuClock>
         <ClockAutoDetect>0</ClockAutoDetect>
-        <ClockWanted>250000</ClockWanted>
-        <JtagSpeed>250000</JtagSpeed>
-        <Prescaler>384</Prescaler>
+        <ClockWanted>2000000</ClockWanted>
+        <JtagSpeed>2000000</JtagSpeed>
+        <Prescaler>48</Prescaler>
         <TimeStampPrescIndex>0</TimeStampPrescIndex>
         <TimeStampPrescData>0</TimeStampPrescData>
         <PcSampCYCTAP>1</PcSampCYCTAP>
@@ -70,8 +70,25 @@
         <MultiCoreRunAll>1</MultiCoreRunAll>
     </Simulator>
     <watch_formats>
-        <Fmt0>{W}1:temp	4	0</Fmt0>
+        <Fmt0>{W}1:0x1324	4	0</Fmt0>
+        <Fmt1>{W}1:id	4	0</Fmt1>
+        <Fmt2>{W}1:pBuffer	4	0</Fmt2>
+        <Fmt3>{W}1:pid	4	0</Fmt3>
+        <Fmt4>{W}1:temp	4	0</Fmt4>
     </watch_formats>
+    <DriverProfiling>
+        <Enabled>0</Enabled>
+        <Mode>1</Mode>
+        <Graph>0</Graph>
+        <Symbiont>0</Symbiont>
+        <Exclusions />
+    </DriverProfiling>
+    <CallStackLog>
+        <Enabled>0</Enabled>
+    </CallStackLog>
+    <CallStackStripe>
+        <ShowTiming>1</ShowTiming>
+    </CallStackStripe>
     <Trace1>
         <Enabled>0</Enabled>
         <ShowSource>1</ShowSource>
@@ -130,15 +147,6 @@
         <ShowTimeSum>1</ShowTimeSum>
         <SumSortOrder>0</SumSortOrder>
     </EventLog>
-    <DisassembleMode>
-        <mode>0</mode>
-    </DisassembleMode>
-    <Breakpoints2>
-        <Bp0>_ 1 "EMUL_CODE" "{$PROJ_DIR$\..\App\main.c}.108.3" 0 0 1 "" 0 "" 0</Bp0>
-        <Bp1>_ 1 "EMUL_CODE" "{$PROJ_DIR$\..\App\testbench\bsp_sdram.c}.227.3" 0 0 1 "" 0 "Clear_TIMER1()" 0</Bp1>
-        <Bp2>_ 1 "EMUL_CODE" "{$PROJ_DIR$\..\App\testbench\bsp_sdram.c}.233.3" 0 0 1 "" 0 "Dump()" 0</Bp2>
-        <Count>3</Count>
-    </Breakpoints2>
     <LogFile>
         <LoggingEnabled>_ 0</LoggingEnabled>
         <LogFile>_ ""</LogFile>
@@ -148,27 +156,20 @@
         <LoggingEnabled>_ 0</LoggingEnabled>
         <LogFile>_ ""</LogFile>
     </TermIOLog>
-    <Aliases>
-        <A0>_ "F:\Proj_IMXRT\KSDK2_MCIMXRT1052\main.c" "F:\Proj_IMXRT\KSDK2_MCIMXRT1052\App\main.c"</A0>
-        <Count>1</Count>
-        <SuppressDialog>0</SuppressDialog>
-    </Aliases>
-    <DriverProfiling>
-        <Enabled>0</Enabled>
-        <Mode>1</Mode>
-        <Graph>0</Graph>
-        <Symbiont>0</Symbiont>
-        <Exclusions />
-    </DriverProfiling>
-    <CallStackLog>
-        <Enabled>0</Enabled>
-    </CallStackLog>
-    <CallStackStripe>
-        <ShowTiming>1</ShowTiming>
-    </CallStackStripe>
     <PowerProbe>
         <Frequency>10000</Frequency>
         <Probe0>I0</Probe0>
         <ProbeSetup0>2 1 1 2 0 0</ProbeSetup0>
     </PowerProbe>
+    <DisassembleMode>
+        <mode>0</mode>
+    </DisassembleMode>
+    <Breakpoints2>
+        <Count>0</Count>
+    </Breakpoints2>
+    <Aliases>
+        <A0>_ "F:\Proj_IMXRT\KSDK2_MCIMXRT1052\main.c" "F:\Proj_IMXRT\KSDK2_MCIMXRT1052\App\main.c"</A0>
+        <Count>1</Count>
+        <SuppressDialog>0</SuppressDialog>
+    </Aliases>
 </settings>

@@ -6,7 +6,7 @@ Clear_TIMER1() {
 Dump()  {
   __var time, speed;
   time = CCTIMER1/(600);
-  speed = 2000000000/time;
+  speed = 2048000000/time;
   __message "finish writing 2MBytes in ", time:%f, "us\n";
   __message "and SDRAM write speed is  ", speed:%f, "Kbyte/s\n";
 }

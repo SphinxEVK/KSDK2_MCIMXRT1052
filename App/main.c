@@ -42,6 +42,9 @@
 #include "SEGGER_RTT.h"
 
 #include "bsp_sdram.h"
+	 
+//#include "ALEX_MT9V034.h"
+#include "drv_camera.h"
 
 /*******************************************************************************
  * Definitions
@@ -88,6 +91,8 @@ int main(void)
     SEGGER_RTT_printf(0, "\r\n GPIO Driver example\r\n");
     SEGGER_RTT_printf(0, "\r\n The LED is blinking.\r\n");
 
+	GPIO_PinInit(GPIO1, 16U, &(gpio_pin_config_t){kGPIO_DigitalOutput, 1, kGPIO_NoIntmode});
+	GPIO_PinInit(GPIO1, 17U, &(gpio_pin_config_t){kGPIO_DigitalOutput, 1, kGPIO_NoIntmode});
     /* Init output LED GPIO. */
     GPIO_PinInit(GPIO1, 15U, &(gpio_pin_config_t){kGPIO_DigitalOutput, 1, kGPIO_NoIntmode});
 	
@@ -98,11 +103,14 @@ int main(void)
 	
 	//uint8_t str[] = {0x01, 0x02, 0x03, 0x04};
 	
+	__asm("NOP");
+	__asm("NOP");
+	
 #if (defined(USE_EXTERNAL_SDRAM) && (USE_EXTERNAL_SDRAM == 1))	
 	BOARD_InitSEMC();
-	//SCB_DisableDCache();
-    //SCB_DisableICache();
-	if(1==sdram_test(0x12ABCDEF))
+	SCB_DisableDCache();
+    SCB_DisableICache();
+	if(1==sdram_test(0x00000000))
 	{
 		//sdram test success
 		SEGGER_RTT_printf(0, "\r\n sdram test success\r\n");
@@ -116,9 +124,12 @@ int main(void)
 	SCB_EnableICache();
 #endif
 
+	//MT9V034_Init(0x5C);
+	Camera_Start();
+	
     while (1)
     {
-        delay();
-        GPIO_WritePinOutput(GPIO1, 15U, !GPIO_PinRead(GPIO1, 15U));
+        //delay();
+        //GPIO_WritePinOutput(GPIO1, 15U, !GPIO_PinRead(GPIO1, 15U));
     }
 }

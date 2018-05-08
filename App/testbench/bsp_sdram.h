@@ -8,7 +8,7 @@ extern "C" {
 #define SDRAM_ADDR  0x81E00000ul
 #define SDRAM_SIZE  0x001FFFFFul
 
-int32_t sdram_test(uint32_t data);
+__ramfunc int32_t sdram_test(uint32_t data);
 
 #ifdef __cplusplus
 }

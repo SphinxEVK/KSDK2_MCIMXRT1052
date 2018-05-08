@@ -117,7 +117,7 @@ void SDRAM_Init(void)
   CCM_ANALOG->PLL_SYS = 0x00002001;		//Enable PLL2 output, Fout=Fref*22
   CCM_ANALOG->PFD_528 = 0x001d0000;	//Set PLL2_PFD2 fractional divide value as 0x1D. PLL2_PFD2 = 528*18/29 = 327.72Mhz
   CCM_ANALOG->PLL_USB1 = 0x00003040;	//Enable PLL3 output
-  CCM_ANALOG->PFD_480 = 0x00000D00;	//Set PLL3_PFD1 fractional divide value as 0x12. PLL3_PFD1 = 480*18/18 = 664.62Mhz
+  CCM_ANALOG->PFD_480 = 0x00000D00;	//Set PLL3_PFD1 fractional divide value as 0x0D. PLL3_PFD1 = 480*18/13 = 664.62Mhz
   CCM->CBCDR = 0x00010D40;		    //0x00000D40: SEMC Clock at 327.7Mhz	(source: PLL2_PFD2-327.72Mhz)
   								    //0x00010D40: SEMC Clock at 163.8Mhz	(source: PLL2_PFD2-327.72Mhz)
   								    //0x00020D40: SEMC Clock at 109.2Mhz	(source: PLL2_PFD2-327.72Mhz)
