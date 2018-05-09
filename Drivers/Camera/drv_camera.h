@@ -8,14 +8,10 @@
 #define CAMERA_CONTROL_FLAGS 		(kCAMERA_VsyncActiveHigh|kCAMERA_HrefActiveHigh|kCAMERA_DataLatchOnFallingEdge)
 #define CAMERA_FRAME_BUFFER_COUNT	(4)
 
-<<<<<<< HEAD
-volatile static uint8_t csi_frameBuffer[CAMERA_FRAME_BUFFER_COUNT][CAMERA_HEIGHT][CAMERA_WIDTH];
-=======
+volatile static uint16_t csi_frameBuffer[CAMERA_FRAME_BUFFER_COUNT][CAMERA_HEIGHT*CAMERA_WIDTH*CAMERA_BPP/sizeof(uint16_t)];
 extern uint32_t activeFrameAddr;
 extern uint32_t inactiveFrameAddr;
 
-volatile static uint16_t csi_frameBuffer[CAMERA_FRAME_BUFFER_COUNT][CAMERA_HEIGHT*CAMERA_WIDTH*CAMERA_BPP/sizeof(uint16_t)];
->>>>>>> 28af8751a004a5338b14d64f71ce516305afdf74
 extern void CSI_DriverIRQHandler(void);
 extern void Camera_Start(void);
 	
