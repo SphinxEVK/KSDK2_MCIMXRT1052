@@ -1,7 +1,52 @@
-﻿File generated Wed May  9 08:36:11 2018
+﻿File generated Wed May  9 21:36:29 2018
 
 Pass 1 of 1
 Starting fragment-style flashloader pass.
-Device: D:\Proj_IMXRT\KSDK2_MCIMXRT1052\iar\RT1052_SphinxEVK.flash
-Flash loader: D:\Proj_IMXRT\KSDK2_MCIMXRT1052\iar\RT1052_SphinxEVK.out
+Device: F:\Proj_IMXRT\KSDK2_MCIMXRT1052\iar\RT1052_SphinxEVK.flash
+Flash loader: F:\Proj_IMXRT\KSDK2_MCIMXRT1052\iar\RT1052_SphinxEVK.out
+FlashInitEntry is at 0x0000101C
+FlashWriteEntry is at 0x00001024
+FlashEraseWriteEntry is at 0x0000102C
+FlashBreak is at 0x00000F28
+FlashBufferStart is at 0x20200000
+FlashBufferEnd is at 0x20240000
+theFlashParams is at 0x20000040
+FlashChecksumEntry not found
+FlashSignoffEntry is at 0x00001034
+page size is 256 (0x100)
+filler is 0xff
+buffer size is 262144 (0x40000)
+SimpleCode records (after offset):
+  Record 0: @ 0x60001000 [32 (0x20) bytes] 0x60001000 - 0x6000101f [d1 0 20]
+  Record 1: @ 0x60001020 [16 (0x10) bytes] 0x60001020 - 0x6000102f [0 0 0]
+  Record 2: @ 0x60002000 [1024 (0x400) bytes] 0x60002000 - 0x600023ff [0 0 2]
+  Record 3: @ 0x60002400 [21768 (0x5508) bytes] 0x60002400 - 0x60007907 [bf f3 4f]
+Base of flash at 0x60000000
+->init       : base @ 0x60000000, image size 0x6908
+      Args: (argc = 0)
+  timing(init): 0.0000 (CPU) 0.0140 (elapsed)
+Transaction list:
+  Transaction @ 0x60001000 + 0x0 (0x100 bytes) 1 packet(s).
+    Will erase 1 block(s):
+      0: 0x60001000 (0x1000 bytes)
+  Transaction @ 0x60002000 + 0x0 (0x5a00 bytes) 6 packet(s).
+    Will erase 6 block(s):
+      0: 0x60002000 (0x1000 bytes)
+      1: 0x60003000 (0x1000 bytes)
+      2: 0x60004000 (0x1000 bytes)
+      3: 0x60005000 (0x1000 bytes)
+      4: 0x60006000 (0x1000 bytes)
+      5: 0x60007000 (0x1000 bytes)
+->multi_erase: 1 blocks (0x8 bytes in buffer) [0 10 0]
+  timing(erase): 0.0000 (CPU) 0.0470 (elapsed)
+->write      : @ 0x60001000 (0x100 bytes, offset 0x0 into block @ 0x60001000) [d1 0 20]
+  timing(write): 0.0000 (CPU) 0.0100 (elapsed)
+->multi_erase: 6 blocks (0x30 bytes in buffer) [0 20 0]
+  timing(erase): 0.0000 (CPU) 0.2500 (elapsed)
+->write      : @ 0x60002000 (0x5a00 bytes, offset 0x0 into block @ 0x60002000) [0 0 2]
+  timing(write): 0.0000 (CPU) 0.0400 (elapsed)
+->signoff
+  timing(signoff): 0.0000 (CPU) 0.0090 (elapsed)
+Duration:   0.70 (CPU)   1.95 (elapsed)
+  of which on target: 0.0000 (CPU) 0.3700 (elapsed)
 Flash loading pass finished
