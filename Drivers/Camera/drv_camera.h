@@ -8,8 +8,7 @@
 #define CAMERA_CONTROL_FLAGS 		(kCAMERA_VsyncActiveHigh|kCAMERA_HrefActiveHigh|kCAMERA_DataLatchOnFallingEdge)
 #define CAMERA_FRAME_BUFFER_COUNT	(4)
 
-volatile static 
-csi_frameBuffer[CAMERA_FRAME_BUFFER_COUNT][CAMERA_HEIGHT][CAMERA_WIDTH];
+volatile static uint8_t csi_frameBuffer[CAMERA_FRAME_BUFFER_COUNT][CAMERA_HEIGHT][CAMERA_WIDTH];
 
 extern void Camera_Start(void);
 	
