@@ -1150,7 +1150,7 @@
                     <item>val</item>
                     <item>0x1324</item>
                     <item>pBuffer</item>
-                    <item></item>
+                    <item />
                 </expressions>
                 <col-names>
                     <item>Expression</item>
