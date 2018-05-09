@@ -38,19 +38,19 @@ static status_t MT9V034_Init(camera_device_handle_t *handle, const camera_config
     {
         return kStatus_Fail;
     }
-
-	MT9V034_Reset(MT9V034_I2C_ADDRESS);
-	
-	MT9V034_SetTestPattern(MT9V034_I2C_ADDRESS, false);
-	
-	MT9V034_SetFrameResolution(MT9V034_I2C_ADDRESS, MT9V034_W, MT9V034_H);
-	
-	//MT9V034_SetAutoExposure(MT9V034_I2C_ADDRESS, true);			// this function is NOT working rightnow
-	MT9V034_SetHDRMode(MT9V034_I2C_ADDRESS, MT9V034_HDR_OFF);
     
-	MT9V034_SetReservedReg(MT9V034_I2C_ADDRESS);
-	
-	return kStatus_Success;
+    MT9V034_Reset(MT9V034_I2C_ADDRESS);
+    
+    MT9V034_SetTestPattern(MT9V034_I2C_ADDRESS, false);
+    
+    MT9V034_SetFrameResolution(MT9V034_I2C_ADDRESS, MT9V034_W, MT9V034_H);
+    
+    //MT9V034_SetAutoExposure(MT9V034_I2C_ADDRESS, true);			// this function is NOT working rightnow
+    MT9V034_SetHDRMode(MT9V034_I2C_ADDRESS, MT9V034_HDR_OFF);
+    
+    MT9V034_SetReservedReg(MT9V034_I2C_ADDRESS);
+    
+    return kStatus_Success;
 }
 
 static status_t MT9V034_InitExt(camera_device_handle_t *handle, const camera_config_t *config, const void *specialConfig)

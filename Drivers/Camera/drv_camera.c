@@ -8,13 +8,13 @@
 #include "fsl_gpio.h"
 
 /*******************************************************************************
- * Variables
- ******************************************************************************/
+* Variables
+******************************************************************************/
 #if defined(__CC_ARM) || defined(__GNUC__)
-    AT_NONCACHEABLE_SECTION_ALIGN(volatile static uint8_t csi_frameBuffer[CAMERA_FRAME_BUFFER_COUNT][CAMERA_HEIGHT][CAMERA_WIDTH], FRAME_BUFFER_ALIGN);
+AT_NONCACHEABLE_SECTION_ALIGN(volatile static uint8_t csi_frameBuffer[CAMERA_FRAME_BUFFER_COUNT][CAMERA_HEIGHT][CAMERA_WIDTH], FRAME_BUFFER_ALIGN);
 #elif defined(__ICCARM__)
-	#pragma location = ".csi_data"
-	volatile static uint8_t csi_frameBuffer[CAMERA_FRAME_BUFFER_COUNT][CAMERA_HEIGHT][CAMERA_WIDTH];// @ 0x81E00000;
+#pragma location = ".csi_data"
+volatile static uint8_t csi_frameBuffer[CAMERA_FRAME_BUFFER_COUNT][CAMERA_HEIGHT][CAMERA_WIDTH];// @ 0x81E00000;
 #endif
 
 static csi_private_data_t csiPrivateData;
@@ -22,14 +22,14 @@ static csi_private_data_t csiPrivateData;
 
 /* CSI接收属性配置 */
 camera_receiver_handle_t cameraReceiver = {
-	.resource = &(csi_resource_t){.csiBase = CSI},
-	.ops = &csi_ops,
-	.privateData = &csiPrivateData,
+    .resource = &(csi_resource_t){.csiBase = CSI},
+    .ops = &csi_ops,
+    .privateData = &csiPrivateData,
 };
 
 /* Camera设备操作配置 */
 const camera_device_handle_t cameraDevice = {
-	.ops = &MT9V034_ops,
+    .ops = &MT9V034_ops,
 };
 
 /* Camera设备属性配置 */
@@ -44,38 +44,43 @@ const camera_config_t cameraConfig = {
 };
 
 /*******************************************************************************
- * Code
- ******************************************************************************/
+* Code
+******************************************************************************/
 void CSI_IRQHandler(void)
 {
-    //CSI_DriverIRQHandler();
-	GPIO_WritePinOutput(GPIO1, 15U, !GPIO_PinRead(GPIO1, 15U));
+    CSI_DriverIRQHandler();
+    GPIO_WritePinOutput(GPIO1, 15U, !GPIO_PinRead(GPIO1, 15U));
 }
 
 void Camera_Start(void)
 {
-	BOARD_InitCSIPins();
-	
-	//Clear Video Frame Buffer
-	//memset(csi_frameBuffer, 0, sizeof(csi_frameBuffer));
-	//volatile uint32_t * write_uint32 = (uint32_t *)csi_frameBuffer;	
-	//for(uint32_t i=0; i <(sizeof(csi_frameBuffer)/sizeof(uint16_t)); i++)
-	//{
-	//	*write_uint32++ = 0x00000000;
-	//}
-	
+    BOARD_InitCSIPins();
+    
+    //Clear Video Frame Buffer
+    //memset(csi_frameBuffer, 0, sizeof(csi_frameBuffer));	
+    for(uint32_t i=0; i<CAMERA_FRAME_BUFFER_COUNT; i++)
+    {
+        for(uint32_t j=0; j<CAMERA_HEIGHT; j++)
+        {
+            for(uint32_t k=0; k<CAMERA_WIDTH; k++)
+            {
+                csi_frameBuffer[i][j][k] = 0x00;
+            }
+        }
+    }
+    
     CAMERA_RECEIVER_Init(&cameraReceiver, &cameraConfig, NULL, NULL);
     CAMERA_DEVICE_Init((camera_device_handle_t*)&cameraDevice, &cameraConfig);
     CAMERA_DEVICE_Start((camera_device_handle_t*)&cameraDevice);
-	
-	/* 将空帧缓冲区提交到缓冲区队列. */
+    
+    /* 将空帧缓冲区提交到缓冲区队列. */
     for (uint32_t i = 0; i < CAMERA_FRAME_BUFFER_COUNT; i++)
     {
         CAMERA_RECEIVER_SubmitEmptyBuffer(&cameraReceiver, (uint32_t)(csi_frameBuffer[i]));
     }
-	
-	//CSI_DisableInterrupts(CSI, 0xFFFFFFFF);
-	//CSI_EnableInterrupts(CSI, CSI_CSICR1_EOF_INT_EN(true));
-	
-	CAMERA_RECEIVER_Start(&cameraReceiver);
+    
+    //CSI_DisableInterrupts(CSI, 0xFFFFFFFF);
+    //CSI_EnableInterrupts(CSI, CSI_CSICR1_EOF_INT_EN(true));
+    
+    CAMERA_RECEIVER_Start(&cameraReceiver);
 }
