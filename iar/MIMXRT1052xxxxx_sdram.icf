@@ -61,9 +61,11 @@ define symbol m_data2_start            = 0x20200000;
 define symbol m_data2_end              = 0x2023FFFF;
 
 define symbol m_data3_start            = 0x80000000;
-define symbol m_data3_end              = 0x81DFFFFF;
+/*define symbol m_data3_end              = 0x81DFFFFF;*/
+define symbol m_data3_end              = 0x817FFFFF;
 
-define symbol m_ncache_start           = 0x81E00000;
+/*define symbol m_ncache_start           = 0x81E00000;*/
+define symbol m_ncache_start           = 0x81800000;
 define symbol m_ncache_end             = 0x81FFFFFF;
 /* Sizes */
 if (isdefinedsymbol(__stack_size__)) {

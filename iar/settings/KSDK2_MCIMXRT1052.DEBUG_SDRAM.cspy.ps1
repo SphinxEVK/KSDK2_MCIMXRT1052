@@ -23,9 +23,9 @@
 
 if ($debugfile -eq "")
 {
-& "C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.0\common\bin\cspybat" -f "D:\Proj_IMXRT\KSDK2_MCIMXRT1052\iar\settings\KSDK2_MCIMXRT1052.DEBUG_SDRAM.general.xcl" --backend -f "D:\Proj_IMXRT\KSDK2_MCIMXRT1052\iar\settings\KSDK2_MCIMXRT1052.DEBUG_SDRAM.driver.xcl" 
+& "C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.0\common\bin\cspybat" -f "F:\Proj_IMXRT\KSDK2_MCIMXRT1052\iar\settings\KSDK2_MCIMXRT1052.DEBUG_SDRAM.general.xcl" --backend -f "F:\Proj_IMXRT\KSDK2_MCIMXRT1052\iar\settings\KSDK2_MCIMXRT1052.DEBUG_SDRAM.driver.xcl" 
 }
 else
 {
-& "C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.0\common\bin\cspybat" -f "D:\Proj_IMXRT\KSDK2_MCIMXRT1052\iar\settings\KSDK2_MCIMXRT1052.DEBUG_SDRAM.general.xcl" --debug_file=$debugfile --backend -f "D:\Proj_IMXRT\KSDK2_MCIMXRT1052\iar\settings\KSDK2_MCIMXRT1052.DEBUG_SDRAM.driver.xcl" 
+& "C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.0\common\bin\cspybat" -f "F:\Proj_IMXRT\KSDK2_MCIMXRT1052\iar\settings\KSDK2_MCIMXRT1052.DEBUG_SDRAM.general.xcl" --debug_file=$debugfile --backend -f "F:\Proj_IMXRT\KSDK2_MCIMXRT1052\iar\settings\KSDK2_MCIMXRT1052.DEBUG_SDRAM.driver.xcl" 
 }
