@@ -3647,6 +3647,9 @@
             <file>
                 <name>$PROJ_DIR$\..\Drivers\Camera\fsl_csi_camera_adapter.h</name>
             </file>
+            <configuration>
+                <name>DEBUG_SDRAM</name>
+            </configuration>
         </group>
     </group>
     <group>

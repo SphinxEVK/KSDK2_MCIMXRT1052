@@ -1,4 +1,4 @@
-﻿File generated Wed May  9 21:36:29 2018
+﻿File generated Thu May 10 12:31:34 2018
 
 Pass 1 of 1
 Starting fragment-style flashloader pass.
@@ -20,16 +20,16 @@ SimpleCode records (after offset):
   Record 0: @ 0x60001000 [32 (0x20) bytes] 0x60001000 - 0x6000101f [d1 0 20]
   Record 1: @ 0x60001020 [16 (0x10) bytes] 0x60001020 - 0x6000102f [0 0 0]
   Record 2: @ 0x60002000 [1024 (0x400) bytes] 0x60002000 - 0x600023ff [0 0 2]
-  Record 3: @ 0x60002400 [21768 (0x5508) bytes] 0x60002400 - 0x60007907 [bf f3 4f]
+  Record 3: @ 0x60002400 [19464 (0x4c08) bytes] 0x60002400 - 0x60007007 [10 b5 0]
 Base of flash at 0x60000000
-->init       : base @ 0x60000000, image size 0x6908
+->init       : base @ 0x60000000, image size 0x6008
       Args: (argc = 0)
-  timing(init): 0.0000 (CPU) 0.0140 (elapsed)
+  timing(init): 0.0313 (CPU) 0.0170 (elapsed)
 Transaction list:
   Transaction @ 0x60001000 + 0x0 (0x100 bytes) 1 packet(s).
     Will erase 1 block(s):
       0: 0x60001000 (0x1000 bytes)
-  Transaction @ 0x60002000 + 0x0 (0x5a00 bytes) 6 packet(s).
+  Transaction @ 0x60002000 + 0x0 (0x5100 bytes) 6 packet(s).
     Will erase 6 block(s):
       0: 0x60002000 (0x1000 bytes)
       1: 0x60003000 (0x1000 bytes)
@@ -38,15 +38,15 @@ Transaction list:
       4: 0x60006000 (0x1000 bytes)
       5: 0x60007000 (0x1000 bytes)
 ->multi_erase: 1 blocks (0x8 bytes in buffer) [0 10 0]
-  timing(erase): 0.0000 (CPU) 0.0470 (elapsed)
+  timing(erase): 0.0469 (CPU) 0.0500 (elapsed)
 ->write      : @ 0x60001000 (0x100 bytes, offset 0x0 into block @ 0x60001000) [d1 0 20]
-  timing(write): 0.0000 (CPU) 0.0100 (elapsed)
+  timing(write): 0.0156 (CPU) 0.0110 (elapsed)
 ->multi_erase: 6 blocks (0x30 bytes in buffer) [0 20 0]
-  timing(erase): 0.0000 (CPU) 0.2500 (elapsed)
-->write      : @ 0x60002000 (0x5a00 bytes, offset 0x0 into block @ 0x60002000) [0 0 2]
+  timing(erase): 0.1406 (CPU) 0.2480 (elapsed)
+->write      : @ 0x60002000 (0x5100 bytes, offset 0x0 into block @ 0x60002000) [0 0 2]
   timing(write): 0.0000 (CPU) 0.0400 (elapsed)
 ->signoff
-  timing(signoff): 0.0000 (CPU) 0.0090 (elapsed)
-Duration:   0.70 (CPU)   1.95 (elapsed)
-  of which on target: 0.0000 (CPU) 0.3700 (elapsed)
+  timing(signoff): 0.0000 (CPU) 0.0100 (elapsed)
+Duration:   1.25 (CPU)   1.91 (elapsed)
+  of which on target: 0.2344 (CPU) 0.3760 (elapsed)
 Flash loading pass finished

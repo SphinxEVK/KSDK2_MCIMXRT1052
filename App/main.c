@@ -42,7 +42,7 @@
 #include "SEGGER_RTT.h"
 
 #include "bsp_sdram.h"
-	 
+
 //#include "ALEX_MT9V034.h"
 #include "drv_camera.h"
 
@@ -95,18 +95,18 @@ int main(void)
 	GPIO_PinInit(GPIO1, 17U, &(gpio_pin_config_t){kGPIO_DigitalOutput, 1, kGPIO_NoIntmode});
     /* Init output LED GPIO. */
     GPIO_PinInit(GPIO1, 15U, &(gpio_pin_config_t){kGPIO_DigitalOutput, 1, kGPIO_NoIntmode});
-	
+
 	//uint8_t string[10] = {0x00};
 	//uint32_t vendorID = QSPIFlash_25Q128JVSQ.init((void*)FlexSPI_AHB_BASE, 0, 0);
 	//QSPIFlash_25Q128JVSQ.write(FlexSPI_AHB_BASE, sizeof("HELLOWORLD"), "HELLOWORLD");
 	//memcpy(string, (uint8_t*)FlexSPI_AHB_BASE, sizeof("HELLOWORLD"));
-	
+
 	//uint8_t str[] = {0x01, 0x02, 0x03, 0x04};
-	
+
 	__asm("NOP");
 	__asm("NOP");
-	
-#if (defined(USE_EXTERNAL_SDRAM) && (USE_EXTERNAL_SDRAM == 1))	
+
+#if (defined(USE_EXTERNAL_SDRAM) && (USE_EXTERNAL_SDRAM == 1))
 	BOARD_InitSEMC();
 	SCB_DisableDCache();
     SCB_DisableICache();
@@ -126,10 +126,14 @@ int main(void)
 
 	//MT9V034_Init(0x5C);
 	Camera_Start();
-	
+
     while (1)
     {
         //delay();
         //GPIO_WritePinOutput(GPIO1, 15U, !GPIO_PinRead(GPIO1, 15U));
+
+		// CAMERA_RECEIVER_GetFullBuffer(&cameraReceiver, &inactiveFrameAddr);
+		// CAMERA_RECEIVER_SubmitEmptyBuffer(&cameraReceiver, activeFrameAddr);
+		// activeFrameAddr = inactiveFrameAddr;
     }
 }
