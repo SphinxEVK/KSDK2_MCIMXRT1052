@@ -11,6 +11,7 @@
         <LimitSize>0</LimitSize>
         <ByteLimit>50</ByteLimit>
     </Stack>
+<<<<<<< HEAD
     <JLinkDriver>
         <CStepIntDis>_ 0</CStepIntDis>
         <LeaveTargetRunning>_ 0</LeaveTargetRunning>
@@ -169,6 +170,8 @@
         <Probe0>I0</Probe0>
         <ProbeSetup0>2 1 1 2 0 0</ProbeSetup0>
     </PowerProbe>
+=======
+>>>>>>> d848e093619db88270c0fcef2c90bd9469f4d6c2
     <DisassembleMode>
         <mode>0</mode>
     </DisassembleMode>
@@ -176,8 +179,11 @@
         <Count>0</Count>
     </Breakpoints2>
     <Aliases>
-        <A0>_ "F:\Proj_IMXRT\KSDK2_MCIMXRT1052\main.c" "F:\Proj_IMXRT\KSDK2_MCIMXRT1052\App\main.c"</A0>
-        <Count>1</Count>
+        <Count>0</Count>
         <SuppressDialog>0</SuppressDialog>
     </Aliases>
+    <JLinkDriver>
+        <CStepIntDis>_ 0</CStepIntDis>
+        <LeaveTargetRunning>_ 0</LeaveTargetRunning>
+    </JLinkDriver>
 </settings>

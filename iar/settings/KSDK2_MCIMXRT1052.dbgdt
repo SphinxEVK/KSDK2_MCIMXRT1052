@@ -1,5 +1,6 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <Project>
+<<<<<<< HEAD
     <WindowStorage>
         <ChildIdMap>
             <TB_CMSISPACK>34048</TB_CMSISPACK>
@@ -1379,4 +1380,7 @@
             <IarPane-34120 />
         </Desktop>
     </WindowStorage>
+=======
+    <WindowStorage />
+>>>>>>> d848e093619db88270c0fcef2c90bd9469f4d6c2
 </Project>

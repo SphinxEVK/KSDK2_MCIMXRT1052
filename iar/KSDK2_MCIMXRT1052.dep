@@ -4,7 +4,16 @@
     <fileChecksum>2044328727</fileChecksum>
     <configuration>
         <name>DEBUG_QSPIFlash</name>
+        <outputs />
+        <forcedrebuild>
+            <name>[MULTI_TOOL]</name>
+            <tool>ILINK</tool>
+        </forcedrebuild>
+    </configuration>
+    <configuration>
+        <name>DEBUG_RAM</name>
         <outputs>
+<<<<<<< HEAD
             <file>$PROJ_DIR$\..\Drivers\Camera\ALEX_MT9V034.c</file>
             <file>$PROJ_DIR$\..\App\testbench\bsp_sdram.h</file>
             <file>$PROJ_DIR$\..\App\main.c</file>
@@ -112,8 +121,66 @@
             <file>$PROJ_DIR$\..\Drivers\ALEX_MT9V034.c</file>
             <file>$PROJ_DIR$\..\App\include.h</file>
             <file>$PROJ_DIR$\DEBUG_QSPIFlash\Obj\ALEX_I2C&amp;&amp;SCCB.o</file>
+=======
+            <file>$PROJ_DIR$\DEBUG_RAM\Exe\KSDK2_MCIMXRT1052.out</file>
+            <file>$PROJ_DIR$\..\App\testbench\bsp_sdram.h</file>
+            <file>$PROJ_DIR$\..\App\appinc.h</file>
+            <file>$PROJ_DIR$\..\App\main.c</file>
+            <file>$PROJ_DIR$\..\Board\board.h</file>
+            <file>$PROJ_DIR$\DEBUG_RAM\Obj\xip_config.pbi</file>
+            <file>$PROJ_DIR$\..\Board\clock_config.c</file>
+            <file>$PROJ_DIR$\..\App\testbench\bsp_sdram.c</file>
+            <file>$PROJ_DIR$\..\Board\board.c</file>
+            <file>$TOOLKIT_DIR$\inc\c\intrinsics.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\string.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdlib.h</file>
+            <file>$PROJ_DIR$\..\SEGGER\RTT\SEGGER_RTT_Conf.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product_string.h</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\utilities\str\fsl_str.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\ysizet.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product_stdlib.h</file>
+            <file>$PROJ_DIR$\..\SEGGER\RTT\SEGGER_RTT.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\iccarm_builtin.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\cmsis_iar.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\stddef.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
+            <file>$PROJ_DIR$\DEBUG_RAM\Obj\KSDK2_MCIMXRT1052.pbd</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdbool.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Normal.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\assert.h</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_csi.h</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_dmamux.c</file>
+            <file>$PROJ_DIR$\..\Board\pin_mux.c</file>
+            <file>$PROJ_DIR$\..\Board\pin_mux.h</file>
+            <file>$PROJ_DIR$\..\Drivers\Camera\fsl_camera_device.h</file>
+            <file>$PROJ_DIR$\..\Drivers\Camera\drv_camera_device.c</file>
+            <file>$PROJ_DIR$\..\Drivers\Camera\ALEX_MT9V034.c</file>
+            <file>$PROJ_DIR$\..\Drivers\Camera\drv_camera_device.h</file>
+            <file>$PROJ_DIR$\..\Drivers\Camera\ALEX_I2C&amp;&amp;SCCB.h</file>
+            <file>$PROJ_DIR$\..\Drivers\Camera\drv_camera.h</file>
+            <file>$PROJ_DIR$\..\Drivers\Camera\fsl_csi_camera_adapter.h</file>
+            <file>$PROJ_DIR$\..\Library\CMSIS\Include\cmsis_compiler.h</file>
+            <file>$PROJ_DIR$\..\Library\CMSIS\Include\mpu_armv7.h</file>
+            <file>$PROJ_DIR$\..\Drivers\Camera\fsl_camera.h</file>
+            <file>$PROJ_DIR$\..\Drivers\Camera\ALEX_I2C&amp;&amp;SCCB.c</file>
+            <file>$PROJ_DIR$\..\Drivers\Camera\ALEX_MT9V034_REG.h</file>
+            <file>$PROJ_DIR$\..\Drivers\Camera\fsl_csi_camera_adapter.c</file>
+            <file>$PROJ_DIR$\..\Library\CMSIS\Include\cmsis_version.h</file>
+            <file>$PROJ_DIR$\..\Library\CMSIS\Include\core_cm7.h</file>
+>>>>>>> d848e093619db88270c0fcef2c90bd9469f4d6c2
             <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_clock.c</file>
+            <file>$PROJ_DIR$\..\Board\clock_config.h</file>
+            <file>$PROJ_DIR$\..\Drivers\Camera\fsl_video_common.h</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_clock.h</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_csi.c</file>
+            <file>$PROJ_DIR$\..\Drivers\Camera\fsl_camera_receiver.h</file>
+            <file>$PROJ_DIR$\..\Drivers\Camera\drv_camera.c</file>
             <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_common.c</file>
+<<<<<<< HEAD
             <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_dmamux.h</file>
             <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_edma.h</file>
             <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_gpio.h</file>
@@ -184,20 +251,140 @@
                 <tool>
                     <name>BICOMP</name>
                     <file> 100</file>
-                </tool>
+=======
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_common.h</file>
+            <file>$PROJ_DIR$\..\Drivers\Camera\ALEX_MT9V034.h</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\utilities\log\fsl_log.c</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_edma.h</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_lpi2c.h</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\utilities\log\fsl_log.h</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_flexspi.c</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\utilities\fsl_debug_console.c</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\fsl_device_registers.h</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\MIMXRT1052_features.h</file>
+            <file>$PROJ_DIR$\..\SEGGER\RTT\SEGGER_RTT.c</file>
+            <file>$PROJ_DIR$\..\SEGGER\RTT\SEGGER_RTT_printf.c</file>
+            <file>$PROJ_DIR$\..\Xip\fsl_flexspi_nor_boot.c</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\utilities\io\fsl_io.c</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\utilities\fsl_debug_console.h</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_lpuart.h</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_lpi2c.c</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\MIMXRT1052.h</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\utilities\fsl_debug_console_conf.h</file>
+            <file>$PROJ_DIR$\..\Xip\external_flash_config.h</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_gpio.h</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_edma.c</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_flexspi.h</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_gpio.c</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_dmamux.h</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_lpuart.c</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_semc.h</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\startup\startup_MIMXRT1052.s</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\startup\system_MIMXRT1052.h</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_iomuxc.h</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_semc.c</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\utilities\io\fsl_io.h</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\startup\system_MIMXRT1052.c</file>
+            <file>$PROJ_DIR$\DEBUG_RAM\Obj\fsl_csi.o</file>
+            <file>$PROJ_DIR$\DEBUG_RAM\Obj\pin_mux.o</file>
+            <file>$PROJ_DIR$\DEBUG_RAM\Obj\fsl_gpio.o</file>
+            <file>$PROJ_DIR$\DEBUG_RAM\Obj\bsp_sdram.o</file>
+            <file>$PROJ_DIR$\DEBUG_RAM\Obj\board.o</file>
+            <file>$PROJ_DIR$\DEBUG_RAM\Obj\drv_camera.o</file>
+            <file>$PROJ_DIR$\DEBUG_RAM\Obj\fsl_lpi2c.o</file>
+            <file>$PROJ_DIR$\DEBUG_RAM\Obj\fsl_lpuart.o</file>
+            <file>$PROJ_DIR$\DEBUG_RAM\Obj\system_MIMXRT1052.o</file>
+            <file>$PROJ_DIR$\DEBUG_RAM\Obj\main.o</file>
+            <file>$PROJ_DIR$\DEBUG_RAM\Obj\clock_config.o</file>
+            <file>$PROJ_DIR$\DEBUG_RAM\Obj\fsl_io.o</file>
+            <file>$PROJ_DIR$\DEBUG_RAM\Obj\fsl_flexspi.o</file>
+            <file>$PROJ_DIR$\DEBUG_RAM\Obj\ALEX_I2C&amp;&amp;SCCB.o</file>
+            <file>$PROJ_DIR$\DEBUG_RAM\Obj\fsl_log.o</file>
+            <file>$PROJ_DIR$\DEBUG_RAM\Obj\fsl_debug_console.o</file>
+            <file>$PROJ_DIR$\DEBUG_RAM\Obj\SEGGER_RTT.o</file>
+            <file>$PROJ_DIR$\DEBUG_RAM\Obj\fsl_semc.o</file>
+            <file>$PROJ_DIR$\DEBUG_RAM\Obj\ALEX_MT9V034.o</file>
+            <file>$PROJ_DIR$\DEBUG_RAM\Obj\drv_camera_device.o</file>
+            <file>$PROJ_DIR$\DEBUG_RAM\Obj\fsl_common.o</file>
+            <file>$PROJ_DIR$\DEBUG_RAM\Obj\fsl_clock.o</file>
+            <file>$PROJ_DIR$\..\Xip\fsl_flexspi_nor_boot.h</file>
+            <file>$PROJ_DIR$\..\Xip\xip_config.c</file>
+            <file>$PROJ_DIR$\DEBUG_RAM\Obj\fsl_csi_camera_adapter.o</file>
+            <file>$PROJ_DIR$\DEBUG_RAM\Obj\fsl_dmamux.o</file>
+            <file>$PROJ_DIR$\DEBUG_RAM\Obj\fsl_edma.o</file>
+            <file>$PROJ_DIR$\DEBUG_RAM\Obj\xip_config.o</file>
+            <file>$PROJ_DIR$\DEBUG_RAM\Obj\fsl_io.pbi</file>
+            <file>$PROJ_DIR$\DEBUG_RAM\Obj\main.pbi</file>
+            <file>$PROJ_DIR$\DEBUG_RAM\Obj\SEGGER_RTT_printf.o</file>
+            <file>$PROJ_DIR$\DEBUG_RAM\Obj\drv_camera.pbi</file>
+            <file>$PROJ_DIR$\DEBUG_RAM\Obj\fsl_lpi2c.pbi</file>
+            <file>$PROJ_DIR$\DEBUG_RAM\Obj\fsl_lpuart.pbi</file>
+            <file>$PROJ_DIR$\DEBUG_RAM\Obj\fsl_log.pbi</file>
+            <file>$PROJ_DIR$\DEBUG_RAM\Obj\fsl_debug_console.pbi</file>
+            <file>$PROJ_DIR$\DEBUG_RAM\Obj\SEGGER_RTT.pbi</file>
+            <file>$PROJ_DIR$\DEBUG_RAM\Obj\fsl_flexspi_nor_boot.pbi</file>
+            <file>$PROJ_DIR$\DEBUG_RAM\Obj\board.pbi</file>
+            <file>$PROJ_DIR$\DEBUG_RAM\Obj\fsl_csi_camera_adapter.pbi</file>
+            <file>$PROJ_DIR$\DEBUG_RAM\Obj\ALEX_I2C&amp;&amp;SCCB.pbi</file>
+            <file>$PROJ_DIR$\DEBUG_RAM\Obj\fsl_gpio.pbi</file>
+            <file>$PROJ_DIR$\DEBUG_RAM\Obj\SEGGER_RTT_printf.pbi</file>
+            <file>$PROJ_DIR$\DEBUG_RAM\Obj\pin_mux.pbi</file>
+            <file>$PROJ_DIR$\DEBUG_RAM\Obj\ALEX_MT9V034.pbi</file>
+            <file>$PROJ_DIR$\DEBUG_RAM\Obj\clock_config.pbi</file>
+            <file>$PROJ_DIR$\DEBUG_RAM\Obj\fsl_common.pbi</file>
+            <file>$PROJ_DIR$\DEBUG_RAM\Obj\fsl_clock.pbi</file>
+            <file>$PROJ_DIR$\DEBUG_RAM\Obj\fsl_flexspi.pbi</file>
+            <file>$PROJ_DIR$\DEBUG_RAM\Obj\startup_MIMXRT1052.o</file>
+            <file>$PROJ_DIR$\DEBUG_RAM\Obj\drv_camera_device.pbi</file>
+            <file>$PROJ_DIR$\DEBUG_RAM\Obj\fsl_csi.pbi</file>
+            <file>$PROJ_DIR$\DEBUG_RAM\Obj\fsl_semc.pbi</file>
+            <file>$PROJ_DIR$\DEBUG_RAM\Obj\fsl_dmamux.pbi</file>
+            <file>$PROJ_DIR$\DEBUG_RAM\Obj\fsl_edma.pbi</file>
+            <file>$PROJ_DIR$\DEBUG_RAM\Obj\fsl_flexspi_nor_boot.o</file>
+            <file>$PROJ_DIR$\DEBUG_RAM\Obj\bsp_sdram.pbi</file>
+            <file>$PROJ_DIR$\DEBUG_RAM\Obj\system_MIMXRT1052.pbi</file>
+            <file>$PROJ_DIR$\DEBUG_RAM\List\KSDK2_MCIMXRT1052.map</file>
+            <file>$TOOLKIT_DIR$\lib\dl7M_tln.a</file>
+            <file>$PROJ_DIR$\MIMXRT1052xxxxx_ram.icf</file>
+            <file>$TOOLKIT_DIR$\lib\rt7M_tl.a</file>
+            <file>$TOOLKIT_DIR$\lib\m7M_tl.a</file>
+        </outputs>
+        <file>
+            <name>[ROOT_NODE]</name>
+            <outputs>
                 <tool>
+                    <name>ILINK</name>
+                    <file> 0 148</file>
+>>>>>>> d848e093619db88270c0fcef2c90bd9469f4d6c2
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\DEBUG_RAM\Exe\KSDK2_MCIMXRT1052.out</name>
+            <outputs>
+                <tool>
+<<<<<<< HEAD
                     <name>ICCARM</name>
                     <file> 164</file>
+=======
+                    <name>ILINK</name>
+                    <file> 148</file>
+>>>>>>> d848e093619db88270c0fcef2c90bd9469f4d6c2
                 </tool>
             </outputs>
             <inputs>
                 <tool>
+<<<<<<< HEAD
                     <name>BICOMP</name>
                     <file> 61 18 56 126 130 147 14 78 76 46 11 96 163 65 8 82 19 38 111 136 67 134 72 161 123 87 7 146 148 114 133</file>
                 </tool>
                 <tool>
                     <name>ICCARM</name>
                     <file> 7 11 46 78 61 76 19 38 82 8 14 111 136 96 67 65 72 163 146 56 147 161 114 123 133 18 87 130 126 148 134</file>
+=======
+                    <name>ILINK</name>
+                    <file> 150 103 108 94 93 100 95 109 111 110 90 114 105 115 116 102 145 92 101 104 96 97 107 99 91 106 120 139 98 117 151 152 149</file>
+>>>>>>> d848e093619db88270c0fcef2c90bd9469f4d6c2
                 </tool>
             </inputs>
         </file>
@@ -205,6 +392,7 @@
             <name>$PROJ_DIR$\..\App\main.c</name>
             <outputs>
                 <tool>
+<<<<<<< HEAD
                     <name>__cstat</name>
                     <file> 152</file>
                 </tool>
@@ -215,20 +403,34 @@
                 <tool>
                     <name>ICCARM</name>
                     <file> 59</file>
+=======
+                    <name>ICCARM</name>
+                    <file> 99</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 119</file>
+>>>>>>> d848e093619db88270c0fcef2c90bd9469f4d6c2
                 </tool>
             </outputs>
             <inputs>
                 <tool>
+<<<<<<< HEAD
                     <name>BICOMP</name>
                     <file> 87 6 136 78 82 38 8 111 1 67 147 134 19 161 123 144 4 84 7 96 46 163 56 61 76 65 126 130 18 16 11 12 72 146 148 114 133 45 14</file>
                 </tool>
                 <tool>
                     <name>ICCARM</name>
                     <file> 12 6 136 96 78 61 76 19 38 82 46 67 65 72 163 146 56 147 161 114 123 133 18 87 130 126 148 134 111 144 4 84 45 16 1 7 11 8 14</file>
+=======
+                    <name>ICCARM</name>
+                    <file> 4 50 57 29 23 24 22 28 25 27 15 10 16 13 11 17 21 65 74 48 47 41 20 19 42 85 66 52 77 71 33 18 12 9 1 39</file>
+>>>>>>> d848e093619db88270c0fcef2c90bd9469f4d6c2
                 </tool>
             </inputs>
         </file>
         <file>
+<<<<<<< HEAD
             <name>$PROJ_DIR$\..\Board\board.c</name>
             <outputs>
                 <tool>
@@ -242,16 +444,32 @@
                 <tool>
                     <name>ICCARM</name>
                     <file> 166</file>
+=======
+            <name>$PROJ_DIR$\..\Board\clock_config.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 100</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 135</file>
+>>>>>>> d848e093619db88270c0fcef2c90bd9469f4d6c2
                 </tool>
             </outputs>
             <inputs>
                 <tool>
+<<<<<<< HEAD
                     <name>BICOMP</name>
                     <file> 61 46 163 76 96 65 136 6 144 56 19 146 133 117 12 82 67 147 134 78 38 72 148 114 111 161 126 123 130 18 87</file>
                 </tool>
                 <tool>
                     <name>ICCARM</name>
                     <file> 136 96 78 61 76 19 38 82 46 67 65 72 163 146 56 147 161 114 123 133 18 87 130 126 148 134 117 144 12 6 111</file>
+=======
+                    <name>ICCARM</name>
+                    <file> 50 57 29 23 24 22 28 25 27 15 10 16 13 11 17 21 65 74 48 47 41 20 19 42 85 66 52</file>
+>>>>>>> d848e093619db88270c0fcef2c90bd9469f4d6c2
                 </tool>
             </inputs>
         </file>
@@ -259,6 +477,7 @@
             <name>$PROJ_DIR$\..\App\testbench\bsp_sdram.c</name>
             <outputs>
                 <tool>
+<<<<<<< HEAD
                     <name>__cstat</name>
                     <file> 30</file>
                 </tool>
@@ -269,20 +488,34 @@
                 <tool>
                     <name>ICCARM</name>
                     <file> 17</file>
+=======
+                    <name>ICCARM</name>
+                    <file> 93</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 146</file>
+>>>>>>> d848e093619db88270c0fcef2c90bd9469f4d6c2
                 </tool>
             </outputs>
             <inputs>
                 <tool>
+<<<<<<< HEAD
                     <name>BICOMP</name>
                     <file> 65 147 46 111 134 19 61 136 67 6 82 78 38 72 146 133 1 96 163 56 76 148 114 12 161 126 123 130 18 87</file>
                 </tool>
                 <tool>
                     <name>ICCARM</name>
                     <file> 12 6 136 96 78 61 76 19 38 82 46 67 65 72 163 146 56 147 161 114 123 133 18 87 130 126 148 134 111 1</file>
+=======
+                    <name>ICCARM</name>
+                    <file> 4 50 57 29 23 24 22 28 25 27 15 10 16 13 11 17 21 65 74 48 47 41 20 19 42 85 66 52 77 1</file>
+>>>>>>> d848e093619db88270c0fcef2c90bd9469f4d6c2
                 </tool>
             </inputs>
         </file>
         <file>
+<<<<<<< HEAD
             <name>$PROJ_DIR$\..\Drivers\Camera\ALEX_I2C&amp;&amp;SCCB.c</name>
             <outputs>
                 <tool>
@@ -292,10 +525,22 @@
                 <tool>
                     <name>ICCARM</name>
                     <file> 106</file>
+=======
+            <name>$PROJ_DIR$\..\Board\board.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 94</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 128</file>
+>>>>>>> d848e093619db88270c0fcef2c90bd9469f4d6c2
                 </tool>
             </outputs>
             <inputs>
                 <tool>
+<<<<<<< HEAD
                     <name>BICOMP</name>
                     <file> 61 18 78 76 126 130 147 111 82 65 46 136 67 134 72 11 19 38 96 163 56 161 123 87 14 146 148 114 133</file>
                 </tool>
@@ -319,10 +564,47 @@
                 <tool>
                     <name>ICCARM</name>
                     <file> 60</file>
+=======
+                    <name>ICCARM</name>
+                    <file> 57 29 23 24 22 28 25 27 15 10 16 13 11 17 21 65 74 48 47 41 20 19 42 85 66 52 83 71 4 50 77</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_dmamux.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 115</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 143</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
+                    <name>ICCARM</name>
+                    <file> 81 57 29 23 24 22 28 25 27 15 10 16 13 11 17 21 65 74 48 47 41 20 19 42 85 66 52</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Board\pin_mux.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 91</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 133</file>
+>>>>>>> d848e093619db88270c0fcef2c90bd9469f4d6c2
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+<<<<<<< HEAD
                     <name>BICOMP</name>
                     <file> 61 134 19 18 147 65 126 130 136 67 82 78 38 72 96 46 163 56 76 161 123 87 6 146 148 114 133</file>
                 </tool>
@@ -346,20 +628,43 @@
                 <tool>
                     <name>ICCARM</name>
                     <file> 34</file>
+=======
+                    <name>ICCARM</name>
+                    <file> 57 29 23 24 22 28 25 27 15 10 16 13 11 17 21 65 74 48 47 41 20 19 42 85 66 52 86 33</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Drivers\Camera\drv_camera_device.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 109</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 140</file>
+>>>>>>> d848e093619db88270c0fcef2c90bd9469f4d6c2
                 </tool>
             </outputs>
             <inputs>
                 <tool>
+<<<<<<< HEAD
                     <name>BICOMP</name>
                     <file> 61 46 56 78 65 4 96 163 76 146 133 112 82 67 147 134 19 38 72 148 114 136 161 126 123 130 18 87</file>
                 </tool>
                 <tool>
                     <name>ICCARM</name>
                     <file> 136 96 78 61 76 19 38 82 46 67 65 72 163 146 56 147 161 114 123 133 18 87 130 126 148 134 112 4</file>
+=======
+                    <name>ICCARM</name>
+                    <file> 34 57 29 23 24 22 28 25 27 15 10 16 13 11 17 21 65 74 48 47 41 20 19 42 85 66 52 43 51 37 58 2 45</file>
+>>>>>>> d848e093619db88270c0fcef2c90bd9469f4d6c2
                 </tool>
             </inputs>
         </file>
         <file>
+<<<<<<< HEAD
             <name>[ROOT_NODE]</name>
             <outputs>
                 <tool>
@@ -382,20 +687,37 @@
                 <tool>
                     <name>ICCARM</name>
                     <file> 28</file>
+=======
+            <name>$PROJ_DIR$\..\Drivers\Camera\ALEX_MT9V034.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 108</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 134</file>
+>>>>>>> d848e093619db88270c0fcef2c90bd9469f4d6c2
                 </tool>
             </outputs>
             <inputs>
                 <tool>
+<<<<<<< HEAD
                     <name>BICOMP</name>
                     <file> 65 78 146 46 111 82 19 133 61 38 56 11 113 76 136 67 147 134 72 148 114 96 88 163 161 126 123 130 18 87</file>
                 </tool>
                 <tool>
                     <name>ICCARM</name>
                     <file> 88 11 46 78 61 76 19 38 82 111 136 96 67 65 72 163 146 56 147 161 114 123 133 18 87 130 126 148 134 113</file>
+=======
+                    <name>ICCARM</name>
+                    <file> 38 2 15 23 24 22 28 25 27 57 29 10 16 13 11 17 21 65 74 48 47 41 20 19 42 85 66 52 58 45</file>
+>>>>>>> d848e093619db88270c0fcef2c90bd9469f4d6c2
                 </tool>
             </inputs>
         </file>
         <file>
+<<<<<<< HEAD
             <name>$PROJ_DIR$\DEBUG_QSPIFlash\Exe\KSDK2_MCIMXRT1052.out</name>
             <outputs>
                 <tool>
@@ -407,6 +729,13 @@
                 <tool>
                     <name>ILINK</name>
                     <file> 51 106 164 166 17 60 95 83 66 55 93 81 44 103 74 79 49 94 73 59 34 26 160 29 145 99 47 21 90</file>
+=======
+            <name>$PROJ_DIR$\..\Drivers\Camera\ALEX_I2C&amp;&amp;SCCB.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 103</file>
+>>>>>>> d848e093619db88270c0fcef2c90bd9469f4d6c2
                 </tool>
             </inputs>
         </file>
@@ -415,11 +744,15 @@
             <outputs>
                 <tool>
                     <name>BICOMP</name>
+<<<<<<< HEAD
                     <file> 64</file>
                 </tool>
                 <tool>
                     <name>ICCARM</name>
                     <file> 59</file>
+=======
+                    <file> 130</file>
+>>>>>>> d848e093619db88270c0fcef2c90bd9469f4d6c2
                 </tool>
             </outputs>
             <inputs>
@@ -429,6 +762,7 @@
                 </tool>
                 <tool>
                     <name>ICCARM</name>
+<<<<<<< HEAD
                     <file> 12 6 136 96 78 61 76 19 38 82 46 67 65 72 163 146 56 147 161 114 123 133 18 87 130 126 148 134 111 144 4 84 45 16</file>
                 </tool>
             </inputs>
@@ -439,10 +773,14 @@
                 <tool>
                     <name>ILINK</name>
                     <file> 51 166 60 95 83 66 81 44 103 74 79 94 59 34 26 160 29 145 99 47 21 90</file>
+=======
+                    <file> 77 57 29 23 24 22 28 25 27 15 10 16 13 11 17 21 65 74 48 47 41 20 19 42 85 66 52 38 2</file>
+>>>>>>> d848e093619db88270c0fcef2c90bd9469f4d6c2
                 </tool>
             </inputs>
         </file>
         <file>
+<<<<<<< HEAD
             <name>$PROJ_DIR$\..\Drivers\ALEX_MT9V034.c</name>
             <outputs>
                 <tool>
@@ -456,16 +794,32 @@
                 <tool>
                     <name>ICCARM</name>
                     <file> 164</file>
+=======
+            <name>$PROJ_DIR$\..\Drivers\Camera\fsl_csi_camera_adapter.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 114</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 129</file>
+>>>>>>> d848e093619db88270c0fcef2c90bd9469f4d6c2
                 </tool>
             </outputs>
             <inputs>
                 <tool>
+<<<<<<< HEAD
                     <name>BICOMP</name>
                     <file> 61 123 109 82 19 46 161 41 38 56 78 87 105 110 76 136 96 163 65 126 130 18 147 53 67 134 72 146 148 114 133</file>
                 </tool>
                 <tool>
                     <name>ICCARM</name>
                     <file> 53 105 46 78 61 76 19 38 82 109 136 96 67 65 72 163 146 56 147 161 114 123 133 18 87 130 126 148 134 110 41</file>
+=======
+                    <name>ICCARM</name>
+                    <file> 40 57 29 23 24 22 28 25 27 15 10 16 13 11 17 21 65 74 48 47 41 20 19 42 85 66 52 54 43 51 30</file>
+>>>>>>> d848e093619db88270c0fcef2c90bd9469f4d6c2
                 </tool>
             </inputs>
         </file>
@@ -473,15 +827,25 @@
             <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_clock.c</name>
             <outputs>
                 <tool>
+<<<<<<< HEAD
                     <name>__cstat</name>
                     <file> 52</file>
                 </tool>
                 <tool>
                     <name>BICOMP</name>
                     <file> 32</file>
+=======
+                    <name>ICCARM</name>
+                    <file> 111</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 137</file>
+>>>>>>> d848e093619db88270c0fcef2c90bd9469f4d6c2
                 </tool>
                 <tool>
                     <name>ICCARM</name>
+<<<<<<< HEAD
                     <file> 95</file>
                 </tool>
             </outputs>
@@ -493,10 +857,14 @@
                 <tool>
                     <name>ICCARM</name>
                     <file> 136 96 78 61 76 19 38 82 46 67 65 72 163 146 56 147 161 114 123 133 18 87 130 126 148 134</file>
+=======
+                    <file> 57 29 23 24 22 28 25 27 15 10 16 13 11 17 21 65 74 48 47 41 20 19 42 85 66 52</file>
+>>>>>>> d848e093619db88270c0fcef2c90bd9469f4d6c2
                 </tool>
             </inputs>
         </file>
         <file>
+<<<<<<< HEAD
             <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_common.c</name>
             <outputs>
                 <tool>
@@ -510,20 +878,37 @@
                 <tool>
                     <name>ICCARM</name>
                     <file> 83</file>
+=======
+            <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_csi.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 90</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 141</file>
+>>>>>>> d848e093619db88270c0fcef2c90bd9469f4d6c2
                 </tool>
             </outputs>
             <inputs>
                 <tool>
+<<<<<<< HEAD
                     <name>BICOMP</name>
                     <file> 147 61 82 134 65 87 67 19 146 78 38 72 148 114 123 96 46 163 56 76 161 126 130 18 136 133</file>
                 </tool>
                 <tool>
                     <name>ICCARM</name>
                     <file> 136 96 78 61 76 19 38 82 46 67 65 72 163 146 56 147 161 114 123 133 18 87 130 126 148 134</file>
+=======
+                    <name>ICCARM</name>
+                    <file> 30 57 29 23 24 22 28 25 27 15 10 16 13 11 17 21 65 74 48 47 41 20 19 42 85 66 52</file>
+>>>>>>> d848e093619db88270c0fcef2c90bd9469f4d6c2
                 </tool>
             </inputs>
         </file>
         <file>
+<<<<<<< HEAD
             <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_semc.c</name>
             <outputs>
                 <tool>
@@ -537,20 +922,41 @@
                 <tool>
                     <name>ICCARM</name>
                     <file> 73</file>
+=======
+            <name>$PROJ_DIR$\..\Drivers\Camera\drv_camera.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 95</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 121</file>
+>>>>>>> d848e093619db88270c0fcef2c90bd9469f4d6c2
                 </tool>
             </outputs>
             <inputs>
                 <tool>
+<<<<<<< HEAD
                     <name>BICOMP</name>
                     <file> 61 65 56 147 46 78 126 130 18 136 96 163 76 161 123 87 82 67 134 19 38 72 146 148 114 133 117</file>
                 </tool>
                 <tool>
                     <name>ICCARM</name>
                     <file> 117 136 96 78 61 76 19 38 82 46 67 65 72 163 146 56 147 161 114 123 133 18 87 130 126 148 134</file>
+=======
+                    <name>ICCARM</name>
+                    <file> 33 40 57 29 23 24 22 28 25 27 15 10 16 13 11 17 21 65 74 48 47 41 20 19 42 85 66 52 54 43 51 30 34 37 39 77</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 30 27 23 16 17 15 37 28 41 57 54 77 10 65 52 24 43 40 34 39 29 11 21 22 25 13 66 48 33 74 85 47 42 20 19 51</file>
+>>>>>>> d848e093619db88270c0fcef2c90bd9469f4d6c2
                 </tool>
             </inputs>
         </file>
         <file>
+<<<<<<< HEAD
             <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\startup\startup_MIMXRT1052.s</name>
             <outputs>
                 <tool>
@@ -573,23 +979,40 @@
                 <tool>
                     <name>ICCARM</name>
                     <file> 103</file>
+=======
+            <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_common.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 110</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 136</file>
+>>>>>>> d848e093619db88270c0fcef2c90bd9469f4d6c2
                 </tool>
             </outputs>
             <inputs>
                 <tool>
+<<<<<<< HEAD
                     <name>BICOMP</name>
                     <file> 61 18 78 126 130 147 82 38 72 136 67 134 19 65 96 46 163 56 76 161 123 87 111 146 148 114 133</file>
                 </tool>
                 <tool>
                     <name>ICCARM</name>
                     <file> 111 136 96 78 61 76 19 38 82 46 67 65 72 163 146 56 147 161 114 123 133 18 87 130 126 148 134</file>
+=======
+                    <name>ICCARM</name>
+                    <file> 57 29 23 24 22 28 25 27 15 10 16 13 11 17 21 65 74 48 47 41 20 19 42 85 66 52</file>
+>>>>>>> d848e093619db88270c0fcef2c90bd9469f4d6c2
                 </tool>
             </inputs>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\utilities\io\fsl_io.c</name>
+            <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\utilities\log\fsl_log.c</name>
             <outputs>
                 <tool>
+<<<<<<< HEAD
                     <name>__cstat</name>
                     <file> 149</file>
                 </tool>
@@ -600,20 +1023,34 @@
                 <tool>
                     <name>ICCARM</name>
                     <file> 74</file>
+=======
+                    <name>ICCARM</name>
+                    <file> 104</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 124</file>
+>>>>>>> d848e093619db88270c0fcef2c90bd9469f4d6c2
                 </tool>
             </outputs>
             <inputs>
                 <tool>
+<<<<<<< HEAD
                     <name>BICOMP</name>
                     <file> 67 61 147 134 19 65 87 82 115 136 78 38 72 161 123 167 96 46 163 56 76 126 130 18 124 146 148 114 133</file>
                 </tool>
                 <tool>
                     <name>ICCARM</name>
                     <file> 124 136 96 78 61 76 19 38 82 46 67 65 72 163 146 56 147 161 114 123 133 18 87 130 126 148 134 167 115</file>
+=======
+                    <name>ICCARM</name>
+                    <file> 62 57 29 23 24 22 28 25 27 15 10 16 13 11 17 21 65 74 48 47 41 20 19 42 85 66 52 75 88</file>
+>>>>>>> d848e093619db88270c0fcef2c90bd9469f4d6c2
                 </tool>
             </inputs>
         </file>
         <file>
+<<<<<<< HEAD
             <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_lpuart.c</name>
             <outputs>
                 <tool>
@@ -627,20 +1064,37 @@
                 <tool>
                     <name>ICCARM</name>
                     <file> 94</file>
+=======
+            <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_flexspi.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 102</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 138</file>
+>>>>>>> d848e093619db88270c0fcef2c90bd9469f4d6c2
                 </tool>
             </outputs>
             <inputs>
                 <tool>
+<<<<<<< HEAD
                     <name>BICOMP</name>
                     <file> 133 134 19 147 65 146 46 67 61 136 82 78 38 72 148 114 96 163 56 76 161 126 123 130 18 87 115</file>
                 </tool>
                 <tool>
                     <name>ICCARM</name>
                     <file> 115 136 96 78 61 76 19 38 82 46 67 65 72 163 146 56 147 161 114 123 133 18 87 130 126 148 134</file>
+=======
+                    <name>ICCARM</name>
+                    <file> 79 21 23 24 22 28 25 16 65 74 48 15 47 41 20 19 42 85 66 57 29 27 10 13 11 17 52</file>
+>>>>>>> d848e093619db88270c0fcef2c90bd9469f4d6c2
                 </tool>
             </inputs>
         </file>
         <file>
+<<<<<<< HEAD
             <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\startup\system_MIMXRT1052.c</name>
             <outputs>
                 <tool>
@@ -654,16 +1108,32 @@
                 <tool>
                     <name>ICCARM</name>
                     <file> 145</file>
+=======
+            <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\utilities\fsl_debug_console.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 105</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 125</file>
+>>>>>>> d848e093619db88270c0fcef2c90bd9469f4d6c2
                 </tool>
             </outputs>
             <inputs>
                 <tool>
+<<<<<<< HEAD
                     <name>BICOMP</name>
                     <file> 161 19 78 38 126 46 147 61 76 148 114 133 123 130 18 87</file>
                 </tool>
                 <tool>
                     <name>ICCARM</name>
                     <file> 46 78 61 76 19 38 147 161 114 123 133 18 87 130 126 148</file>
+=======
+                    <name>ICCARM</name>
+                    <file> 11 23 24 22 28 25 16 17 71 57 29 27 15 10 13 21 65 74 48 47 41 20 19 42 85 66 52 75 62 14</file>
+>>>>>>> d848e093619db88270c0fcef2c90bd9469f4d6c2
                 </tool>
             </inputs>
         </file>
@@ -671,6 +1141,7 @@
             <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_lpi2c.c</name>
             <outputs>
                 <tool>
+<<<<<<< HEAD
                     <name>__cstat</name>
                     <file> 86</file>
                 </tool>
@@ -681,10 +1152,19 @@
                 <tool>
                     <name>ICCARM</name>
                     <file> 49</file>
+=======
+                    <name>ICCARM</name>
+                    <file> 106</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 126</file>
+>>>>>>> d848e093619db88270c0fcef2c90bd9469f4d6c2
                 </tool>
             </outputs>
             <inputs>
                 <tool>
+<<<<<<< HEAD
                     <name>BICOMP</name>
                     <file> 163 19 61 147 126 130 78 67 38 161 123 46 96 72 56 136 65 76 148 114 133 18 87 146 82 113 134</file>
                 </tool>
@@ -708,20 +1188,43 @@
                 <tool>
                     <name>ICCARM</name>
                     <file> 55</file>
+=======
+                    <name>ICCARM</name>
+                    <file> 18 12 9 19 24 22 28 25 10 23 16 13</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\SEGGER\RTT\SEGGER_RTT_printf.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 120</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 132</file>
+>>>>>>> d848e093619db88270c0fcef2c90bd9469f4d6c2
                 </tool>
             </outputs>
             <inputs>
                 <tool>
+<<<<<<< HEAD
                     <name>BICOMP</name>
                     <file> 147 61 82 134 65 87 67 19 146 78 38 72 148 114 123 136 96 46 163 56 76 161 126 130 18 109 133</file>
                 </tool>
                 <tool>
                     <name>ICCARM</name>
                     <file> 109 136 96 78 61 76 19 38 82 46 67 65 72 163 146 56 147 161 114 123 133 18 87 130 126 148 134</file>
+=======
+                    <name>ICCARM</name>
+                    <file> 18 12 9 19 24 22 28 25 11 23 16 17</file>
+>>>>>>> d848e093619db88270c0fcef2c90bd9469f4d6c2
                 </tool>
             </inputs>
         </file>
         <file>
+<<<<<<< HEAD
             <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\utilities\log\fsl_log.c</name>
             <outputs>
                 <tool>
@@ -735,20 +1238,37 @@
                 <tool>
                     <name>ICCARM</name>
                     <file> 79</file>
+=======
+            <name>$PROJ_DIR$\..\Xip\fsl_flexspi_nor_boot.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 145</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 127</file>
+>>>>>>> d848e093619db88270c0fcef2c90bd9469f4d6c2
                 </tool>
             </outputs>
             <inputs>
                 <tool>
+<<<<<<< HEAD
                     <name>BICOMP</name>
                     <file> 61 65 46 96 136 56 78 126 124 163 76 161 167 82 67 147 134 19 38 72 146 148 114 133 129 123 130 18 87</file>
                 </tool>
                 <tool>
                     <name>ICCARM</name>
                     <file> 129 136 96 78 61 76 19 38 82 46 67 65 72 163 146 56 147 161 114 123 133 18 87 130 126 148 134 167 124</file>
+=======
+                    <name>ICCARM</name>
+                    <file> 112 15 23 24 22 28 25 4 50 57 29 27 10 16 13 11 17 21 65 74 48 47 41 20 19 42 85 66 52 77</file>
+>>>>>>> d848e093619db88270c0fcef2c90bd9469f4d6c2
                 </tool>
             </inputs>
         </file>
         <file>
+<<<<<<< HEAD
             <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_edma.c</name>
             <outputs>
                 <tool>
@@ -762,20 +1282,37 @@
                 <tool>
                     <name>ICCARM</name>
                     <file> 93</file>
+=======
+            <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\utilities\io\fsl_io.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 101</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 118</file>
+>>>>>>> d848e093619db88270c0fcef2c90bd9469f4d6c2
                 </tool>
             </outputs>
             <inputs>
                 <tool>
+<<<<<<< HEAD
                     <name>BICOMP</name>
                     <file> 65 67 61 46 147 134 19 146 133 82 78 38 72 148 114 136 96 163 56 76 161 126 123 130 18 87 110</file>
                 </tool>
                 <tool>
                     <name>ICCARM</name>
                     <file> 110 136 96 78 61 76 19 38 82 46 67 65 72 163 146 56 147 161 114 123 133 18 87 130 126 148 134</file>
+=======
+                    <name>ICCARM</name>
+                    <file> 88 57 29 23 24 22 28 25 27 15 10 16 13 11 17 21 65 74 48 47 41 20 19 42 85 66 52 75 72</file>
+>>>>>>> d848e093619db88270c0fcef2c90bd9469f4d6c2
                 </tool>
             </inputs>
         </file>
         <file>
+<<<<<<< HEAD
             <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_flexspi.c</name>
             <outputs>
                 <tool>
@@ -789,20 +1326,37 @@
                 <tool>
                     <name>ICCARM</name>
                     <file> 81</file>
+=======
+            <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_lpi2c.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 96</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 122</file>
+>>>>>>> d848e093619db88270c0fcef2c90bd9469f4d6c2
                 </tool>
             </outputs>
             <inputs>
                 <tool>
+<<<<<<< HEAD
                     <name>BICOMP</name>
                     <file> 46 136 133 87 146 78 61 76 56 65 82 148 114 18 96 163 72 147 19 38 161 126 123 130 67 134 132</file>
                 </tool>
                 <tool>
                     <name>ICCARM</name>
                     <file> 132 56 78 61 76 19 38 65 147 161 114 46 123 133 18 87 130 126 148 136 96 82 67 72 163 146 134</file>
+=======
+                    <name>ICCARM</name>
+                    <file> 61 21 23 24 22 28 25 16 65 74 48 15 47 41 20 19 42 85 66 57 29 27 10 13 11 17 52</file>
+>>>>>>> d848e093619db88270c0fcef2c90bd9469f4d6c2
                 </tool>
             </inputs>
         </file>
         <file>
+<<<<<<< HEAD
             <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\utilities\fsl_debug_console.c</name>
             <outputs>
                 <tool>
@@ -816,23 +1370,40 @@
                 <tool>
                     <name>ICCARM</name>
                     <file> 66</file>
+=======
+            <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_edma.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 116</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 144</file>
+>>>>>>> d848e093619db88270c0fcef2c90bd9469f4d6c2
                 </tool>
             </outputs>
             <inputs>
                 <tool>
+<<<<<<< HEAD
                     <name>BICOMP</name>
                     <file> 61 134 87 147 72 161 82 129 78 67 144 76 146 136 65 126 123 163 167 43 19 38 96 46 56 148 114 130 18 92 133</file>
                 </tool>
                 <tool>
                     <name>ICCARM</name>
                     <file> 163 78 61 76 19 38 65 146 144 136 96 82 46 67 72 56 147 161 114 123 133 18 87 130 126 148 134 167 129 43</file>
+=======
+                    <name>ICCARM</name>
+                    <file> 60 57 29 23 24 22 28 25 27 15 10 16 13 11 17 21 65 74 48 47 41 20 19 42 85 66 52</file>
+>>>>>>> d848e093619db88270c0fcef2c90bd9469f4d6c2
                 </tool>
             </inputs>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\Xip\xip_config.c</name>
+            <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_gpio.c</name>
             <outputs>
                 <tool>
+<<<<<<< HEAD
                     <name>__cstat</name>
                     <file> 50</file>
                 </tool>
@@ -843,20 +1414,34 @@
                 <tool>
                     <name>ICCARM</name>
                     <file> 99</file>
+=======
+                    <name>ICCARM</name>
+                    <file> 92</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 131</file>
+>>>>>>> d848e093619db88270c0fcef2c90bd9469f4d6c2
                 </tool>
             </outputs>
             <inputs>
                 <tool>
+<<<<<<< HEAD
                     <name>BICOMP</name>
                     <file> 61 78 18 56 126 130 147 136 76 46 96 163 65 82 19 38 67 134 72 161 123 87 137 146 148 114 133</file>
                 </tool>
                 <tool>
                     <name>ICCARM</name>
                     <file> 137 46 78 61 76 19 38 82 136 96 67 65 72 163 146 56 147 161 114 123 133 18 87 130 126 148 134</file>
+=======
+                    <name>ICCARM</name>
+                    <file> 77 57 29 23 24 22 28 25 27 15 10 16 13 11 17 21 65 74 48 47 41 20 19 42 85 66 52</file>
+>>>>>>> d848e093619db88270c0fcef2c90bd9469f4d6c2
                 </tool>
             </inputs>
         </file>
         <file>
+<<<<<<< HEAD
             <name>$PROJ_DIR$\..\Xip\fsl_flexspi_nor_boot.c</name>
             <outputs>
                 <tool>
@@ -870,20 +1455,47 @@
                 <tool>
                     <name>ICCARM</name>
                     <file> 44</file>
+=======
+            <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_lpuart.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 97</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 123</file>
+>>>>>>> d848e093619db88270c0fcef2c90bd9469f4d6c2
                 </tool>
             </outputs>
             <inputs>
                 <tool>
+<<<<<<< HEAD
                     <name>BICOMP</name>
                     <file> 136 78 46 6 67 61 38 147 134 19 111 82 65 126 130 18 12 76 96 163 56 72 161 123 87 159 146 148 114 133</file>
-                </tool>
-                <tool>
+=======
                     <name>ICCARM</name>
-                    <file> 159 46 78 61 76 19 38 12 6 136 96 82 67 65 72 163 146 56 147 161 114 123 133 18 87 130 126 148 134 111</file>
+                    <file> 72 57 29 23 24 22 28 25 27 15 10 16 13 11 17 21 65 74 48 47 41 20 19 42 85 66 52</file>
+>>>>>>> d848e093619db88270c0fcef2c90bd9469f4d6c2
                 </tool>
             </inputs>
         </file>
         <file>
+            <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\startup\startup_MIMXRT1052.s</name>
+            <outputs>
+                <tool>
+<<<<<<< HEAD
+                    <name>ICCARM</name>
+                    <file> 159 46 78 61 76 19 38 12 6 136 96 82 67 65 72 163 146 56 147 161 114 123 133 18 87 130 126 148 134 111</file>
+=======
+                    <name>AARM</name>
+                    <file> 139</file>
+>>>>>>> d848e093619db88270c0fcef2c90bd9469f4d6c2
+                </tool>
+            </outputs>
+        </file>
+        <file>
+<<<<<<< HEAD
             <name>$PROJ_DIR$\..\SEGGER\RTT\SEGGER_RTT.c</name>
             <outputs>
                 <tool>
@@ -897,20 +1509,37 @@
                 <tool>
                     <name>ICCARM</name>
                     <file> 26</file>
+=======
+            <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_semc.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 107</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 142</file>
+>>>>>>> d848e093619db88270c0fcef2c90bd9469f4d6c2
                 </tool>
             </outputs>
             <inputs>
                 <tool>
+<<<<<<< HEAD
                     <name>BICOMP</name>
                     <file> 76 16 78 61 38 72 67 45 87 19 65 84</file>
                 </tool>
                 <tool>
                     <name>ICCARM</name>
                     <file> 84 45 16 87 61 76 19 38 67 78 65 72</file>
+=======
+                    <name>ICCARM</name>
+                    <file> 83 57 29 23 24 22 28 25 27 15 10 16 13 11 17 21 65 74 48 47 41 20 19 42 85 66 52</file>
+>>>>>>> d848e093619db88270c0fcef2c90bd9469f4d6c2
                 </tool>
             </inputs>
         </file>
         <file>
+<<<<<<< HEAD
             <name>$PROJ_DIR$\..\SEGGER\RTT\SEGGER_RTT_printf.c</name>
             <outputs>
                 <tool>
@@ -920,9 +1549,21 @@
                 <tool>
                     <name>BICOMP</name>
                     <file> 69</file>
+=======
+            <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\startup\system_MIMXRT1052.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 98</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 147</file>
+>>>>>>> d848e093619db88270c0fcef2c90bd9469f4d6c2
                 </tool>
                 <tool>
                     <name>ICCARM</name>
+<<<<<<< HEAD
                     <file> 160</file>
                 </tool>
             </outputs>
@@ -934,10 +1575,14 @@
                 <tool>
                     <name>ICCARM</name>
                     <file> 84 45 16 87 61 76 19 38 163 78 65 146</file>
+=======
+                    <file> 15 23 24 22 28 25 65 74 48 47 41 20 19 42 85 66</file>
+>>>>>>> d848e093619db88270c0fcef2c90bd9469f4d6c2
                 </tool>
             </inputs>
         </file>
         <file>
+<<<<<<< HEAD
             <name>$PROJ_DIR$\..\main.c</name>
             <outputs>
                 <tool>
@@ -951,16 +1596,32 @@
                 <tool>
                     <name>ICCARM</name>
                     <file> 59</file>
+=======
+            <name>$PROJ_DIR$\..\Xip\xip_config.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 117</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 5</file>
+>>>>>>> d848e093619db88270c0fcef2c90bd9469f4d6c2
                 </tool>
             </outputs>
             <inputs>
                 <tool>
+<<<<<<< HEAD
                     <name>BICOMP</name>
                     <file> 96 148 6 163 76 72 78 114 111 1 136 46 56 61 144 4 84 82 67 147 134 19 38 65 146 133 45 87 12 161 126 123 130 18 16</file>
                 </tool>
                 <tool>
                     <name>ICCARM</name>
                     <file> 12 6 136 96 78 61 76 19 38 82 46 67 65 72 163 146 56 147 161 114 123 133 18 87 130 126 148 134 111 144 4 84 45 16 1</file>
+=======
+                    <name>ICCARM</name>
+                    <file> 76 15 23 24 22 28 25 27 57 29 10 16 13 11 17 21 65 74 48 47 41 20 19 42 85 66 52</file>
+>>>>>>> d848e093619db88270c0fcef2c90bd9469f4d6c2
                 </tool>
             </inputs>
         </file>
@@ -970,8 +1631,9 @@
         </forcedrebuild>
     </configuration>
     <configuration>
-        <name>DEBUG_RAM</name>
+        <name>DEBUG_SDRAM</name>
         <outputs>
+<<<<<<< HEAD
             <file>$PROJ_DIR$\..\Drivers\Camera\ALEX_MT9V034.c</file>
             <file>$PROJ_DIR$\..\App\testbench\bsp_sdram.h</file>
             <file>$PROJ_DIR$\..\App\main.c</file>
@@ -2127,11 +2789,176 @@
                     <file> 5 12 170 49 43 38 42 30 32 44 35 40 39 41 183 173 37 174 181 146 156 166 29 46 163 159 175 167 20 23 21 169 22 10 6 143</file>
                 </tool>
             </inputs>
+=======
+            <file>$PROJ_DIR$\..\App\testbench\bsp_sdram.h</file>
+            <file>$PROJ_DIR$\..\App\appinc.h</file>
+            <file>$PROJ_DIR$\..\App\main.c</file>
+            <file>$PROJ_DIR$\..\Board\board.h</file>
+            <file>$PROJ_DIR$\..\Board\clock_config.c</file>
+            <file>$PROJ_DIR$\..\App\testbench\bsp_sdram.c</file>
+            <file>$PROJ_DIR$\..\Board\board.c</file>
+            <file>$TOOLKIT_DIR$\inc\c\intrinsics.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\string.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdlib.h</file>
+            <file>$PROJ_DIR$\..\SEGGER\RTT\SEGGER_RTT_Conf.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product_string.h</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\utilities\str\fsl_str.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\ysizet.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product_stdlib.h</file>
+            <file>$PROJ_DIR$\..\SEGGER\RTT\SEGGER_RTT.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\iccarm_builtin.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\cmsis_iar.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\stddef.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
+            <file>$PROJ_DIR$\DEBUG_SDRAM\Obj\drv_camera_device.o</file>
+            <file>$PROJ_DIR$\DEBUG_SDRAM\Obj\fsl_csi_camera_adapter.o</file>
+            <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdbool.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Normal.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\assert.h</file>
+            <file>$PROJ_DIR$\DEBUG_SDRAM\Obj\drv_camera.o</file>
+            <file>$PROJ_DIR$\DEBUG_SDRAM\Obj\ALEX_MT9V034.o</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_csi.h</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_dmamux.c</file>
+            <file>$PROJ_DIR$\..\Board\pin_mux.c</file>
+            <file>$PROJ_DIR$\..\Board\pin_mux.h</file>
+            <file>$PROJ_DIR$\..\Drivers\Camera\fsl_camera_device.h</file>
+            <file>$PROJ_DIR$\..\Drivers\Camera\drv_camera_device.c</file>
+            <file>$PROJ_DIR$\..\Drivers\Camera\ALEX_MT9V034.c</file>
+            <file>$PROJ_DIR$\..\Drivers\Camera\drv_camera_device.h</file>
+            <file>$PROJ_DIR$\..\Drivers\Camera\ALEX_I2C&amp;&amp;SCCB.h</file>
+            <file>$PROJ_DIR$\..\Drivers\Camera\drv_camera.h</file>
+            <file>$PROJ_DIR$\..\Drivers\Camera\fsl_csi_camera_adapter.h</file>
+            <file>$PROJ_DIR$\..\Library\CMSIS\Include\cmsis_compiler.h</file>
+            <file>$PROJ_DIR$\..\Library\CMSIS\Include\mpu_armv7.h</file>
+            <file>$PROJ_DIR$\..\Drivers\Camera\fsl_camera.h</file>
+            <file>$PROJ_DIR$\..\Drivers\Camera\ALEX_I2C&amp;&amp;SCCB.c</file>
+            <file>$PROJ_DIR$\..\Drivers\Camera\ALEX_MT9V034_REG.h</file>
+            <file>$PROJ_DIR$\..\Drivers\Camera\fsl_csi_camera_adapter.c</file>
+            <file>$PROJ_DIR$\..\Library\CMSIS\Include\cmsis_version.h</file>
+            <file>$PROJ_DIR$\..\Library\CMSIS\Include\core_cm7.h</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_clock.c</file>
+            <file>$PROJ_DIR$\..\Board\clock_config.h</file>
+            <file>$PROJ_DIR$\..\Drivers\Camera\fsl_video_common.h</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_clock.h</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_csi.c</file>
+            <file>$PROJ_DIR$\..\Drivers\Camera\fsl_camera_receiver.h</file>
+            <file>$PROJ_DIR$\..\Drivers\Camera\drv_camera.c</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_common.c</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_common.h</file>
+            <file>$PROJ_DIR$\..\Drivers\Camera\ALEX_MT9V034.h</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\utilities\log\fsl_log.c</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_edma.h</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_lpi2c.h</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\utilities\log\fsl_log.h</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_flexspi.c</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\utilities\fsl_debug_console.c</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\fsl_device_registers.h</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\MIMXRT1052_features.h</file>
+            <file>$PROJ_DIR$\..\SEGGER\RTT\SEGGER_RTT.c</file>
+            <file>$PROJ_DIR$\..\SEGGER\RTT\SEGGER_RTT_printf.c</file>
+            <file>$PROJ_DIR$\..\Xip\fsl_flexspi_nor_boot.c</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\utilities\io\fsl_io.c</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\utilities\fsl_debug_console.h</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_lpuart.h</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_lpi2c.c</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\MIMXRT1052.h</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\utilities\fsl_debug_console_conf.h</file>
+            <file>$PROJ_DIR$\..\Xip\external_flash_config.h</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_gpio.h</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_edma.c</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_flexspi.h</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_gpio.c</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_dmamux.h</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_lpuart.c</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_semc.h</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\startup\startup_MIMXRT1052.s</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\startup\system_MIMXRT1052.h</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_iomuxc.h</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_semc.c</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\utilities\io\fsl_io.h</file>
+            <file>$PROJ_DIR$\..\Library\MCUXpressoSDK\startup\system_MIMXRT1052.c</file>
+            <file>$PROJ_DIR$\DEBUG_SDRAM\Obj\fsl_dmamux.o</file>
+            <file>$PROJ_DIR$\..\Xip\fsl_flexspi_nor_boot.h</file>
+            <file>$PROJ_DIR$\..\Xip\xip_config.c</file>
+            <file>$PROJ_DIR$\DEBUG_SDRAM\Obj\SEGGER_RTT_printf.pbi</file>
+            <file>$PROJ_DIR$\DEBUG_SDRAM\Obj\fsl_io.pbi</file>
+            <file>$PROJ_DIR$\DEBUG_SDRAM\Obj\fsl_lpi2c.pbi</file>
+            <file>$PROJ_DIR$\DEBUG_SDRAM\Obj\KSDK2_MCIMXRT1052.pbd</file>
+            <file>$PROJ_DIR$\DEBUG_SDRAM\Obj\xip_config.pbi</file>
+            <file>$PROJ_DIR$\DEBUG_SDRAM\Obj\fsl_debug_console.pbi</file>
+            <file>$PROJ_DIR$\DEBUG_SDRAM\Obj\fsl_gpio.pbi</file>
+            <file>$PROJ_DIR$\MIMXRT1052xxxxx_sdram.icf</file>
+            <file>$PROJ_DIR$\DEBUG_SDRAM\Obj\fsl_lpuart.pbi</file>
+            <file>$PROJ_DIR$\DEBUG_SDRAM\Obj\fsl_flexspi_nor_boot.pbi</file>
+            <file>$PROJ_DIR$\DEBUG_SDRAM\List\KSDK2_MCIMXRT1052.map</file>
+            <file>$PROJ_DIR$\DEBUG_SDRAM\Obj\fsl_semc.pbi</file>
+            <file>$PROJ_DIR$\DEBUG_SDRAM\Obj\system_MIMXRT1052.pbi</file>
+            <file>$PROJ_DIR$\DEBUG_SDRAM\Obj\fsl_log.pbi</file>
+            <file>$PROJ_DIR$\DEBUG_SDRAM\Obj\SEGGER_RTT.pbi</file>
+            <file>$PROJ_DIR$\DEBUG_SDRAM\Exe\KSDK2_MCIMXRT1052.out</file>
+            <file>$PROJ_DIR$\DEBUG_SDRAM\Obj\fsl_flexspi.o</file>
+            <file>$PROJ_DIR$\DEBUG_SDRAM\Obj\bsp_sdram.pbi</file>
+            <file>$PROJ_DIR$\DEBUG_SDRAM\Obj\ALEX_I2C&amp;&amp;SCCB.pbi</file>
+            <file>$PROJ_DIR$\DEBUG_SDRAM\Obj\fsl_gpio.o</file>
+            <file>$PROJ_DIR$\DEBUG_SDRAM\Obj\SEGGER_RTT_printf.o</file>
+            <file>$PROJ_DIR$\DEBUG_SDRAM\Obj\xip_config.o</file>
+            <file>$PROJ_DIR$\DEBUG_SDRAM\Obj\board.pbi</file>
+            <file>$PROJ_DIR$\DEBUG_SDRAM\Obj\startup_MIMXRT1052.o</file>
+            <file>$PROJ_DIR$\DEBUG_SDRAM\Obj\drv_camera.pbi</file>
+            <file>$PROJ_DIR$\DEBUG_SDRAM\Obj\fsl_csi_camera_adapter.pbi</file>
+            <file>$PROJ_DIR$\DEBUG_SDRAM\Obj\fsl_semc.o</file>
+            <file>$PROJ_DIR$\DEBUG_SDRAM\Obj\fsl_clock.pbi</file>
+            <file>$PROJ_DIR$\DEBUG_SDRAM\Obj\fsl_common.pbi</file>
+            <file>$PROJ_DIR$\DEBUG_SDRAM\Obj\fsl_csi.pbi</file>
+            <file>$PROJ_DIR$\DEBUG_SDRAM\Obj\fsl_debug_console.o</file>
+            <file>$PROJ_DIR$\DEBUG_SDRAM\Obj\fsl_dmamux.pbi</file>
+            <file>$PROJ_DIR$\DEBUG_SDRAM\Obj\fsl_edma.pbi</file>
+            <file>$PROJ_DIR$\DEBUG_SDRAM\Obj\fsl_edma.o</file>
+            <file>$PROJ_DIR$\DEBUG_SDRAM\Obj\fsl_lpuart.o</file>
+            <file>$PROJ_DIR$\DEBUG_SDRAM\Obj\fsl_log.o</file>
+            <file>$PROJ_DIR$\DEBUG_SDRAM\Obj\SEGGER_RTT.o</file>
+            <file>$PROJ_DIR$\DEBUG_SDRAM\Obj\fsl_flexspi_nor_boot.o</file>
+            <file>$PROJ_DIR$\DEBUG_SDRAM\Obj\clock_config.pbi</file>
+            <file>$PROJ_DIR$\DEBUG_SDRAM\Obj\pin_mux.pbi</file>
+            <file>$PROJ_DIR$\DEBUG_SDRAM\Obj\main.pbi</file>
+            <file>$PROJ_DIR$\DEBUG_SDRAM\Obj\drv_camera_device.pbi</file>
+            <file>$PROJ_DIR$\DEBUG_SDRAM\Obj\fsl_flexspi.pbi</file>
+            <file>$PROJ_DIR$\DEBUG_SDRAM\Obj\fsl_lpi2c.o</file>
+            <file>$PROJ_DIR$\DEBUG_SDRAM\Obj\system_MIMXRT1052.o</file>
+            <file>$PROJ_DIR$\DEBUG_SDRAM\Obj\ALEX_MT9V034.pbi</file>
+            <file>$PROJ_DIR$\DEBUG_SDRAM\Obj\fsl_io.o</file>
+            <file>$PROJ_DIR$\DEBUG_SDRAM\Obj\fsl_common.o</file>
+            <file>$PROJ_DIR$\DEBUG_SDRAM\Obj\fsl_csi.o</file>
+            <file>$PROJ_DIR$\DEBUG_SDRAM\Obj\fsl_clock.o</file>
+            <file>$TOOLKIT_DIR$\lib\dl7M_tln.a</file>
+            <file>$TOOLKIT_DIR$\lib\rt7M_tl.a</file>
+            <file>$TOOLKIT_DIR$\lib\m7M_tl.a</file>
+            <file>$PROJ_DIR$\DEBUG_SDRAM\Obj\bsp_sdram.o</file>
+            <file>$PROJ_DIR$\DEBUG_SDRAM\Obj\board.o</file>
+            <file>$PROJ_DIR$\DEBUG_SDRAM\Obj\clock_config.o</file>
+            <file>$PROJ_DIR$\DEBUG_SDRAM\Obj\main.o</file>
+            <file>$PROJ_DIR$\DEBUG_SDRAM\Obj\ALEX_I2C&amp;&amp;SCCB.o</file>
+            <file>$PROJ_DIR$\DEBUG_SDRAM\Obj\pin_mux.o</file>
+        </outputs>
+        <file>
+            <name>[ROOT_NODE]</name>
+            <outputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 109 104</file>
+                </tool>
+            </outputs>
+>>>>>>> d848e093619db88270c0fcef2c90bd9469f4d6c2
         </file>
         <file>
             <name>$PROJ_DIR$\..\Drivers\Camera\ALEX_MT9V034.c</name>
             <outputs>
                 <tool>
+<<<<<<< HEAD
                     <name>__cstat</name>
                     <file> 135</file>
                 </tool>
@@ -2169,20 +2996,34 @@
                 <tool>
                     <name>ICCARM</name>
                     <file> 81</file>
+=======
+                    <name>ICCARM</name>
+                    <file> 150</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 134</file>
+>>>>>>> d848e093619db88270c0fcef2c90bd9469f4d6c2
                 </tool>
             </outputs>
             <inputs>
                 <tool>
+<<<<<<< HEAD
                     <name>BICOMP</name>
                     <file> 38 39 8 44 43 32 143 2 170 40 174 167 30 159 163 29 172 5 45 6 49 35 183 37 42 181 156 46 34 25 41 173 175 146 166 28</file>
                 </tool>
                 <tool>
                     <name>ICCARM</name>
                     <file> 25 8 170 49 43 38 42 30 32 44 35 40 39 41 183 173 37 174 181 146 156 166 29 46 163 159 175 167 143 172 5 45 34 28 2 6</file>
+=======
+                    <name>ICCARM</name>
+                    <file> 3 51 58 28 23 24 20 27 25 26 13 8 14 11 9 15 19 66 75 49 48 42 18 17 43 86 67 53 78 72 34 16 10 7 0 40</file>
+>>>>>>> d848e093619db88270c0fcef2c90bd9469f4d6c2
                 </tool>
             </inputs>
         </file>
         <file>
+<<<<<<< HEAD
             <name>$PROJ_DIR$\..\Board\board.c</name>
             <outputs>
                 <tool>
@@ -2196,16 +3037,32 @@
                 <tool>
                     <name>ICCARM</name>
                     <file> 129</file>
+=======
+            <name>$PROJ_DIR$\..\Board\clock_config.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 149</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 132</file>
+>>>>>>> d848e093619db88270c0fcef2c90bd9469f4d6c2
                 </tool>
             </outputs>
             <inputs>
                 <tool>
+<<<<<<< HEAD
                     <name>BICOMP</name>
                     <file> 37 38 35 39 170 8 172 49 183 42 30 173 166 149 25 44 40 174 167 43 32 41 175 146 143 181 159 156 163 29 46</file>
                 </tool>
                 <tool>
                     <name>ICCARM</name>
                     <file> 170 49 43 38 42 30 32 44 35 40 39 41 183 173 37 174 181 146 156 166 29 46 163 159 175 167 149 172 25 8 143</file>
+=======
+                    <name>ICCARM</name>
+                    <file> 51 58 28 23 24 20 27 25 26 13 8 14 11 9 15 19 66 75 49 48 42 18 17 43 86 67 53</file>
+>>>>>>> d848e093619db88270c0fcef2c90bd9469f4d6c2
                 </tool>
             </inputs>
         </file>
@@ -2213,6 +3070,7 @@
             <name>$PROJ_DIR$\..\App\testbench\bsp_sdram.c</name>
             <outputs>
                 <tool>
+<<<<<<< HEAD
                     <name>__cstat</name>
                     <file> 60</file>
                 </tool>
@@ -2223,20 +3081,34 @@
                 <tool>
                     <name>ICCARM</name>
                     <file> 61</file>
+=======
+                    <name>ICCARM</name>
+                    <file> 147</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 111</file>
+>>>>>>> d848e093619db88270c0fcef2c90bd9469f4d6c2
                 </tool>
             </outputs>
             <inputs>
                 <tool>
+<<<<<<< HEAD
                     <name>BICOMP</name>
                     <file> 39 174 35 143 167 30 38 170 40 8 44 43 32 41 173 166 2 49 183 37 42 175 146 25 181 159 156 163 29 46</file>
                 </tool>
                 <tool>
                     <name>ICCARM</name>
                     <file> 25 8 170 49 43 38 42 30 32 44 35 40 39 41 183 173 37 174 181 146 156 166 29 46 163 159 175 167 143 2</file>
+=======
+                    <name>ICCARM</name>
+                    <file> 3 51 58 28 23 24 20 27 25 26 13 8 14 11 9 15 19 66 75 49 48 42 18 17 43 86 67 53 78 0</file>
+>>>>>>> d848e093619db88270c0fcef2c90bd9469f4d6c2
                 </tool>
             </inputs>
         </file>
         <file>
+<<<<<<< HEAD
             <name>$PROJ_DIR$\..\Drivers\Camera\drv_camera_device.c</name>
             <outputs>
                 <tool>
@@ -2250,20 +3122,37 @@
                 <tool>
                     <name>ICCARM</name>
                     <file> 70</file>
+=======
+            <name>$PROJ_DIR$\..\Board\board.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 148</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 116</file>
+>>>>>>> d848e093619db88270c0fcef2c90bd9469f4d6c2
                 </tool>
             </outputs>
             <inputs>
                 <tool>
+<<<<<<< HEAD
                     <name>BICOMP</name>
                     <file> 37 38 39 35 170 43 21 13 49 183 42 173 166 24 10 23 44 40 174 167 30 32 41 175 146 22 181 159 156 163 29 46 14</file>
                 </tool>
                 <tool>
                     <name>ICCARM</name>
                     <file> 22 170 49 43 38 42 30 32 44 35 40 39 41 183 173 37 174 181 146 156 166 29 46 163 159 175 167 23 21 10 13 24 14</file>
+=======
+                    <name>ICCARM</name>
+                    <file> 58 28 23 24 20 27 25 26 13 8 14 11 9 15 19 66 75 49 48 42 18 17 43 86 67 53 84 72 3 51 78</file>
+>>>>>>> d848e093619db88270c0fcef2c90bd9469f4d6c2
                 </tool>
             </inputs>
         </file>
         <file>
+<<<<<<< HEAD
             <name>$PROJ_DIR$\..\Drivers\Camera\fsl_csi_camera_adapter.c</name>
             <outputs>
                 <tool>
@@ -2277,20 +3166,37 @@
                 <tool>
                     <name>ICCARM</name>
                     <file> 133</file>
+=======
+            <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_dmamux.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 91</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 125</file>
+>>>>>>> d848e093619db88270c0fcef2c90bd9469f4d6c2
                 </tool>
             </outputs>
             <inputs>
                 <tool>
+<<<<<<< HEAD
                     <name>BICOMP</name>
                     <file> 175 174 170 167 32 40 41 43 146 169 44 38 35 49 20 183 37 30 39 173 166 12 42 181 159 156 163 29 46 23 21</file>
                 </tool>
                 <tool>
                     <name>ICCARM</name>
                     <file> 12 170 49 43 38 42 30 32 44 35 40 39 41 183 173 37 174 181 146 156 166 29 46 163 159 175 167 20 23 21 169</file>
+=======
+                    <name>ICCARM</name>
+                    <file> 82 58 28 23 24 20 27 25 26 13 8 14 11 9 15 19 66 75 49 48 42 18 17 43 86 67 53</file>
+>>>>>>> d848e093619db88270c0fcef2c90bd9469f4d6c2
                 </tool>
             </inputs>
         </file>
         <file>
+<<<<<<< HEAD
             <name>$PROJ_DIR$\..\Drivers\Camera\ALEX_I2C&amp;&amp;SCCB.c</name>
             <outputs>
                 <tool>
@@ -2304,20 +3210,37 @@
                 <tool>
                     <name>ICCARM</name>
                     <file> 120</file>
+=======
+            <name>$PROJ_DIR$\..\Board\pin_mux.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 152</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 133</file>
+>>>>>>> d848e093619db88270c0fcef2c90bd9469f4d6c2
                 </tool>
             </outputs>
             <inputs>
                 <tool>
+<<<<<<< HEAD
                     <name>BICOMP</name>
                     <file> 174 39 44 167 30 46 170 40 38 43 32 41 181 156 27 49 35 183 37 42 159 163 29 143 173 175 146 166 24</file>
                 </tool>
                 <tool>
                     <name>ICCARM</name>
                     <file> 143 170 49 43 38 42 30 32 44 35 40 39 41 183 173 37 174 181 146 156 166 29 46 163 159 175 167 27 24</file>
+=======
+                    <name>ICCARM</name>
+                    <file> 58 28 23 24 20 27 25 26 13 8 14 11 9 15 19 66 75 49 48 42 18 17 43 86 67 53 87 34</file>
+>>>>>>> d848e093619db88270c0fcef2c90bd9469f4d6c2
                 </tool>
             </inputs>
         </file>
         <file>
+<<<<<<< HEAD
             <name>$PROJ_DIR$\..\Board\clock_config.c</name>
             <outputs>
                 <tool>
@@ -2331,20 +3254,37 @@
                 <tool>
                     <name>ICCARM</name>
                     <file> 112</file>
+=======
+            <name>$PROJ_DIR$\..\Drivers\Camera\drv_camera_device.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 21</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 135</file>
+>>>>>>> d848e093619db88270c0fcef2c90bd9469f4d6c2
                 </tool>
             </outputs>
             <inputs>
                 <tool>
+<<<<<<< HEAD
                     <name>BICOMP</name>
                     <file> 38 41 43 29 44 32 159 163 174 170 40 167 30 39 49 35 183 37 42 181 156 46 8 173 175 146 166</file>
                 </tool>
                 <tool>
                     <name>ICCARM</name>
                     <file> 8 170 49 43 38 42 30 32 44 35 40 39 41 183 173 37 174 181 146 156 166 29 46 163 159 175 167</file>
+=======
+                    <name>ICCARM</name>
+                    <file> 35 58 28 23 24 20 27 25 26 13 8 14 11 9 15 19 66 75 49 48 42 18 17 43 86 67 53 44 52 38 59 1 46</file>
+>>>>>>> d848e093619db88270c0fcef2c90bd9469f4d6c2
                 </tool>
             </inputs>
         </file>
         <file>
+<<<<<<< HEAD
             <name>$PROJ_DIR$\..\Board\pin_mux.c</name>
             <outputs>
                 <tool>
@@ -2358,20 +3298,37 @@
                 <tool>
                     <name>ICCARM</name>
                     <file> 114</file>
+=======
+            <name>$PROJ_DIR$\..\Drivers\Camera\ALEX_MT9V034.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 30</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 139</file>
+>>>>>>> d848e093619db88270c0fcef2c90bd9469f4d6c2
                 </tool>
             </outputs>
             <inputs>
                 <tool>
+<<<<<<< HEAD
                     <name>BICOMP</name>
                     <file> 38 40 30 39 35 174 167 5 44 43 32 41 173 166 144 49 183 37 42 175 146 170 181 159 156 163 29 46</file>
                 </tool>
                 <tool>
                     <name>ICCARM</name>
                     <file> 170 49 43 38 42 30 32 44 35 40 39 41 183 173 37 174 181 146 156 166 29 46 163 159 175 167 144 5</file>
+=======
+                    <name>ICCARM</name>
+                    <file> 39 1 13 23 24 20 27 25 26 58 28 8 14 11 9 15 19 66 75 49 48 42 18 17 43 86 67 53 59 46</file>
+>>>>>>> d848e093619db88270c0fcef2c90bd9469f4d6c2
                 </tool>
             </inputs>
         </file>
         <file>
+<<<<<<< HEAD
             <name>[ROOT_NODE]</name>
             <outputs>
                 <tool>
@@ -2386,12 +3343,28 @@
                 <tool>
                     <name>ILINK</name>
                     <file> 51</file>
+=======
+            <name>$PROJ_DIR$\..\Drivers\Camera\ALEX_I2C&amp;&amp;SCCB.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 151</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 112</file>
+>>>>>>> d848e093619db88270c0fcef2c90bd9469f4d6c2
                 </tool>
             </outputs>
             <inputs>
                 <tool>
+<<<<<<< HEAD
                     <name>ILINK</name>
                     <file> 123 120 100 129 61 112 126 70 110 127 111 133 84 105 83 122 101 92 79 87 78 62 131 81 114 109 71 65 63 53 36 31 47</file>
+=======
+                    <name>ICCARM</name>
+                    <file> 78 58 28 23 24 20 27 25 26 13 8 14 11 9 15 19 66 75 49 48 42 18 17 43 86 67 53 39 1</file>
+>>>>>>> d848e093619db88270c0fcef2c90bd9469f4d6c2
                 </tool>
             </inputs>
         </file>
@@ -2399,6 +3372,7 @@
             <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_clock.c</name>
             <outputs>
                 <tool>
+<<<<<<< HEAD
                     <name>__cstat</name>
                     <file> 121</file>
                 </tool>
@@ -2409,20 +3383,34 @@
                 <tool>
                     <name>ICCARM</name>
                     <file> 110</file>
+=======
+                    <name>ICCARM</name>
+                    <file> 22</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 119</file>
+>>>>>>> d848e093619db88270c0fcef2c90bd9469f4d6c2
                 </tool>
             </outputs>
             <inputs>
                 <tool>
+<<<<<<< HEAD
                     <name>BICOMP</name>
                     <file> 38 43 29 44 32 159 163 174 40 167 30 39 49 35 183 37 42 181 156 46 170 41 173 175 146 166</file>
                 </tool>
                 <tool>
                     <name>ICCARM</name>
                     <file> 170 49 43 38 42 30 32 44 35 40 39 41 183 173 37 174 181 146 156 166 29 46 163 159 175 167</file>
+=======
+                    <name>ICCARM</name>
+                    <file> 41 58 28 23 24 20 27 25 26 13 8 14 11 9 15 19 66 75 49 48 42 18 17 43 86 67 53 55 44 52 31</file>
+>>>>>>> d848e093619db88270c0fcef2c90bd9469f4d6c2
                 </tool>
             </inputs>
         </file>
         <file>
+<<<<<<< HEAD
             <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_common.c</name>
             <outputs>
                 <tool>
@@ -2436,16 +3424,32 @@
                 <tool>
                     <name>ICCARM</name>
                     <file> 127</file>
+=======
+            <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_clock.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 143</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 121</file>
+>>>>>>> d848e093619db88270c0fcef2c90bd9469f4d6c2
                 </tool>
             </outputs>
             <inputs>
                 <tool>
+<<<<<<< HEAD
                     <name>BICOMP</name>
                     <file> 174 38 44 167 39 46 40 30 173 43 32 41 175 146 156 49 35 183 37 42 181 159 163 29 170 166</file>
                 </tool>
                 <tool>
                     <name>ICCARM</name>
                     <file> 170 49 43 38 42 30 32 44 35 40 39 41 183 173 37 174 181 146 156 166 29 46 163 159 175 167</file>
+=======
+                    <name>ICCARM</name>
+                    <file> 58 28 23 24 20 27 25 26 13 8 14 11 9 15 19 66 75 49 48 42 18 17 43 86 67 53</file>
+>>>>>>> d848e093619db88270c0fcef2c90bd9469f4d6c2
                 </tool>
             </inputs>
         </file>
@@ -2453,6 +3457,7 @@
             <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_semc.c</name>
             <outputs>
                 <tool>
+<<<<<<< HEAD
                     <name>__cstat</name>
                     <file> 103</file>
                 </tool>
@@ -2463,6 +3468,14 @@
                 <tool>
                     <name>ICCARM</name>
                     <file> 131</file>
+=======
+                    <name>ICCARM</name>
+                    <file> 142</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 123</file>
+>>>>>>> d848e093619db88270c0fcef2c90bd9469f4d6c2
                 </tool>
             </outputs>
             <inputs>
@@ -2472,6 +3485,7 @@
                 </tool>
                 <tool>
                     <name>ICCARM</name>
+<<<<<<< HEAD
                     <file> 149 170 49 43 38 42 30 32 44 35 40 39 41 183 173 37 174 181 146 156 166 29 46 163 159 175 167</file>
                 </tool>
             </inputs>
@@ -2482,10 +3496,14 @@
                 <tool>
                     <name>AARM</name>
                     <file> 65</file>
+=======
+                    <file> 31 58 28 23 24 20 27 25 26 13 8 14 11 9 15 19 66 75 49 48 42 18 17 43 86 67 53</file>
+>>>>>>> d848e093619db88270c0fcef2c90bd9469f4d6c2
                 </tool>
             </outputs>
         </file>
         <file>
+<<<<<<< HEAD
             <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_gpio.c</name>
             <outputs>
                 <tool>
@@ -2499,20 +3517,41 @@
                 <tool>
                     <name>ICCARM</name>
                     <file> 92</file>
+=======
+            <name>$PROJ_DIR$\..\Drivers\Camera\drv_camera.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 29</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 118</file>
+>>>>>>> d848e093619db88270c0fcef2c90bd9469f4d6c2
                 </tool>
             </outputs>
             <inputs>
                 <tool>
+<<<<<<< HEAD
                     <name>BICOMP</name>
                     <file> 38 29 43 159 163 174 44 32 41 170 40 167 30 39 49 35 183 37 42 181 156 46 143 173 175 146 166</file>
                 </tool>
                 <tool>
                     <name>ICCARM</name>
                     <file> 143 170 49 43 38 42 30 32 44 35 40 39 41 183 173 37 174 181 146 156 166 29 46 163 159 175 167</file>
+=======
+                    <name>ICCARM</name>
+                    <file> 34 41 58 28 23 24 20 27 25 26 13 8 14 11 9 15 19 66 75 49 48 42 18 17 43 86 67 53 55 44 52 31 35 38 40 78</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 31 26 23 14 15 13 38 27 42 58 55 78 8 66 53 24 44 41 35 40 28 9 19 20 25 11 67 49 34 75 86 48 43 18 17 52</file>
+>>>>>>> d848e093619db88270c0fcef2c90bd9469f4d6c2
                 </tool>
             </inputs>
         </file>
         <file>
+<<<<<<< HEAD
             <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\utilities\io\fsl_io.c</name>
             <outputs>
                 <tool>
@@ -2526,20 +3565,37 @@
                 <tool>
                     <name>ICCARM</name>
                     <file> 79</file>
+=======
+            <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_common.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 141</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 122</file>
+>>>>>>> d848e093619db88270c0fcef2c90bd9469f4d6c2
                 </tool>
             </outputs>
             <inputs>
                 <tool>
+<<<<<<< HEAD
                     <name>BICOMP</name>
                     <file> 40 38 174 167 30 39 46 44 147 170 43 32 41 181 156 184 49 35 183 37 42 159 163 29 157 173 175 146 166</file>
                 </tool>
                 <tool>
                     <name>ICCARM</name>
                     <file> 157 170 49 43 38 42 30 32 44 35 40 39 41 183 173 37 174 181 146 156 166 29 46 163 159 175 167 184 147</file>
+=======
+                    <name>ICCARM</name>
+                    <file> 58 28 23 24 20 27 25 26 13 8 14 11 9 15 19 66 75 49 48 42 18 17 43 86 67 53</file>
+>>>>>>> d848e093619db88270c0fcef2c90bd9469f4d6c2
                 </tool>
             </inputs>
         </file>
         <file>
+<<<<<<< HEAD
             <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_csi.c</name>
             <outputs>
                 <tool>
@@ -2553,23 +3609,40 @@
                 <tool>
                     <name>ICCARM</name>
                     <file> 111</file>
+=======
+            <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\utilities\log\fsl_log.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 129</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 107</file>
+>>>>>>> d848e093619db88270c0fcef2c90bd9469f4d6c2
                 </tool>
             </outputs>
             <inputs>
                 <tool>
+<<<<<<< HEAD
                     <name>BICOMP</name>
                     <file> 32 38 44 29 170 43 41 159 163 174 40 167 30 39 49 35 183 37 42 181 156 46 169 173 175 146 166</file>
                 </tool>
                 <tool>
                     <name>ICCARM</name>
                     <file> 169 170 49 43 38 42 30 32 44 35 40 39 41 183 173 37 174 181 146 156 166 29 46 163 159 175 167</file>
+=======
+                    <name>ICCARM</name>
+                    <file> 63 58 28 23 24 20 27 25 26 13 8 14 11 9 15 19 66 75 49 48 42 18 17 43 86 67 53 76 89</file>
+>>>>>>> d848e093619db88270c0fcef2c90bd9469f4d6c2
                 </tool>
             </inputs>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_lpuart.c</name>
+            <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_flexspi.c</name>
             <outputs>
                 <tool>
+<<<<<<< HEAD
                     <name>__cstat</name>
                     <file> 76</file>
                 </tool>
@@ -2580,20 +3653,34 @@
                 <tool>
                     <name>ICCARM</name>
                     <file> 62</file>
+=======
+                    <name>ICCARM</name>
+                    <file> 110</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 136</file>
+>>>>>>> d848e093619db88270c0fcef2c90bd9469f4d6c2
                 </tool>
             </outputs>
             <inputs>
                 <tool>
+<<<<<<< HEAD
                     <name>BICOMP</name>
                     <file> 166 167 30 174 39 173 35 40 38 170 44 43 32 41 175 146 49 183 37 42 181 159 156 163 29 46 147</file>
                 </tool>
                 <tool>
                     <name>ICCARM</name>
                     <file> 147 170 49 43 38 42 30 32 44 35 40 39 41 183 173 37 174 181 146 156 166 29 46 163 159 175 167</file>
+=======
+                    <name>ICCARM</name>
+                    <file> 80 19 23 24 20 27 25 14 66 75 49 13 48 42 18 17 43 86 67 58 28 26 8 11 9 15 53</file>
+>>>>>>> d848e093619db88270c0fcef2c90bd9469f4d6c2
                 </tool>
             </inputs>
         </file>
         <file>
+<<<<<<< HEAD
             <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\startup\system_MIMXRT1052.c</name>
             <outputs>
                 <tool>
@@ -2607,20 +3694,37 @@
                 <tool>
                     <name>ICCARM</name>
                     <file> 63</file>
+=======
+            <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\utilities\fsl_debug_console.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 124</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 99</file>
+>>>>>>> d848e093619db88270c0fcef2c90bd9469f4d6c2
                 </tool>
             </outputs>
             <inputs>
                 <tool>
+<<<<<<< HEAD
                     <name>BICOMP</name>
                     <file> 159 32 43 30 181 35 174 38 42 175 146 166 156 163 29 46</file>
                 </tool>
                 <tool>
                     <name>ICCARM</name>
                     <file> 35 43 38 42 30 32 174 181 146 156 166 29 46 163 159 175</file>
+=======
+                    <name>ICCARM</name>
+                    <file> 9 23 24 20 27 25 14 15 72 58 28 26 13 8 11 19 66 75 49 48 42 18 17 43 86 67 53 76 63 12</file>
+>>>>>>> d848e093619db88270c0fcef2c90bd9469f4d6c2
                 </tool>
             </inputs>
         </file>
         <file>
+<<<<<<< HEAD
             <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_lpi2c.c</name>
             <outputs>
                 <tool>
@@ -2634,20 +3738,37 @@
                 <tool>
                     <name>ICCARM</name>
                     <file> 78</file>
+=======
+            <name>$PROJ_DIR$\..\SEGGER\RTT\SEGGER_RTT.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 130</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 108</file>
+>>>>>>> d848e093619db88270c0fcef2c90bd9469f4d6c2
                 </tool>
             </outputs>
             <inputs>
                 <tool>
+<<<<<<< HEAD
                     <name>BICOMP</name>
                     <file> 183 30 38 174 159 163 43 40 32 181 156 35 49 41 37 170 39 42 175 146 166 29 46 173 44 145 167</file>
                 </tool>
                 <tool>
                     <name>ICCARM</name>
                     <file> 145 37 43 38 42 30 32 39 174 181 146 35 156 166 29 46 163 159 175 170 49 44 40 41 183 173 167</file>
+=======
+                    <name>ICCARM</name>
+                    <file> 16 10 7 17 24 20 27 25 8 23 14 11</file>
+>>>>>>> d848e093619db88270c0fcef2c90bd9469f4d6c2
                 </tool>
             </inputs>
         </file>
         <file>
+<<<<<<< HEAD
             <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_dmamux.c</name>
             <outputs>
                 <tool>
@@ -2661,20 +3782,37 @@
                 <tool>
                     <name>ICCARM</name>
                     <file> 105</file>
+=======
+            <name>$PROJ_DIR$\..\SEGGER\RTT\SEGGER_RTT_printf.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 114</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 94</file>
+>>>>>>> d848e093619db88270c0fcef2c90bd9469f4d6c2
                 </tool>
             </outputs>
             <inputs>
                 <tool>
+<<<<<<< HEAD
                     <name>BICOMP</name>
                     <file> 174 38 44 167 39 46 40 30 173 43 32 41 175 146 156 170 49 35 183 37 42 181 159 163 29 141 166</file>
                 </tool>
                 <tool>
                     <name>ICCARM</name>
                     <file> 141 170 49 43 38 42 30 32 44 35 40 39 41 183 173 37 174 181 146 156 166 29 46 163 159 175 167</file>
+=======
+                    <name>ICCARM</name>
+                    <file> 16 10 7 17 24 20 27 25 9 23 14 15</file>
+>>>>>>> d848e093619db88270c0fcef2c90bd9469f4d6c2
                 </tool>
             </inputs>
         </file>
         <file>
+<<<<<<< HEAD
             <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\utilities\log\fsl_log.c</name>
             <outputs>
                 <tool>
@@ -2688,10 +3826,22 @@
                 <tool>
                     <name>ICCARM</name>
                     <file> 87</file>
+=======
+            <name>$PROJ_DIR$\..\Xip\fsl_flexspi_nor_boot.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 131</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 103</file>
+>>>>>>> d848e093619db88270c0fcef2c90bd9469f4d6c2
                 </tool>
             </outputs>
             <inputs>
                 <tool>
+<<<<<<< HEAD
                     <name>BICOMP</name>
                     <file> 38 39 35 49 170 37 43 159 157 183 42 181 184 44 40 174 167 30 32 41 173 175 146 166 162 156 163 29 46</file>
                 </tool>
@@ -2699,12 +3849,37 @@
                     <name>ICCARM</name>
                     <file> 162 170 49 43 38 42 30 32 44 35 40 39 41 183 173 37 174 181 146 156 166 29 46 163 159 175 167 184 157</file>
                 </tool>
+=======
+                    <name>ICCARM</name>
+                    <file> 92 13 23 24 20 27 25 3 51 58 28 26 8 14 11 9 15 19 66 75 49 48 42 18 17 43 86 67 53 78</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\utilities\io\fsl_io.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 140</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 95</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 89 58 28 23 24 20 27 25 26 13 8 14 11 9 15 19 66 75 49 48 42 18 17 43 86 67 53 76 73</file>
+                </tool>
+>>>>>>> d848e093619db88270c0fcef2c90bd9469f4d6c2
             </inputs>
         </file>
         <file>
             <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_edma.c</name>
             <outputs>
                 <tool>
+<<<<<<< HEAD
                     <name>__cstat</name>
                     <file> 134</file>
                 </tool>
@@ -2715,20 +3890,34 @@
                 <tool>
                     <name>ICCARM</name>
                     <file> 83</file>
+=======
+                    <name>ICCARM</name>
+                    <file> 137</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 96</file>
+>>>>>>> d848e093619db88270c0fcef2c90bd9469f4d6c2
                 </tool>
             </outputs>
             <inputs>
                 <tool>
+<<<<<<< HEAD
                     <name>BICOMP</name>
                     <file> 39 40 38 35 174 167 30 173 166 44 43 32 41 175 146 170 49 183 37 42 181 159 156 163 29 46 142</file>
                 </tool>
                 <tool>
                     <name>ICCARM</name>
                     <file> 142 170 49 43 38 42 30 32 44 35 40 39 41 183 173 37 174 181 146 156 166 29 46 163 159 175 167</file>
+=======
+                    <name>ICCARM</name>
+                    <file> 62 19 23 24 20 27 25 14 66 75 49 13 48 42 18 17 43 86 67 58 28 26 8 11 9 15 53</file>
+>>>>>>> d848e093619db88270c0fcef2c90bd9469f4d6c2
                 </tool>
             </inputs>
         </file>
         <file>
+<<<<<<< HEAD
             <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_flexspi.c</name>
             <outputs>
                 <tool>
@@ -2742,20 +3931,37 @@
                 <tool>
                     <name>ICCARM</name>
                     <file> 122</file>
+=======
+            <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_edma.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 127</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 126</file>
+>>>>>>> d848e093619db88270c0fcef2c90bd9469f4d6c2
                 </tool>
             </outputs>
             <inputs>
                 <tool>
+<<<<<<< HEAD
                     <name>BICOMP</name>
                     <file> 35 170 166 46 173 43 38 42 37 39 44 175 146 29 49 183 41 174 30 32 181 159 156 163 40 167 165</file>
                 </tool>
                 <tool>
                     <name>ICCARM</name>
                     <file> 165 37 43 38 42 30 32 39 174 181 146 35 156 166 29 46 163 159 175 170 49 44 40 41 183 173 167</file>
+=======
+                    <name>ICCARM</name>
+                    <file> 61 58 28 23 24 20 27 25 26 13 8 14 11 9 15 19 66 75 49 48 42 18 17 43 86 67 53</file>
+>>>>>>> d848e093619db88270c0fcef2c90bd9469f4d6c2
                 </tool>
             </inputs>
         </file>
         <file>
+<<<<<<< HEAD
             <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\utilities\fsl_debug_console.c</name>
             <outputs>
                 <tool>
@@ -2769,20 +3975,37 @@
                 <tool>
                     <name>ICCARM</name>
                     <file> 84</file>
+=======
+            <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_gpio.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 113</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 100</file>
+>>>>>>> d848e093619db88270c0fcef2c90bd9469f4d6c2
                 </tool>
             </outputs>
             <inputs>
                 <tool>
+<<<<<<< HEAD
                     <name>BICOMP</name>
                     <file> 38 167 46 174 41 181 44 162 43 40 172 42 173 170 39 159 156 183 184 33 30 32 49 35 37 175 146 163 29 48 166</file>
                 </tool>
                 <tool>
                     <name>ICCARM</name>
                     <file> 183 43 38 42 30 32 39 173 172 170 49 44 35 40 41 37 174 181 146 156 166 29 46 163 159 175 167 184 162 33</file>
+=======
+                    <name>ICCARM</name>
+                    <file> 78 58 28 23 24 20 27 25 26 13 8 14 11 9 15 19 66 75 49 48 42 18 17 43 86 67 53</file>
+>>>>>>> d848e093619db88270c0fcef2c90bd9469f4d6c2
                 </tool>
             </inputs>
         </file>
         <file>
+<<<<<<< HEAD
             <name>$PROJ_DIR$\..\Xip\xip_config.c</name>
             <outputs>
                 <tool>
@@ -2796,23 +4019,50 @@
                 <tool>
                     <name>ICCARM</name>
                     <file> 53</file>
+=======
+            <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_lpuart.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 128</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 102</file>
+>>>>>>> d848e093619db88270c0fcef2c90bd9469f4d6c2
                 </tool>
             </outputs>
             <inputs>
                 <tool>
+<<<<<<< HEAD
                     <name>BICOMP</name>
                     <file> 38 29 183 159 163 174 35 49 39 170 43 42 37 44 30 32 40 167 41 181 156 46 171 173 175 146 166</file>
-                </tool>
-                <tool>
+=======
                     <name>ICCARM</name>
-                    <file> 171 35 43 38 42 30 32 44 170 49 40 39 41 183 173 37 174 181 146 156 166 29 46 163 159 175 167</file>
+                    <file> 73 58 28 23 24 20 27 25 26 13 8 14 11 9 15 19 66 75 49 48 42 18 17 43 86 67 53</file>
+>>>>>>> d848e093619db88270c0fcef2c90bd9469f4d6c2
                 </tool>
             </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\startup\startup_MIMXRT1052.s</name>
+            <outputs>
+                <tool>
+<<<<<<< HEAD
+                    <name>ICCARM</name>
+                    <file> 171 35 43 38 42 30 32 44 170 49 40 39 41 183 173 37 174 181 146 156 166 29 46 163 159 175 167</file>
+=======
+                    <name>AARM</name>
+                    <file> 117</file>
+>>>>>>> d848e093619db88270c0fcef2c90bd9469f4d6c2
+                </tool>
+            </outputs>
         </file>
         <file>
             <name>$PROJ_DIR$\..\Xip\fsl_flexspi_nor_boot.c</name>
             <outputs>
                 <tool>
+<<<<<<< HEAD
                     <name>__cstat</name>
                     <file> 119</file>
                 </tool>
@@ -2823,20 +4073,34 @@
                 <tool>
                     <name>ICCARM</name>
                     <file> 101</file>
+=======
+                    <name>ICCARM</name>
+                    <file> 120</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 105</file>
+>>>>>>> d848e093619db88270c0fcef2c90bd9469f4d6c2
                 </tool>
             </outputs>
             <inputs>
                 <tool>
+<<<<<<< HEAD
                     <name>BICOMP</name>
                     <file> 167 32 174 35 38 8 170 40 43 30 143 44 39 159 163 29 25 42 49 183 37 41 181 156 46 180 173 175 146 166</file>
                 </tool>
                 <tool>
                     <name>ICCARM</name>
                     <file> 180 35 43 38 42 30 32 25 8 170 49 44 40 39 41 183 173 37 174 181 146 156 166 29 46 163 159 175 167 143</file>
+=======
+                    <name>ICCARM</name>
+                    <file> 84 58 28 23 24 20 27 25 26 13 8 14 11 9 15 19 66 75 49 48 42 18 17 43 86 67 53</file>
+>>>>>>> d848e093619db88270c0fcef2c90bd9469f4d6c2
                 </tool>
             </inputs>
         </file>
         <file>
+<<<<<<< HEAD
             <name>$PROJ_DIR$\..\SEGGER\RTT\SEGGER_RTT.c</name>
             <outputs>
                 <tool>
@@ -2850,20 +4114,37 @@
                 <tool>
                     <name>ICCARM</name>
                     <file> 109</file>
+=======
+            <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\startup\system_MIMXRT1052.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 138</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 106</file>
+>>>>>>> d848e093619db88270c0fcef2c90bd9469f4d6c2
                 </tool>
             </outputs>
             <inputs>
                 <tool>
+<<<<<<< HEAD
                     <name>BICOMP</name>
                     <file> 42 28 43 38 32 41 40 34 46 30 39 45</file>
                 </tool>
                 <tool>
                     <name>ICCARM</name>
                     <file> 45 34 28 46 38 42 30 32 40 43 39 41</file>
+=======
+                    <name>ICCARM</name>
+                    <file> 13 23 24 20 27 25 66 75 49 48 42 18 17 43 86 67</file>
+>>>>>>> d848e093619db88270c0fcef2c90bd9469f4d6c2
                 </tool>
             </inputs>
         </file>
         <file>
+<<<<<<< HEAD
             <name>$PROJ_DIR$\..\SEGGER\RTT\SEGGER_RTT_printf.c</name>
             <outputs>
                 <tool>
@@ -2877,16 +4158,48 @@
                 <tool>
                     <name>ICCARM</name>
                     <file> 71</file>
+=======
+            <name>$PROJ_DIR$\..\Xip\xip_config.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 115</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 98</file>
+>>>>>>> d848e093619db88270c0fcef2c90bd9469f4d6c2
                 </tool>
             </outputs>
             <inputs>
                 <tool>
+<<<<<<< HEAD
                     <name>BICOMP</name>
                     <file> 48 34 46 38 183 28 173 43 45 42 30 32 39</file>
+=======
+                    <name>ICCARM</name>
+                    <file> 77 13 23 24 20 27 25 26 58 28 8 14 11 9 15 19 66 75 49 48 42 18 17 43 86 67 53</file>
                 </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\DEBUG_SDRAM\Exe\KSDK2_MCIMXRT1052.out</name>
+            <outputs>
                 <tool>
+                    <name>ILINK</name>
+                    <file> 104</file>
+>>>>>>> d848e093619db88270c0fcef2c90bd9469f4d6c2
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+<<<<<<< HEAD
                     <name>ICCARM</name>
                     <file> 45 34 28 46 38 42 30 32 183 43 39 173</file>
+=======
+                    <name>ILINK</name>
+                    <file> 101 151 30 148 147 149 29 21 143 141 142 22 124 91 127 110 131 113 140 129 137 128 120 150 152 130 114 117 138 115 145 146 144</file>
+>>>>>>> d848e093619db88270c0fcef2c90bd9469f4d6c2
                 </tool>
             </inputs>
         </file>

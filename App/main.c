@@ -110,7 +110,7 @@ int main(void)
 	BOARD_InitSEMC();
 	SCB_DisableDCache();
     SCB_DisableICache();
-	if(1==sdram_test(0x00000000))
+	if(1==sdram_test(0x1234CDEF))
 	{
 		//sdram test success
 		SEGGER_RTT_printf(0, "\r\n sdram test success\r\n");

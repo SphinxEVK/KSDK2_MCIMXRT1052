@@ -4,17 +4,17 @@
 #include "appinc.h"
 #include "ALEX_MT9V034_REG.h"
 
-#define MT9V034_I2C_ADDRESS				(0x5C)
+#define MT9V034_I2C_ADDRESS		(0x5C)
 
 #define MT9V034_H_MAX                   (480)
 #define MT9V034_W_MAX                   (752)
 
-#define MT9V034_H						(120)
+#define MT9V034_H			(120)
 #define MT9V034_W                       (188)
 #define MT9V034_SIZE                    (MT9V034_H*MT9V034_W)
 
-#define MT9V034_Delay(n)       			 ALEX_CPU_Delay(n) 
-#define MT9V034_DelayMs(ms)    			 ALEX_lptmr_DelayMs(ms)
+#define MT9V034_Delay(n)       		ALEX_CPU_Delay(n) 
+#define MT9V034_DelayMs(ms)    		ALEX_lptmr_DelayMs(ms)
 ///////////////////////////////////////////////////////////
 typedef enum{
 	MT9V034_HDR_OFF = 0,
