@@ -1,19 +1,11 @@
 #ifndef _DRV_CAMERA_H_
 #define _DRV_CAMERA_H_
 
-<<<<<<< HEAD
-
-#define CAMERA_WIDTH				(752)//(CAMERA_DEVICE_WIDTH)
-#define CAMERA_HEIGHT				(480)//(CAMERA_DEVICE_HEIGHT)
+#define CAMERA_WIDTH				(752)
+#define CAMERA_HEIGHT				(480)
 #define CAMERA_BPP					(1)		// Bytes Per Pixel
 #define CAMERA_SIZE					(CAMERA_WIDTH*CAMERA_HEIGHT*CAMERA_BPP)
 
-=======
-#define CAMERA_WIDTH			(752)
-#define CAMERA_HEIGHT			(480)
-
-#define CAMERA_BPP			(1)		// Bytes Per Pixel
->>>>>>> d848e093619db88270c0fcef2c90bd9469f4d6c2
 #define CAMERA_CONTROL_FLAGS 		(kCAMERA_VsyncActiveHigh|kCAMERA_HrefActiveHigh|kCAMERA_DataLatchOnFallingEdge)
 #define CAMERA_FRAME_BUFFER_COUNT	(4)
 

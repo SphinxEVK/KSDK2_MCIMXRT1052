@@ -1,8 +1,8 @@
 #ifndef _DRV_CAMERA_DEVICE_H_
 #define _DRV_CAMERA_DEVICE_H_
 
-#define CAMERA_DEVICE_WIDTH				(752)
-#define CAMERA_DEVICE_HEIGHT			(480)
+#define CAMERA_DEVICE_WIDTH				(CAMERA_WIDTH)
+#define CAMERA_DEVICE_HEIGHT			(CAMERA_HEIGHT)
 
 extern const camera_device_operations_t MT9V034_ops;
 
