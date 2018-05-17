@@ -33,6 +33,6 @@
 #### 第一次编译必读
 
 1. 确认IAR版本高于8.22
-2. 将IAR安装目录下的 **/arm\CMSIS/Core/Include/cmsis_iccarm.h/** 拷贝至 **/arm/inc/c/**
+2. 将IAR安装目录下的 **/arm/CMSIS/Core/Include/cmsis_iccarm.h/** 拷贝至 **/arm/inc/c/**
 3. 删除 **/arm/inc/c/cmsis_iar.h**，将新拷贝的**cmsis_iccarm.h**重命名为**cmsis_iar.h**
 4. 打开repo下的快捷方式**KSDK2_MCIMXRT1052.eww** 进入IAR后make(F7)，结束。
