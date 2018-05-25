@@ -11,15 +11,16 @@
 /*******************************************************************************
 * Variables
 ******************************************************************************/
-uint32_t activeFrameAddr;
-uint32_t inactiveFrameAddr;
+uint32_t activeFrameAddr = (uint32_t)&csi_frameBuffer[0];
+uint32_t inactiveFrameAddr = (uint32_t)&csi_frameBuffer[0];
 uint32_t CSI_FPS = 0;
 
 #if defined(__CC_ARM) || defined(__GNUC__)
-AT_NONCACHEABLE_SECTION_ALIGN(volatile static uint16_t csi_frameBuffer[CAMERA_FRAME_BUFFER_COUNT][CAMERA_HEIGHT*CAMERA_WIDTH*CAMERA_BPP/sizeof(uint16_t)], FRAME_BUFFER_ALIGN);
+	AT_NONCACHEABLE_SECTION_ALIGN(volatile static uint16_t csi_frameBuffer[CAMERA_FRAME_BUFFER_COUNT][CAMERA_HEIGHT*CAMERA_WIDTH*CAMERA_BPP/sizeof(uint16_t)], FRAME_BUFFER_ALIGN);
 #elif defined(__ICCARM__)
-#pragma location = ".csi_data"
-volatile static uint16_t csi_frameBuffer[CAMERA_FRAME_BUFFER_COUNT][CAMERA_HEIGHT*CAMERA_WIDTH*CAMERA_BPP/sizeof(uint16_t)];
+	#pragma location = ".csi_data"
+	#pragma pack(8)
+	volatile static uint16_t csi_frameBuffer[CAMERA_FRAME_BUFFER_COUNT][CAMERA_HEIGHT*CAMERA_WIDTH*CAMERA_BPP/sizeof(uint16_t)];
 #endif
 
 static csi_private_data_t csiPrivateData;
@@ -39,7 +40,7 @@ const camera_device_handle_t cameraDevice = {
 
 /* CameraÉè±¸ÊôÐÔÅäÖÃ */
 const camera_config_t cameraConfig = {
-    .pixelFormat = kVIDEO_PixelFormatRGB565,
+    .pixelFormat = kVIDEO_PixelFormatRGB565,			//THIS PARAM HAS NO MEANNING
     .bytesPerPixel = CAMERA_BPP,
     .resolution = FSL_VIDEO_RESOLUTION(CAMERA_WIDTH, CAMERA_HEIGHT),
     .frameBufferLinePitch_Bytes = CAMERA_WIDTH*CAMERA_BPP,
@@ -57,31 +58,13 @@ void CSI_IRQHandler(void)
 	GPIO_WritePinOutput(GPIO1, 15U, !GPIO_PinRead(GPIO1, 15U));
 	//CSI_FPS++;
 
-	//////////////////////////////////////////////////////////
-
-	// uint32_t csisr = CSI->CSISR;
-	//
-	// /* Clear the error flags. */
-	// CSI->CSISR = csisr;
-	//
-	//
-	// //if(csir & CSI_CSISR_SOF_INT_MASK == CSI_CSISR_SOF_INT_MASK)
-	//
-	// /* if BOTH framebuff1 and framebuff2 isr flags are asserted, clear all frame buffer and restart capture from framebuff1 */
-	// if((csisr & (CSI_CSISR_DMA_TSF_DONE_FB2_MASK | CSI_CSISR_DMA_TSF_DONE_FB1_MASK)) ==
-    //     (CSI_CSISR_DMA_TSF_DONE_FB2_MASK | CSI_CSISR_DMA_TSF_DONE_FB1_MASK))
-	// {
-	// 	CSI_Stop(CSI);
-	// 	CSI->CSIDMASA_FB1 = (uint32_t)&csi_frameBuffer[0][0];
-	// 	CSI->CSIDMASA_FB2 = (uint32_t)&csi_frameBuffer[1][0];
-	//
-	// 	CSI_ReflashFifoDma(CSI, kCSI_RxFifo);
-    //     CSI_Start(CSI);
-	// }
+	/////////////////////////////////////////////////////////
 
 	CAMERA_RECEIVER_GetFullBuffer(&cameraReceiver, &inactiveFrameAddr);
 	CAMERA_RECEIVER_SubmitEmptyBuffer(&cameraReceiver, activeFrameAddr);
+
 	activeFrameAddr = inactiveFrameAddr;
+	LCDIF->CUR_BUF = inactiveFrameAddr;
 }
 
 void Camera_Start(void)

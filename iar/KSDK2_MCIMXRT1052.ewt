@@ -3613,6 +3613,9 @@
                 <file>
                     <name>$PROJ_DIR$\..\Drivers\Camera\fsl_video_common.h</name>
                 </file>
+                <configuration>
+                    <name>DEBUG_SDRAM</name>
+                </configuration>
             </group>
             <file>
                 <name>$PROJ_DIR$\..\Drivers\Camera\ALEX_I2C&amp;&amp;SCCB.c</name>
@@ -3643,13 +3646,28 @@
             </file>
             <file>
                 <name>$PROJ_DIR$\..\Drivers\Camera\fsl_csi_camera_adapter.c</name>
+                <configuration>
+                    <name>DEBUG_SDRAM</name>
+                </configuration>
             </file>
             <file>
                 <name>$PROJ_DIR$\..\Drivers\Camera\fsl_csi_camera_adapter.h</name>
             </file>
-            <configuration>
-                <name>DEBUG_SDRAM</name>
-            </configuration>
+        </group>
+        <group>
+            <name>Display</name>
+            <file>
+                <name>$PROJ_DIR$\..\Drivers\Display\drv_display.c</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\..\Drivers\Display\drv_display.h</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\..\Drivers\Display\HX8369A.c</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\..\Drivers\Display\HX8369A.h</name>
+            </file>
         </group>
     </group>
     <group>
@@ -3725,6 +3743,12 @@
                     <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_edma.h</name>
                 </file>
                 <file>
+                    <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_elcdif.c</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_elcdif.h</name>
+                </file>
+                <file>
                     <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_flexspi.c</name>
                 </file>
                 <file>
@@ -3750,6 +3774,12 @@
                 </file>
                 <file>
                     <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_lpuart.h</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_pxp.c</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_pxp.h</name>
                 </file>
                 <file>
                     <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_semc.c</name>
@@ -3812,6 +3842,9 @@
             <file>
                 <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\MIMXRT1052_features.h</name>
             </file>
+            <configuration>
+                <name>DEBUG_SDRAM</name>
+            </configuration>
         </group>
     </group>
     <group>

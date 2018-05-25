@@ -92,7 +92,7 @@ status_t MT9V034_SetFrameResolution(uint8_t MT9V034_I2C_ADDR, uint16_t width, ui
         data |= MT9V034_READ_MODE_COL_BIN_2;
     }
 
-    data |= (MT9V034_READ_MODE_ROW_FLIP|MT9V034_READ_MODE_COL_FLIP);       //LQ-MT9V034 needs vertical mirror to capture correct image
+    //data |= (MT9V034_READ_MODE_ROW_FLIP|MT9V034_READ_MODE_COL_FLIP);       //LQ-MT9V034 needs vertical mirror to capture correct image
 
     MT9V034_WriteReg(MT9V034_I2C_ADDR, MT9V034_READ_MODE, data);
 
@@ -110,11 +110,26 @@ status_t MT9V034_SetAutoExposure(uint8_t MT9V034_I2C_ADDR, bool enable)
     uint16_t reg = MT9V034_ReadReg(MT9V034_I2C_ADDR, MT9V034_AEC_AGC_ENABLE);
     if(true == enable)
     {
-        MT9V034_WriteReg(MT9V034_I2C_ADDR, MT9V034_AEC_AGC_ENABLE, reg|MT9V034_AEC_ENABLE|MT9V034_AGC_ENABLE);
+        MT9V034_WriteReg(MT9V034_I2C_ADDR, MT9V034_AEC_AGC_ENABLE, reg|MT9V034_AEC_ENABLE);
     }
     else
     {
-        MT9V034_WriteReg(MT9V034_I2C_ADDR, MT9V034_AEC_AGC_ENABLE, reg&~(MT9V034_AEC_ENABLE|MT9V034_AGC_ENABLE));
+        MT9V034_WriteReg(MT9V034_I2C_ADDR, MT9V034_AEC_AGC_ENABLE, reg&~MT9V034_AEC_ENABLE);
+    }
+
+	return true;
+}
+
+status_t MT9V034_SetAutoGainCtrl(uint8_t MT9V034_I2C_ADDR, bool enable)
+{
+    uint16_t reg = MT9V034_ReadReg(MT9V034_I2C_ADDR, MT9V034_AEC_AGC_ENABLE);
+    if(true == enable)
+    {
+        MT9V034_WriteReg(MT9V034_I2C_ADDR, MT9V034_AEC_AGC_ENABLE, reg|MT9V034_AGC_ENABLE);
+    }
+    else
+    {
+        MT9V034_WriteReg(MT9V034_I2C_ADDR, MT9V034_AEC_AGC_ENABLE, reg&~MT9V034_AGC_ENABLE);
     }
 
 	return true;
@@ -125,6 +140,12 @@ status_t MT9V034_SetHDRMode(uint8_t MT9V034_I2C_ADDR, MT9V034_HDRMode_e mode)
 	switch(mode)
 	{
 		case MT9V034_HDR_OFF:
+			MT9V034_WriteReg(MT9V034_I2C_ADDR, 0x08, 0x01BB);
+    		MT9V034_WriteReg(MT9V034_I2C_ADDR, 0x09, 0x01D9);
+    		MT9V034_WriteReg(MT9V034_I2C_ADDR, 0x0A, 0x0164);
+    		MT9V034_WriteReg(MT9V034_I2C_ADDR, 0x0B, 0x01E0);
+    		MT9V034_WriteReg(MT9V034_I2C_ADDR, 0x0F, 0x0100);
+    		MT9V034_WriteReg(MT9V034_I2C_ADDR, 0x35, 0x0010);
 			break;
 
 		case MT9V034_HDR_80dB:

@@ -350,6 +350,7 @@
                     <state>$PROJ_DIR$\..\Board</state>
                     <state>$PROJ_DIR$\..\Drivers</state>
                     <state>$PROJ_DIR$\..\Drivers\Camera</state>
+                    <state>$PROJ_DIR$\..\Drivers\Display</state>
                     <state>$PROJ_DIR$\..\Library</state>
                     <state>$PROJ_DIR$\..\Library\CMSIS</state>
                     <state>$PROJ_DIR$\..\Library\CMSIS\DSP_Lib</state>
@@ -1389,6 +1390,7 @@
                     <state>$PROJ_DIR$\..\Board</state>
                     <state>$PROJ_DIR$\..\Drivers</state>
                     <state>$PROJ_DIR$\..\Drivers\Camera</state>
+                    <state>$PROJ_DIR$\..\Drivers\Display</state>
                     <state>$PROJ_DIR$\..\Library</state>
                     <state>$PROJ_DIR$\..\Library\CMSIS</state>
                     <state>$PROJ_DIR$\..\Library\CMSIS\DSP_Lib</state>
@@ -2433,6 +2435,7 @@
                     <state>$PROJ_DIR$\..\Board</state>
                     <state>$PROJ_DIR$\..\Drivers</state>
                     <state>$PROJ_DIR$\..\Drivers\Camera</state>
+                    <state>$PROJ_DIR$\..\Drivers\Display</state>
                     <state>$PROJ_DIR$\..\Library</state>
                     <state>$PROJ_DIR$\..\Library\CMSIS</state>
                     <state>$PROJ_DIR$\..\Library\CMSIS\DSP_Lib</state>
@@ -4044,6 +4047,21 @@
                 <name>$PROJ_DIR$\..\Drivers\Camera\fsl_csi_camera_adapter.h</name>
             </file>
         </group>
+        <group>
+            <name>Display</name>
+            <file>
+                <name>$PROJ_DIR$\..\Drivers\Display\drv_display.c</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\..\Drivers\Display\drv_display.h</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\..\Drivers\Display\HX8369A.c</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\..\Drivers\Display\HX8369A.h</name>
+            </file>
+        </group>
     </group>
     <group>
         <name>Library</name>
@@ -4118,6 +4136,12 @@
                     <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_edma.h</name>
                 </file>
                 <file>
+                    <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_elcdif.c</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_elcdif.h</name>
+                </file>
+                <file>
                     <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_flexspi.c</name>
                 </file>
                 <file>
@@ -4143,6 +4167,12 @@
                 </file>
                 <file>
                     <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_lpuart.h</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_pxp.c</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_pxp.h</name>
                 </file>
                 <file>
                     <name>$PROJ_DIR$\..\Library\MCUXpressoSDK\drivers\fsl_semc.c</name>

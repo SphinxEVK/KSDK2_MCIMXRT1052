@@ -13,7 +13,7 @@
 #define MT9V034_W                       (188)
 #define MT9V034_SIZE                    (MT9V034_H*MT9V034_W)
 
-#define MT9V034_Delay(n)       		ALEX_CPU_Delay(n) 
+#define MT9V034_Delay(n)       		ALEX_CPU_Delay(n)
 #define MT9V034_DelayMs(ms)    		ALEX_lptmr_DelayMs(ms)
 ///////////////////////////////////////////////////////////
 typedef enum{
@@ -31,6 +31,7 @@ status_t MT9V034_SetReservedReg(uint8_t MT9V034_I2C_ADDR);
 status_t MT9V034_SetFrameRate(uint8_t MT9V034_I2C_ADDR, uint8_t frameRate);
 status_t MT9V034_SetFrameResolution(uint8_t MT9V034_I2C_ADDR, uint16_t width, uint16_t height);
 status_t MT9V034_SetAutoExposure(uint8_t MT9V034_I2C_ADDR, bool enable);
+status_t MT9V034_SetAutoGainCtrl(uint8_t MT9V034_I2C_ADDR, bool enable);
 status_t MT9V034_SetHDRMode(uint8_t MT9V034_I2C_ADDR, MT9V034_HDRMode_e mode);
 status_t MT9V034_SetTestPattern(uint8_t MT9V034_I2C_ADDR, bool enable);
 ///////////////////////////////////////////////////////////

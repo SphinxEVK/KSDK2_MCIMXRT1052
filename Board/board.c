@@ -202,4 +202,5 @@ status_t BOARD_InitSEMC(void)
 	sdramconfig.refreshBurstLen = 1;
 	return SEMC_ConfigureSDRAM(SEMC, kSEMC_SDRAM_CS0, &sdramconfig, clockFrq);
 }
+
 #endif

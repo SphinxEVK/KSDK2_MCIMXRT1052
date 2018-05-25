@@ -6,7 +6,7 @@
 #define CAMERA_BPP					(1)		// Bytes Per Pixel
 #define CAMERA_SIZE					(CAMERA_WIDTH*CAMERA_HEIGHT*CAMERA_BPP)
 
-#define CAMERA_CONTROL_FLAGS 		(kCAMERA_VsyncActiveHigh|kCAMERA_HrefActiveHigh|kCAMERA_DataLatchOnFallingEdge)
+#define CAMERA_CONTROL_FLAGS 		(kCAMERA_VsyncActiveHigh|kCAMERA_HrefActiveHigh|kCAMERA_DataLatchOnRisingEdge)
 #define CAMERA_FRAME_BUFFER_COUNT	(4)
 
 volatile static uint16_t csi_frameBuffer[CAMERA_FRAME_BUFFER_COUNT][CAMERA_HEIGHT*CAMERA_WIDTH*CAMERA_BPP/sizeof(uint16_t)];

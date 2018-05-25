@@ -68,6 +68,13 @@ void BOARD_InitPins(void);
  */
 void BOARD_InitCSIPins(void);
 
+/*!
+ * @brief Configures pin routing and optionally pin electrical features.
+ *
+ */
+void BOARD_InitDSIPins(void);
+
+
 #if defined(__cplusplus)
 }
 #endif
