@@ -31,7 +31,7 @@
  * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-
+#include "appinc.h"
 #include "board.h"
 #include "fsl_debug_console.h"
 #include "fsl_gpio.h"
@@ -46,6 +46,8 @@
 #include "drv_camera.h"
 #include "drv_display.h"
 
+uint32_t temp = 0;
+
 int main(void)
 {
     /* Board pin, clock, debug console init */
@@ -58,15 +60,17 @@ int main(void)
     SEGGER_RTT_printf(0, "\r\n GPIO Driver example\r\n");
     SEGGER_RTT_printf(0, "\r\n The LED is blinking.\r\n");
 
-	GPIO_PinInit(GPIO1, 16U, &(gpio_pin_config_t){kGPIO_DigitalOutput, 1, kGPIO_NoIntmode});
-	GPIO_PinInit(GPIO1, 17U, &(gpio_pin_config_t){kGPIO_DigitalOutput, 1, kGPIO_NoIntmode});
+    /* Init CSI SCCB GPIO */
+    GPIO_PinInit(GPIO1, 16U, &(gpio_pin_config_t){kGPIO_DigitalOutput, 1, kGPIO_NoIntmode});
+    GPIO_PinInit(GPIO1, 17U, &(gpio_pin_config_t){kGPIO_DigitalOutput, 1, kGPIO_NoIntmode});
     /* Init output LED GPIO. */
     GPIO_PinInit(GPIO1, 15U, &(gpio_pin_config_t){kGPIO_DigitalOutput, 1, kGPIO_NoIntmode});
 
 #if (defined(USE_EXTERNAL_SDRAM) && (USE_EXTERNAL_SDRAM == 1))
-	BOARD_InitSEMC();
+	/*
+        BOARD_InitSEMC();
 	SCB_DisableDCache();
-    SCB_DisableICache();
+        SCB_DisableICache();
 	if(1==sdram_test(0x1234CDEF))
 	{
 		//sdram test success
@@ -79,14 +83,18 @@ int main(void)
 	}
 	SCB_EnableDCache();
 	SCB_EnableICache();
+        */
 #endif
 
 
-	Display_Init();
-	Camera_Start();
-
+    //Display_Init();
+    //Camera_Start();
+    
+    //GPIO_PinInit(GPIO1, 8U, &(gpio_pin_config_t){kGPIO_DigitalInput, 1, kGPIO_NoIntmode});
+    
     while (1)
     {
-        //GPIO_WritePinOutput(GPIO1, 15U, !GPIO_PinRead(GPIO1, 15U));
+        GPIO_WritePinOutput(GPIO1, 15U, !GPIO_PinRead(GPIO1, 15U));
+        ALEX_CPU_Delay(60000000U);
     }
 }

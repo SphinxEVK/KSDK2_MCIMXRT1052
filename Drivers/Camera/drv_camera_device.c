@@ -41,19 +41,12 @@ static status_t MT9V034_Init(camera_device_handle_t *handle, const camera_config
     }
 
 	MT9V034_Reset(MT9V034_I2C_ADDRESS);
-
 	MT9V034_SetTestPattern(MT9V034_I2C_ADDRESS, false);
-
 	MT9V034_SetFrameResolution(MT9V034_I2C_ADDRESS, CAMERA_DEVICE_WIDTH, CAMERA_DEVICE_HEIGHT);
-
 	MT9V034_SetAutoExposure(MT9V034_I2C_ADDRESS, true);
-
 	MT9V034_SetAutoGainCtrl(MT9V034_I2C_ADDRESS, true);
-
 	MT9V034_SetHDRMode(MT9V034_I2C_ADDRESS, MT9V034_HDR_OFF);
-
 	MT9V034_SetReservedReg(MT9V034_I2C_ADDRESS);
-
 	return kStatus_Success;
 }
 

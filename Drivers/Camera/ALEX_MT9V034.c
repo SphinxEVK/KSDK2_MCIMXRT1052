@@ -177,11 +177,11 @@ status_t MT9V034_SetTestPattern(uint8_t MT9V034_I2C_ADDR, bool enable)
 {
 	if(true == enable)
 	{
-		MT9V034_WriteReg(MT9V034_I2C_ADDR, 0x7F, 0x3000);           // Horizonal Test Pattern enabled.
+		MT9V034_WriteReg(MT9V034_I2C_ADDR, 0x7F, 0x3000);               // Horizonal Test Pattern enabled.
 	}
 	else
 	{
-		MT9V034_WriteReg(MT9V034_I2C_ADDR, 0x7F, 0x0000);			// Test Pattern disabled.
+		MT9V034_WriteReg(MT9V034_I2C_ADDR, 0x7F, 0x0000);               // Test Pattern disabled.
 	}
 
 	return true;

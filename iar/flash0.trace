@@ -1,53 +1,42 @@
-﻿File generated Fri May 25 18:08:08 2018
+﻿File generated Sat Jul 21 22:14:25 2018
 
 Pass 1 of 1
 Starting fragment-style flashloader pass.
-Device: F:\Proj_IMXRT\KSDK2_MCIMXRT1052\iar\RT1052_SphinxEVK.flash
-Flash loader: F:\Proj_IMXRT\KSDK2_MCIMXRT1052\iar\RT1052_SphinxEVK.out
-FlashInitEntry is at 0x0000101C
-FlashWriteEntry is at 0x00001024
-FlashEraseWriteEntry is at 0x0000102C
-FlashBreak is at 0x00000F28
+Device: D:\Proj_IMXRT\KSDK2_MCIMXRT1052\iar\RT1052_SphinxEVK.flash
+Flash loader: D:\Proj_IMXRT\KSDK2_MCIMXRT1052\iar\RT1052_SphinxEVK.out
+FlashInitEntry is at 0x00001B58
+FlashWriteEntry is at 0x00001B60
+FlashEraseWriteEntry is at 0x00001B68
+FlashBreak is at 0x00001AE4
 FlashBufferStart is at 0x20200000
 FlashBufferEnd is at 0x20240000
-theFlashParams is at 0x20000040
+theFlashParams is at 0x2000005C
 FlashChecksumEntry not found
-FlashSignoffEntry is at 0x00001034
+FlashSignoffEntry is at 0x00001B70
 page size is 256 (0x100)
 filler is 0xff
 buffer size is 262144 (0x40000)
 SimpleCode records (after offset):
-  Record 0: @ 0x60001000 [32 (0x20) bytes] 0x60001000 - 0x6000101f [d1 0 20]
-  Record 1: @ 0x60001020 [16 (0x10) bytes] 0x60001020 - 0x6000102f [0 0 0]
-  Record 2: @ 0x60002000 [1024 (0x400) bytes] 0x60002000 - 0x600023ff [0 0 2]
-  Record 3: @ 0x60002400 [25708 (0x646c) bytes] 0x60002400 - 0x6000886b [70 b4 4]
+  Record 0: @ 0x60000000 [512 (0x200) bytes] 0x60000000 - 0x600001ff [46 43 46]
+  Record 1: @ 0x60001000 [32 (0x20) bytes] 0x60001000 - 0x6000101f [d1 0 20]
+  Record 2: @ 0x60001020 [16 (0x10) bytes] 0x60001020 - 0x6000102f [0 0 0]
+  Record 3: @ 0x60002000 [1024 (0x400) bytes] 0x60002000 - 0x600023ff [0 0 2]
+  Record 4: @ 0x60002400 [67590 (0x10806) bytes] 0x60002400 - 0x60012c05 [70 b4 4]
 Base of flash at 0x60000000
-->init       : base @ 0x60000000, image size 0x786c
+->init       : base @ 0x60000000, image size 0x12c06
       Args: (argc = 0)
-  timing(init): 0.0313 (CPU) 0.0180 (elapsed)
+  timing(init): 0.0000 (CPU) 0.0170 (elapsed)
+layout override: 256 0x40000, 
 Transaction list:
-  Transaction @ 0x60001000 + 0x0 (0x100 bytes) 1 packet(s).
+  Transaction @ 0x60000000 + 0x0 (0x12d00 bytes) 1 packet(s).
     Will erase 1 block(s):
-      0: 0x60001000 (0x1000 bytes)
-  Transaction @ 0x60002000 + 0x0 (0x6900 bytes) 7 packet(s).
-    Will erase 7 block(s):
-      0: 0x60002000 (0x1000 bytes)
-      1: 0x60003000 (0x1000 bytes)
-      2: 0x60004000 (0x1000 bytes)
-      3: 0x60005000 (0x1000 bytes)
-      4: 0x60006000 (0x1000 bytes)
-      5: 0x60007000 (0x1000 bytes)
-      6: 0x60008000 (0x1000 bytes)
-->multi_erase: 1 blocks (0x8 bytes in buffer) [0 10 0]
-  timing(erase): 0.0156 (CPU) 0.0520 (elapsed)
-->write      : @ 0x60001000 (0x100 bytes, offset 0x0 into block @ 0x60001000) [d1 0 20]
-  timing(write): 0.0000 (CPU) 0.0130 (elapsed)
-->multi_erase: 7 blocks (0x38 bytes in buffer) [0 20 0]
-  timing(erase): 0.0156 (CPU) 0.2950 (elapsed)
-->write      : @ 0x60002000 (0x6900 bytes, offset 0x0 into block @ 0x60002000) [0 0 2]
-  timing(write): 0.0000 (CPU) 0.0490 (elapsed)
+      0: 0x60000000 (0x40000 bytes)
+->multi_erase: 1 blocks (0x8 bytes in buffer) [0 0 0]
+  timing(erase): 0.0469 (CPU) 1.0150 (elapsed)
+->write      : @ 0x60000000 (0x12d00 bytes, offset 0x0 into block @ 0x60000000) [46 43 46]
+  timing(write): 0.0000 (CPU) 0.0890 (elapsed)
 ->signoff
-  timing(signoff): 0.0000 (CPU) 0.0120 (elapsed)
-Duration:   1.17 (CPU)   2.11 (elapsed)
-  of which on target: 0.0625 (CPU) 0.4390 (elapsed)
+  timing(signoff): 0.0000 (CPU) 0.0110 (elapsed)
+Duration:   0.59 (CPU)   2.75 (elapsed)
+  of which on target: 0.0469 (CPU) 1.1320 (elapsed)
 Flash loading pass finished

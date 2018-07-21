@@ -251,8 +251,8 @@ void HX8369A_LCD_Init(void)
 	SPI_WriteData(0xE6);
 
 	SPI_WriteComm(0xB2);	// SET Display 480x800
-	SPI_WriteData(0x00);
-	SPI_WriteData(0x2B);	//0x2B
+	SPI_WriteData(0x00);    //0x00:Internal OSC clock halt; 0x03: Internal OSC clock running
+	SPI_WriteData(0x2B);	//0x2B:DPI+Bypass GRAM; 0x29:DPI+RGB interface
 	SPI_WriteData(0x0A);
 	SPI_WriteData(0x0A);
 	SPI_WriteData(0x70);

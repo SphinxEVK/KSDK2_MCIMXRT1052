@@ -1,8 +1,8 @@
 #ifndef _DRV_DISPLAY_
 #define _DRV_DISPLAY_
 
-#define DISPLAY_WIDTH		(752)
-#define DISPLAY_HEIGHT		(480)
+#define DISPLAY_WIDTH		(480)
+#define DISPLAY_HEIGHT		(854)
 
 /* DSI Timing */
 #define DSI_HSW 			25		//min = 24
@@ -42,6 +42,8 @@
 #define RGB565_2_GRAY(rgb565)           ((uint8_t)(((RGB565_R(rgb565)*235+RGB565_G(rgb565)*613+RGB565_B(rgb565)*625)+1)>>8))  //  31*235+63*613+31*625+1  = 255*256
 
 ////////////////////////////////////////////////////////////////////////////////
+
+static const uint32_t elcdif_gray2rgb565_lut[256];
 
 extern void Display_Init(void);
 

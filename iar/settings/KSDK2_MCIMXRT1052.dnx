@@ -12,11 +12,14 @@
         <ByteLimit>50</ByteLimit>
     </Stack>
     <JLinkDriver>
+        <WatchCond>_ 0</WatchCond>
+        <Watch0>_ 0 "" 0 "" 0 "" 0 "" 0 0 0 0</Watch0>
+        <Watch1>_ 0 "" 0 "" 0 "" 0 "" 0 0 0 0</Watch1>
         <CStepIntDis>_ 0</CStepIntDis>
         <LeaveTargetRunning>_ 0</LeaveTargetRunning>
     </JLinkDriver>
     <DebugChecksum>
-        <Checksum>1896878524</Checksum>
+        <Checksum>1087282336</Checksum>
     </DebugChecksum>
     <Exceptions>
         <StopOnUncaught>_ 0</StopOnUncaught>
@@ -27,6 +30,7 @@
     </CodeCoverage>
     <Disassembly>
         <InstrCount>0</InstrCount>
+        <MixedMode>1</MixedMode>
     </Disassembly>
     <CallStack>
         <ShowArgs>0</ShowArgs>
@@ -53,6 +57,12 @@
         <Show>1 1</Show>
         <Sort>4 0</Sort>
     </SfrWindow>
+    <InterruptStripe>
+        <Sort>0</Sort>
+    </InterruptStripe>
+    <struct_types>
+        <Fmt0>struct CAT_s-Name	4	0</Fmt0>
+    </struct_types>
     <array_types>
         <Fmt0>uint16_t[360960]	4	0</Fmt0>
         <Fmt1>uint32_t[384000]	4	0</Fmt1>
@@ -60,14 +70,30 @@
     <watch_formats>
         <Fmt0>{W}1:((CSI_Type *)0x402BC000u)-&gt;CSICR1	1	0</Fmt0>
         <Fmt1>{W}1:((CSI_Type *)0x402BC000u)-&gt;CSIIMAG_PARA	4	0</Fmt1>
-        <Fmt2>{W}1:configValue	4	0</Fmt2>
-        <Fmt3>{W}1:dsi_frameBuffer[0][0]	4	0</Fmt3>
-        <Fmt4>{W}1:dsi_frameBuffer[0][480*752*2-1]	4	0</Fmt4>
-        <Fmt5>{W}1:dsi_frameBuffer[0][480*752]	4	0</Fmt5>
-        <Fmt6>{W}1:dsi_frameBuffer[0][752*480/2]	4	0</Fmt6>
-        <Fmt7>{W}1:dsi_frameBuffer[0][752*480/8]	4	0</Fmt7>
-        <Fmt8>{W}42:activeFrameAddr	4	0</Fmt8>
+        <Fmt2>{W}1:(0x60000000)	4	0</Fmt2>
+        <Fmt3>{W}1:configValue	4	0</Fmt3>
+        <Fmt4>{W}1:dsi_frameBuffer[0][0]	4	0</Fmt4>
+        <Fmt5>{W}1:dsi_frameBuffer[0][480*752*2-1]	4	0</Fmt5>
+        <Fmt6>{W}1:dsi_frameBuffer[0][480*752]	4	0</Fmt6>
+        <Fmt7>{W}1:dsi_frameBuffer[0][752*480/2]	4	0</Fmt7>
+        <Fmt8>{W}1:dsi_frameBuffer[0][752*480/8]	4	0</Fmt8>
+        <Fmt9>{W}42:activeFrameAddr	4	0</Fmt9>
     </watch_formats>
+    <Interrupts>
+        <Enabled>1</Enabled>
+    </Interrupts>
+    <MemConfig>
+        <Base>1</Base>
+        <Manual>0</Manual>
+        <Ddf>1</Ddf>
+        <TypeViol>0</TypeViol>
+        <Stop>1</Stop>
+    </MemConfig>
+    <Simulator>
+        <Freq>10000000</Freq>
+        <FreqHi>0</FreqHi>
+        <MultiCoreRunAll>1</MultiCoreRunAll>
+    </Simulator>
     <DriverProfiling>
         <Enabled>0</Enabled>
         <Mode>1</Mode>
