@@ -8,7 +8,7 @@
 
 为了节约编译时间，IAR工程中并未添加所有的.c文件。如需用到其他外设驱动功能，请依照路径自行添加源代码文件。
 
-注：下载算法使用了开发者自己编写的flashloader，目前仅适配Winbond W25QxxxJV系列。如需挂载其他型号的QSPI-Flash，请参照[IMXRT_IARFlashloader](https://github.com/AlexYzhov/IMXRT_IARFlashloader)里的文件，添加设备描述和FlexBus LUT表，自行编译对应的flashloader。
+注：下载算法使用了开发者自己编写的flashloader，目前仅适配Winbond W25QxxxJV系列和EVK同款Hyperflash。如需挂载其他型号的QSPI-Flash，请参照[IMXRT_IARFlashloader](https://github.com/AlexYzhov/IMXRT_IARFlashloader)里的文件，添加设备描述和FlexBus LUT表，自行编译对应的flashloader。
 
 **/App/:** 用于放置自己编写的应用程序。
 
